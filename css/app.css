@@ -687,8 +687,74 @@ body {
   }
 }
 
-.section2 .avatars img {
+.section2 h1 {
+  text-align: center;
+}
+
+.section2 .avatars {
+  width: 83.33333%;
+  margin: 100px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.section2 .avatars #cursor {
   width: 100px;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.section2 .avatars .first-image {
+  left: 0;
+}
+
+.section2 .avatars .second-image {
+  left: 50%;
+}
+
+.section2 .avatars .third-image {
+  left: 100%;
+}
+
+.section2 .avatars > div {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.section2 .avatars > div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.section2 .avatars > div img {
+  width: 350px;
+}
+
+.section2 .avatars > div p {
+  text-align: center;
+  margin-top: -50px !important;
+  font-family: "BlinkerSemiBold";
+  font-size: 1.625rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.section2 .avatars > div .pleca {
+  width: 70%;
+  margin: 50px auto 0 auto;
+  display: block;
 }
 
 /********************* HOME ******************/

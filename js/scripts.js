@@ -194,10 +194,10 @@ underlines.forEach(underline => {
 });
 
 
-gsap.from('.width', { 
+gsap.from('.width', {
   width:"0",
   padding:"0",
-  ease: Power4.easeOut, 
+  ease: Power4.easeOut,
   duration: .5,
   //delay:.5,
   scrollTrigger: {
@@ -207,3 +207,12 @@ gsap.from('.width', {
     //markers:true
   }
 })
+
+//////////////////
+
+        $content =  $('#cursor');
+        $('.avatars div').hover(function () {
+            onHover = $(this).data('hover');
+            $content.removeClass();
+            $content.addClass(onHover);
+        });
