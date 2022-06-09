@@ -776,6 +776,12 @@ body {
           animation-fill-mode: forwards;
 }
 
+@media screen and (max-width: 1400px) {
+  .section2 .avatars .third-image {
+    left: 90%;
+  }
+}
+
 .section2 .avatars > div {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -838,7 +844,6 @@ body {
 }
 
 .section3 > div {
-  background-color: #010628;
   width: 900px;
   height: 600px;
   margin: auto;

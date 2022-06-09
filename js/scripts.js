@@ -154,7 +154,8 @@ textos.forEach(text => {
     scrollTrigger: {
       trigger: text,
       toggleActions: "restart none none reverse",
-      start: "top 80%",
+      start: "top 60%",
+      /*start: "top 80%",*/
       //markers:true
     }
   })

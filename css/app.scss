@@ -570,13 +570,11 @@ body {
     }
     .first-image{
       left: 0;
-
       animation: cursoranim .5s linear 1s infinite;
       animation-fill-mode: forwards;
     }
     .second-image{
       left: 50%;
-
       animation: cursoranim .5s linear 1s infinite;
       animation-fill-mode: forwards;
     }
@@ -584,6 +582,9 @@ body {
       left: 100%;
       animation: cursoranim .5s linear 1s infinite;
       animation-fill-mode: forwards;
+      @media screen and (max-width: $lap) {
+        left: 90%;
+      }
     }
     >div{
       transition: all .5s ease;
@@ -629,7 +630,7 @@ body {
     width: 1000px;
   }
   >div{
-    background-color: $purple;
+    //background-color: $purple;
     width: 900px;
     height: 600px;
     margin: auto;
