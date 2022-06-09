@@ -493,6 +493,9 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     margin-top: 50px;
+    @media screen and (max-width: $lap) {
+      align-items: flex-start;
+    }
     .left{
       text-align: center;
       .pin{
