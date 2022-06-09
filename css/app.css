@@ -155,7 +155,6 @@ img {
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #95dacf;
   z-index: -1;
 }
 
@@ -168,6 +167,18 @@ img {
 
 body {
   margin: 0;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 100;
+  }
 }
 
 .nav {
@@ -403,7 +414,6 @@ body {
 }
 
 .burguer.active {
-  background-color: #cad7e3;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -425,7 +435,6 @@ body {
 }
 
 .menu {
-  background-color: #cad7e3;
   position: fixed;
   left: 0%;
   top: 0%;
@@ -707,20 +716,57 @@ body {
   width: 100px;
   position: absolute;
   bottom: 0;
+  opacity: 1;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
+@-webkit-keyframes cursoranim {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes cursoranim {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .section2 .avatars .first-image {
   left: 0;
+  -webkit-animation: cursoranim .5s linear 1s infinite;
+          animation: cursoranim .5s linear 1s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .section2 .avatars .second-image {
   left: 50%;
+  -webkit-animation: cursoranim .5s linear 1s infinite;
+          animation: cursoranim .5s linear 1s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .section2 .avatars .third-image {
   left: 100%;
+  -webkit-animation: cursoranim .5s linear 1s infinite;
+          animation: cursoranim .5s linear 1s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .section2 .avatars > div {
@@ -755,6 +801,115 @@ body {
   width: 70%;
   margin: 50px auto 0 auto;
   display: block;
+}
+
+.section3 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #010628;
+  overflow: hidden;
+}
+
+.section3 h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section3 .fondo {
+  position: absolute;
+  right: -25%;
+  top: -10%;
+  width: 1000px;
+}
+
+.section3 > div {
+  background-color: #010628;
+  width: 50%;
+  height: 600px;
+  margin: auto;
+  position: relative;
+}
+
+.section3 > div .svgcont {
+  position: absolute;
+  width: 240px;
+}
+
+.section3 > div .svgcont.svg1 {
+  left: 190px;
+  top: 110px;
+}
+
+.section3 > div .svgcont.svg2 {
+  right: 210px;
+  top: 130px;
+}
+
+.section3 > div .svgcont.svg3 {
+  right: 210px;
+  bottom: 170px;
+}
+
+.section3 > div .svgcont.svg4 {
+  right: 170px;
+  top: 90px;
+}
+
+.section3 > div .svgcont polyline, .section3 > div .svgcont line {
+  stroke-dasharray: 3;
+  -webkit-animation: dash 5s linear infinite;
+          animation: dash 5s linear infinite;
+}
+
+.section3 > div .base {
+  width: 270px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.section3 > div .barra {
+  width: 13px;
+  position: absolute;
+}
+
+.section3 > div .barra.barraleft {
+  left: 0;
+}
+
+.section3 > div .barra.barraright {
+  right: 0;
+}
+
+.section3 > div .cuernoder {
+  position: absolute;
+  right: 150px;
+  width: 70px;
+  top: 10px;
+}
+
+.section3 > div .cuernoizq {
+  position: absolute;
+  left: 140px;
+  width: 60px;
+  top: 120px;
+}
+
+.section3 > div .ojos {
+  position: absolute;
+  right: 190px;
+  width: 70px;
+  top: 240px;
+}
+
+.section3 > div .boca {
+  position: absolute;
+  right: 210px;
+  width: 30px;
+  bottom: 250px;
 }
 
 /********************* HOME ******************/
@@ -1024,7 +1179,6 @@ body {
 }
 
 .timeline .container .left {
-  background-color: #cad7e3;
   padding: 25px;
   width: 44.44444%;
   border-radius: 10px;
@@ -1175,7 +1329,6 @@ body {
 
 .preferencia {
   width: 100%;
-  background-color: #cad7e3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1864,7 +2017,6 @@ body {
           transform: scale(0);
   height: 50px;
   width: 50px;
-  background-color: #95dacf;
   border-radius: 50%;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -2061,8 +2213,6 @@ body {
 }
 
 .contacto1 .right .info {
-  background-color: #cad7e3;
-  padding: 50px;
   border-radius: 55px 55px 55px 0;
 }
 
@@ -2175,7 +2325,6 @@ footer .redes .red svg path {
 }
 
 footer .redes .red svg:hover path {
-  fill: #cad7e3;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }

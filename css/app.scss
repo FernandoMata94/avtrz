@@ -3,8 +3,7 @@ $black: #000000;
 $darkgray: #1d1d1b;
 $purple: #010628;
 $violet:#F93DF9;
-$clearblue: #cad7e3;
-$mint: #95dacf;
+$blue: #3FA9F5;
 
 @font-face {
   font-family: 'BlinkerBold';
@@ -176,7 +175,7 @@ img {
     left: 0;
     right: 0;
     margin: auto;
-    background-color: $mint;
+
     z-index: -1;
     @media screen and (max-width: $md) {
       height: 8px;
@@ -187,6 +186,12 @@ img {
 
 body {
   margin: 0;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 100;
+  }
 }
 
 .nav {
@@ -373,7 +378,7 @@ body {
     }
   }
   &.active {
-    background-color: $clearblue;
+
     box-shadow: none;
     .cont {
       > div {
@@ -393,7 +398,7 @@ body {
 }
 
 .menu {
-  background-color: $clearblue;
+
   position: fixed;
   left: 0%;
   top: 0%;
@@ -546,16 +551,35 @@ body {
       width: 100px;
       position: absolute;
       bottom: 0;
+      opacity: 1;
       transition: all .5s ease;
+    }
+    @keyframes cursoranim {
+      from {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+      to {
+
+        transform: scale(1);
+      }
     }
     .first-image{
       left: 0;
+
+      animation: cursoranim .5s linear 1s infinite;
+      animation-fill-mode: forwards;
     }
     .second-image{
       left: 50%;
+
+      animation: cursoranim .5s linear 1s infinite;
+      animation-fill-mode: forwards;
     }
     .third-image{
       left: 100%;
+      animation: cursoranim .5s linear 1s infinite;
+      animation-fill-mode: forwards;
     }
     >div{
       transition: all .5s ease;
@@ -576,6 +600,97 @@ body {
         margin: 50px auto 0 auto;
         display: block;
       }
+    }
+  }
+}
+
+.section3{
+  width: col(18);
+  height: 100vh;
+  position: relative;
+  background-color: $purple;
+  overflow: hidden;
+  h1{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .fondo{
+    position: absolute;
+    right: -25%;
+    top: -10%;
+    width: 1000px;
+  }
+  >div{
+    background-color: $purple;
+    width: 50%;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    .svgcont{
+      position: absolute;
+      width: 240px;
+      &.svg1{
+        left: 190px;
+        top: 110px;
+      }
+      &.svg2{
+        right: 210px;
+        top: 130px;
+      }
+      &.svg3{
+        right: 210px;
+        bottom: 170px;
+      }
+      &.svg4{
+        right: 170px;
+        top: 90px;
+      }
+      polyline, line{
+        stroke-dasharray: 3;
+        animation: dash 5s linear infinite;
+      }
+    }
+    .base{
+      width: 270px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+    .barra{
+      width: 13px;
+      position: absolute;
+      &.barraleft{
+        left: 0;
+      }
+      &.barraright{
+        right: 0;
+      }
+    }
+    .cuernoder{
+      position: absolute;
+      right: 150px;
+      width: 70px;
+      top: 10px;
+    }
+    .cuernoizq{
+      position: absolute;
+      left: 140px;
+      width: 60px;
+      top: 120px;
+    }
+    .ojos{
+      position: absolute;
+    right: 190px;
+    width: 70px;
+    top: 240px;
+    }
+    .boca{
+      position: absolute;
+      right: 210px;
+      width: 30px;
+      bottom: 250px;
     }
   }
 }
@@ -760,7 +875,7 @@ body {
     }
 
     .left {
-      background-color: $clearblue;
+
       padding: 25px;
       width: col(8);
       border-radius: 10px;
@@ -873,7 +988,7 @@ body {
 
 .preferencia {
   width: col(18);
-  background-color: $clearblue;
+
   display: flex;
   padding: col(1);
   padding-bottom: col(3);
@@ -1349,7 +1464,7 @@ body {
         transform: scale(0);
         height: 50px;
         width: 50px;
-        background-color: $mint;
+
         border-radius: 50%;
         transition: all 0.5s ease;
       }
@@ -1484,8 +1599,7 @@ body {
       width: col(18);
     }
     .info {
-      background-color: $clearblue;
-      padding: 50px;
+
       border-radius: 55px 55px 55px 0;
       @media screen and (max-width: $lg) {
         border-radius: 0;
@@ -1565,7 +1679,7 @@ footer {
         }
         &:hover {
           path {
-            fill: $clearblue;
+
             transition: all 0.5s ease;
           }
         }
