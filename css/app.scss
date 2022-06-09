@@ -439,6 +439,9 @@ body {
   height: 100vh;
   padding-top: 100px;
   background-color:$purple;
+  @media screen and (max-width: $lap) {
+    height: auto;
+  }
   .companyLogo{
     width: 150px;
   }
@@ -535,8 +538,9 @@ body {
   height: 100vh;
   padding-top: 100px;
   background-color:$purple;
-  @media screen and (max-width: $md) {
-    padding-bottom: 0;
+  @media screen and (max-width: $lap) {
+    height: auto;
+    padding: col(1) 0;
   }
   h1{
     text-align: center;
@@ -610,6 +614,10 @@ body {
   position: relative;
   background-color: $purple;
   overflow: hidden;
+  @media screen and (max-width: $lap) {
+    height: auto;
+    padding: col(1) 0;
+  }
   h1{
     text-align: center;
     margin-bottom: 50px;

@@ -491,6 +491,12 @@ body {
   background-color: #010628;
 }
 
+@media screen and (max-width: 1400px) {
+  .section1 {
+    height: auto;
+  }
+}
+
 .section1 .companyLogo {
   width: 150px;
 }
@@ -690,9 +696,10 @@ body {
   background-color: #010628;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1400px) {
   .section2 {
-    padding-bottom: 0;
+    height: auto;
+    padding: 5.55556% 0;
   }
 }
 
@@ -809,6 +816,13 @@ body {
   position: relative;
   background-color: #010628;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1400px) {
+  .section3 {
+    height: auto;
+    padding: 5.55556% 0;
+  }
 }
 
 .section3 h1 {
