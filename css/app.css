@@ -657,7 +657,7 @@ body {
   width: 40%;
 }
 
-.section1 .bottom .right .text {
+.section1 .bottom .right .texto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,7 +669,7 @@ body {
           justify-content: space-between;
 }
 
-.section1 .bottom .right .text > div {
+.section1 .bottom .right .texto > div {
   width: 10px;
   height: 3px;
   background-color: #F93DF9;
