@@ -217,3 +217,9 @@ gsap.from('.width', {
             $content.removeClass();
             $content.addClass(onHover);
         });
+
+/////////////////
+
+$('.faq li').click(function () {
+  $(this).toggleClass('active');
+})
