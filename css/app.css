@@ -802,6 +802,12 @@ body {
   transition: all .5s ease;
 }
 
+.section2 .avatars > div:hover p {
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
 .section2 .avatars > div img {
   width: 350px;
 }
@@ -809,6 +815,9 @@ body {
 .section2 .avatars > div p {
   text-align: center;
   margin-top: -50px !important;
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   font-family: "BlinkerSemiBold";
   font-size: 1.625rem;
   color: #ffffff;
@@ -1022,6 +1031,146 @@ body {
 .section9 .faq li > div p {
   color: #ffffff;
   font-family: 'BlinkerExtraLight';
+}
+
+.section10 {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.section10 h1 {
+  margin: 100px 0;
+  color: #000000;
+  text-align: center;
+}
+
+.section10 .memm1, .section10 .memm2, .section10 .memm3, .section10 .memm5, .section10 .memm6, .section10 .memm7, .section10 .memm8 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section10 .memm1 .left, .section10 .memm2 .left, .section10 .memm3 .left, .section10 .memm5 .left, .section10 .memm6 .left, .section10 .memm7 .left, .section10 .memm8 .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.section10 .memm1 .left .logo, .section10 .memm2 .left .logo, .section10 .memm3 .left .logo, .section10 .memm5 .left .logo, .section10 .memm6 .left .logo, .section10 .memm7 .left .logo, .section10 .memm8 .left .logo {
+  width: 50px !important;
+  height: 50px !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section10 .memm1 .right, .section10 .memm2 .right, .section10 .memm3 .right, .section10 .memm5 .right, .section10 .memm6 .right, .section10 .memm7 .right, .section10 .memm8 .right {
+  text-align: center;
+}
+
+.section10 .memm1 h2, .section10 .memm2 h2, .section10 .memm3 h2, .section10 .memm5 h2, .section10 .memm6 h2, .section10 .memm7 h2, .section10 .memm8 h2 {
+  margin-top: 20px;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.section10 .memm4 .right {
+  position: relative;
+}
+
+.section10 .memm4 .logo {
+  width: 50px !important;
+  height: 50px !important;
+  position: absolute;
+  right: -70px;
+  top: 40%;
+}
+
+.section10 #memberinfo {
+  width: 50%;
+  margin: auto;
+  display: none;
+}
+
+.section10 #memberinfo.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section10 #memberinfo .left {
+  width: 50%;
+}
+
+.section10 #memberinfo .left img {
+  width: 300px;
+  height: 300px;
+}
+
+.section10 #memberinfo .right {
+  width: 50%;
+}
+
+.section10 #memberinfo .right p {
+  font-family: 'BlinkerExtraLight';
+  color: #000000;
+}
+
+.section10 .bottom {
+  margin: 100px 0 50px 0;
+  padding: 0 5.55556%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.section10 .bottom::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  display: block;
+  background-color: #F93DF9;
+  left: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.section10 .bottom .member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section10 .bottom .member p {
+  background-color: #F93DF9;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.section10 .bottom .member img {
+  margin-top: 30px;
+  width: 120px;
 }
 
 /********************* NOSOTROS ******************/

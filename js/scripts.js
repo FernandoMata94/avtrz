@@ -211,15 +211,122 @@ gsap.from('.width', {
 
 //////////////////
 
-        $content =  $('#cursor');
-        $('.avatars div').hover(function () {
-            onHover = $(this).data('hover');
-            $content.removeClass();
-            $content.addClass(onHover);
-        });
+$content =  $('#cursor');
+$('.avatars div').hover(function () {
+    onHover = $(this).data('hover');
+    $content.removeClass();
+    $content.addClass(onHover);
+});
 
 /////////////////
 
 $('.faq li').click(function () {
   $(this).toggleClass('active');
+})
+
+
+/* $('.member').click(function () {
+  $('.member').removeClass('active');
+  $(this).addClass('active');
+}) */
+
+
+
+
+$('.mem1').click(function () {
+
+  $('.memm2').removeClass('active');
+  $('.memm3').removeClass('active');
+  $('.memm4').removeClass('active');
+  $('.memm5').removeClass('active');
+  $('.memm6').removeClass('active');
+  $('.memm7').removeClass('active');
+  $('.memm8').removeClass('active');
+  $('.memm1').addClass('active');
+})
+
+$('.mem2').click(function () {
+  $('.memm1').removeClass('active');
+  $('.memm3').removeClass('active');
+  $('.memm4').removeClass('active');
+  $('.memm5').removeClass('active');
+  $('.memm6').removeClass('active');
+  $('.memm7').removeClass('active');
+  $('.memm8').removeClass('active');
+
+  $('.memm2').addClass('active');
+})
+
+$('.mem3').click(function () {
+  $('.memm1').removeClass('active');
+  $('.memm2').removeClass('active');
+  $('.memm4').removeClass('active');
+  $('.memm5').removeClass('active');
+  $('.memm6').removeClass('active');
+  $('.memm7').removeClass('active');
+  $('.memm8').removeClass('active');
+
+  $('.memm3').addClass('active');
+})
+
+$('.mem4').click(function () {
+  $('.memm1').removeClass('active');
+  $('.memm2').removeClass('active');
+  $('.memm3').removeClass('active');
+
+  $('.memm5').removeClass('active');
+  $('.memm6').removeClass('active');
+  $('.memm7').removeClass('active');
+  $('.memm8').removeClass('active');
+
+  $('.memm4').addClass('active');
+})
+
+$('.mem5').click(function () {
+  $('.memm1').removeClass('active');
+  $('.memm2').removeClass('active');
+  $('.memm3').removeClass('active');
+  $('.memm4').removeClass('active');
+  $('.memm6').removeClass('active');
+  $('.memm7').removeClass('active');
+  $('.memm8').removeClass('active');
+
+  $('.memm5').addClass('active');
+})
+
+$('.mem6').click(function () {
+  $('.memm1').removeClass('active');
+  $('.memm2').removeClass('active');
+  $('.memm3').removeClass('active');
+  $('.memm4').removeClass('active');
+  $('.memm5').removeClass('active');
+  
+  $('.memm7').removeClass('active');
+  $('.memm8').removeClass('active');
+
+  $('.memm6').addClass('active');
+})
+
+$('.mem7').click(function () {
+  $('.memm1').removeClass('active');
+  $('.memm2').removeClass('active');
+  $('.memm3').removeClass('active');
+  $('.memm4').removeClass('active');
+  $('.memm5').removeClass('active');
+  $('.memm6').removeClass('active');
+  $('.memm8').removeClass('active');
+
+  $('.memm7').addClass('active');
+})
+
+$('.mem8').click(function () {
+  $('.memm1').removeClass('active');
+  $('.memm2').removeClass('active');
+  $('.memm3').removeClass('active');
+  $('.memm4').removeClass('active');
+  $('.memm5').removeClass('active');
+  $('.memm6').removeClass('active');
+  $('.memm7').removeClass('active');
+
+  $('.memm8').addClass('active');
 })
