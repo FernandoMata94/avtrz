@@ -968,11 +968,25 @@ body {
   text-align: center;
 }
 
-.section9 .logo {
+.section9 .logobarra {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.section9 .logobarra .logo {
   position: absolute;
   width: 200px;
   left: 20%;
   top: 30%;
+}
+
+.section9 .logobarra .barra {
+  top: 67px;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: #F93DF9;
 }
 
 .section9 .faq {
