@@ -982,11 +982,14 @@ body {
 }
 
 .section9 .logobarra .barra {
-  top: 67px;
+  top: 61px;
   position: absolute;
   width: 100%;
-  height: 60px;
+  height: 70px;
   background-color: #F93DF9;
+  -webkit-filter: blur(14px);
+          filter: blur(14px);
+  opacity: .3;
 }
 
 .section9 .faq {
@@ -1185,6 +1188,7 @@ body {
 .section10 .bottom .member img {
   margin-top: 30px;
   width: 120px;
+  cursor: pointer;
 }
 
 /********************* NOSOTROS ******************/
