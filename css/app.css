@@ -1249,6 +1249,10 @@ body {
   }
 }
 
+.section7 .right ul li .cont b {
+  color: #F93DF9;
+}
+
 .section7 .right ul li .cont p {
   margin: auto;
   font-family: 'BlinkerExtraLight';
