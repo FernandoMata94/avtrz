@@ -960,6 +960,10 @@ body {
   bottom: 250px;
 }
 
+.section5 {
+  display: none;
+}
+
 .section6 {
   background-color: #010628;
   display: -webkit-box;
