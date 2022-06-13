@@ -484,6 +484,9 @@ body {
       }
       .avatares{
         width: 600px;
+        @media screen and (max-width: $lap) {
+          width: 400px;
+        }
       }
     }
   }
@@ -679,6 +682,9 @@ body {
     .barra{
       width: 13px;
       position: absolute;
+      @media screen and (max-width: $lap) {
+        width: 10px;
+      }
       &.barraleft{
         left: 0;
       }
@@ -743,7 +749,7 @@ body {
   position: relative;
   @media screen and (max-width: $lap) {
     flex-direction: column;
-
+    height: initial;
   }
   .fondo{
     position: absolute;
@@ -864,11 +870,11 @@ body {
 .section9{
   width: col(18);
   padding: col(1) 0;
-
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
+
   h1{
     text-align: center;
   }
@@ -897,6 +903,9 @@ body {
   .faq{
     width: col(6);
     padding: 0;
+    @media screen and (max-width: $lap) {
+      width: col(10);
+    }
     li{
       border: 1px solid $violet;
       margin: 10px 0;
@@ -1084,13 +1093,13 @@ body {
   transform-style: preserve-3d;
 }
 
-.content-carrousel:hover {
+/* .content-carrousel:hover {
   animation-play-state: paused;
   cursor: pointer;
-}
+} */
 
 .content-carrousel figure {
-  width: 100%;
+  width: 90%;
   //height: 120px;
   //overflow: hidden;
   position: absolute;
