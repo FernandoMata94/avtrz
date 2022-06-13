@@ -863,7 +863,8 @@ body {
 
 .section9{
   width: col(18);
-  height: 100vh;
+  padding: col(1) 0;
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -991,6 +992,9 @@ body {
     width: col(9);
     margin: auto;
     display: none;
+    @media screen and (max-width: $lg) {
+      width: col(18);
+    }
     &.active{
       display: flex;
     }
@@ -1012,9 +1016,17 @@ body {
   .bottom{
     margin: 100px 0 50px 0;
     padding: 0 col(1);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
     justify-content: space-between;
     position: relative;
+    @media screen and (max-width: $max) {
+      grid-template-columns: repeat(4,1fr);
+      gap: 30px;
+    }
+    @media screen and (max-width: $md) {
+      grid-template-columns: repeat(3,1fr);
+    }
     &::before{
       position: absolute;
       top: 0;
