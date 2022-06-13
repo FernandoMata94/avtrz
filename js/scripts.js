@@ -339,6 +339,21 @@ $('.mem8').click(function () {
   $('.memm8').addClass('active');
 })
 
+var image = document.getElementById("image");
+var currentPos = 0;
+var images = ["img/section4/Avatar1.svg", "img/section4/Avatar2.svg", "img/section4/Avatar3.svg"]
+
+function volgendefoto() {
+    if (++currentPos >= images.length)
+        currentPos = 0;
+
+    image.src = images[currentPos];
+}
+
+setInterval(volgendefoto, 1000);
+
+///////////////////////////
+
 
 const scene = new THREE.Scene();
 //Objects

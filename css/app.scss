@@ -719,8 +719,76 @@ body {
   }
 }
 
+.section4{
+  background-color: $purple;
+  position: relative;
+
+  width: col(18);
+  padding: col(1);
+  h1{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  h2{
+    text-transform: capitalize;
+  }
+  .cont{
+    height: 100vh;
+    position: relative;
+    .rare{
+
+    }
+    .head{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .eyes{
+      position: absolute;
+      top: 40%;
+      right: 0;
+    }
+    .clothes{
+      position: absolute;
+      bottom: 20%;
+      right: 0;
+    }
+    .mouth{
+      position: absolute;
+      left: 0;
+      bottom: 60%;
+    }
+    .bg{
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+    }
+    .avatar{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      width: 350px;
+      height: 350px;
+      img{
+        width: 350px;
+
+      }
+    }
+  }
+  .traits{
+    img{
+      width: 125px;
+    }
+  }
+
+
+}
+
 .section5{
-  display: none;
+
 }
 
 .section6{

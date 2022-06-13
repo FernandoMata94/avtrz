@@ -960,8 +960,74 @@ body {
   bottom: 250px;
 }
 
-.section5 {
-  display: none;
+.section4 {
+  background-color: #010628;
+  position: relative;
+  width: 100%;
+  padding: 5.55556%;
+}
+
+.section4 h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section4 h2 {
+  text-transform: capitalize;
+}
+
+.section4 .cont {
+  height: 100vh;
+  position: relative;
+}
+
+.section4 .cont .head {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.section4 .cont .eyes {
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+
+.section4 .cont .clothes {
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+}
+
+.section4 .cont .mouth {
+  position: absolute;
+  left: 0;
+  bottom: 60%;
+}
+
+.section4 .cont .bg {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+}
+
+.section4 .cont .avatar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 350px;
+  height: 350px;
+}
+
+.section4 .cont .avatar img {
+  width: 350px;
+}
+
+.section4 .traits img {
+  width: 125px;
 }
 
 .section6 {
