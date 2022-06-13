@@ -713,8 +713,137 @@ body {
   }
 }
 
+.section6{
+  background-color: $purple;
+  display: flex;
+  align-items: center;
+  width: col(18);
+  padding: col(1);
+  height: 100vh;
+  position: relative;
+  @media screen and (max-width: $lap) {
+    flex-direction: column;
+
+  }
+  .fondo{
+    position: absolute;
+    left: -10%;
+    top: 0;
+    width: 650px;
+  }
+  .left{
+    width: col(6);
+    @media screen and (max-width: $lap) {
+      width: col(18);
+      margin-bottom: 50px;
+    }
+    h1{
+      max-width: 550px;
+      @media screen and (max-width: $lap) {
+        text-align: center;
+        max-width: initial;
+      }
+    }
+  }
+  .right{
+    width: col(12);
+    @media screen and (max-width: $lap) {
+      width: col(18);
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0;
+      li{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .switch{
+          width: 150px;
+          height: 30px;
+          border-radius: 50px;
+          display: flex;
+          padding: 0;
+          justify-content: space-around;
+          align-items: center;
+          margin-bottom: 25px;
+          position: relative;
+          border: 1px solid $violet;
+          border-radius: 20px;
+          cursor: pointer;
+
+          .sd{
+            transition: all .5s ease;
+            position: absolute;
+            left: 0;
+            width: 75px;
+            height: 30px;
+            background-color: gray;
+            border-radius: 50px 0 0 50px;
+            &.active{
+              left: 50%;
+              background-color: $violet;
+              border-radius: 0 50px 50px 0;
+            }
+          }
+          .onoff{
+            &.off{
+              z-index: 1;
+              width: 50%;
+              border-radius: 50px 0 0 50px;
+            }
+            &.on{
+              z-index: 1;
+
+              width: 50%;
+              border-radius: 0 50px 50px 0;
+            }
+          }
+        }
+        .cont{
+          border: 1px solid $violet;
+          border-radius: 20px;
+          padding: 25px;
+          width: 300px;
+          height: 220px;
+          h2{
+            color: $violet;
+            @include h2($violet,.8);
+            text-transform: capitalize;
+            margin-bottom: 20px;
+          }
+          p{
+            margin: auto;
+            font-family: 'BlinkerExtraLight';
+            max-width: 200px;
+            line-height: initial;
+          }
+        }
+
+      }
+    }
+    .base{
+      margin-top: 0;
+      margin-bottom: 20px;
+      width: 250px;
+    }
+    .avatar{
+      width: 250px;
+      opacity: 0;
+      transition: all .5s ease;
+      &.active{
+        opacity: 1;
+        transition: all .5s ease;
+      }
+    }
+  }
+}
+
 .section9{
   width: col(18);
+  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;

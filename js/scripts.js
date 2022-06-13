@@ -225,13 +225,20 @@ $('.faq li').click(function () {
 })
 
 
-/* $('.member').click(function () {
-  $('.member').removeClass('active');
-  $(this).addClass('active');
-}) */
+$('#switch1').click(function () {
+  $(this).find('.sd').toggleClass('active');
+  $('.av1').toggleClass('active');
+})
 
+$('#switch2').click(function () {
+  $(this).find('.sd').toggleClass('active');
+  $('.av2').toggleClass('active');
+})
 
-
+$('#switch3').click(function () {
+  $(this).find('.sd').toggleClass('active');
+  $('.av3').toggleClass('active');
+})
 
 $('.mem1').click(function () {
 
@@ -300,7 +307,7 @@ $('.mem6').click(function () {
   $('.memm3').removeClass('active');
   $('.memm4').removeClass('active');
   $('.memm5').removeClass('active');
-  
+
   $('.memm7').removeClass('active');
   $('.memm8').removeClass('active');
 
