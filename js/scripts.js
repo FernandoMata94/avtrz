@@ -229,16 +229,19 @@ $('.faq li').click(function () {
 $('#switch1').click(function () {
   $(this).find('.sd').toggleClass('active');
   $('.av1').toggleClass('active');
+  $('.light1').toggleClass('active');
 })
 
 $('#switch2').click(function () {
   $(this).find('.sd').toggleClass('active');
   $('.av2').toggleClass('active');
+  $('.light2').toggleClass('active');
 })
 
 $('#switch3').click(function () {
   $(this).find('.sd').toggleClass('active');
   $('.av3').toggleClass('active');
+  $('.light3').toggleClass('active');
 })
 
 $('.mem1').click(function () {

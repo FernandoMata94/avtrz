@@ -648,6 +648,7 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-top: 30px;
   }
 }
 
@@ -692,6 +693,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .section1 .bottom .companies {
+    margin-top: 0;
+  }
 }
 
 .section1 .bottom .companies img {
@@ -859,6 +866,12 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1400px) {
+  .section3 h1 {
+    margin-bottom: 0;
+  }
+}
+
 .section3 .fondo {
   position: absolute;
   right: -25%;
@@ -875,7 +888,7 @@ body {
 
 .section3 > div .svgcont {
   position: absolute;
-  width: 240px;
+  width: 220px;
 }
 
 .section3 > div .svgcont.svg1 {
@@ -885,17 +898,17 @@ body {
 
 .section3 > div .svgcont.svg2 {
   right: 210px;
-  top: 130px;
+  top: 100px;
 }
 
 .section3 > div .svgcont.svg3 {
   right: 210px;
-  bottom: 170px;
+  bottom: 200px;
 }
 
 .section3 > div .svgcont.svg4 {
   right: 170px;
-  top: 90px;
+  top: 70px;
 }
 
 .section3 > div .svgcont polyline, .section3 > div .svgcont line {
@@ -936,7 +949,7 @@ body {
   position: absolute;
   right: 150px;
   width: 70px;
-  top: 10px;
+  top: 0px;
 }
 
 .section3 > div .cuernoizq {
@@ -950,14 +963,14 @@ body {
   position: absolute;
   right: 190px;
   width: 70px;
-  top: 240px;
+  top: 210px;
 }
 
 .section3 > div .boca {
   position: absolute;
   right: 210px;
   width: 30px;
-  bottom: 250px;
+  bottom: 280px;
 }
 
 .section4 {
@@ -1152,6 +1165,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .section7 .right ul li .switch {
@@ -1242,6 +1256,17 @@ body {
   line-height: initial;
 }
 
+.section7 .right .light {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.section7 .right .light.active {
+  opacity: 1;
+}
+
 .section7 .right .base {
   margin-top: 0;
   margin-bottom: 20px;
@@ -1249,7 +1274,7 @@ body {
 }
 
 .section7 .right .avatar {
-  width: 250px;
+  margin-top: 100px;
   opacity: 0;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -1259,6 +1284,8 @@ body {
   opacity: 1;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
 }
 
 .section9 {
