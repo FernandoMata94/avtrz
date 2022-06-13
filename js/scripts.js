@@ -342,6 +342,72 @@ $('.mem8').click(function () {
   $('.memm8').addClass('active');
 })
 
+////////////////
+
+var imagerare = document.getElementById("imagerare");
+var currentPosrare = 0;
+var imagesrare = ["img/section4/Rare1.svg", "img/section4/Rare2.svg", "img/section4/Rare3.svg"]
+function volgendefotorare() {
+    if (++currentPosrare >= imagesrare.length)
+        currentPosrare = 0;
+    imagerare.src = imagesrare[currentPosrare];
+}
+setInterval(volgendefotorare, 3000);
+
+
+var imagemouth = document.getElementById("imagemouth");
+var currentPosmouth = 0;
+var imagesmouth = ["img/section4/Mouth1.svg", "img/section4/Mouth2.svg", "img/section4/Mouth3.svg"]
+function volgendefotomouth() {
+    if (++currentPosmouth >= imagesmouth.length)
+        currentPosmouth = 0;
+    imagemouth.src = imagesmouth[currentPosmouth];
+}
+setInterval(volgendefotomouth, 3000);
+
+var imagehead = document.getElementById("imagehead");
+var currentPoshead = 0;
+var imageshead = ["img/section4/Head1.svg", "img/section4/Head2.svg", "img/section4/Head3.svg"]
+function volgendefotohead() {
+    if (++currentPoshead >= imageshead.length)
+        currentPoshead = 0;
+    imagehead.src = imageshead[currentPoshead];
+}
+setInterval(volgendefotohead, 3000);
+
+var imageeyes = document.getElementById("imageeyes");
+var currentPoseyes = 0;
+var imageseyes = ["img/section4/Eyes1.svg", "img/section4/Eyes2.svg", "img/section4/Eyes3.svg"]
+function volgendefotoeyes() {
+    if (++currentPoseyes >= imageseyes.length)
+        currentPoseyes = 0;
+    imageeyes.src = imageseyes[currentPoseyes];
+}
+setInterval(volgendefotoeyes, 3000);
+
+var imageclothes = document.getElementById("imageclothes");
+var currentPosclothes = 0;
+var imagesclothes = ["img/section4/Cloth1.svg", "img/section4/Cloth2.svg", "img/section4/Cloth3.svg"]
+function volgendefotoclothes() {
+    if (++currentPosclothes >= imagesclothes.length)
+        currentPosclothes = 0;
+    imageclothes.src = imagesclothes[currentPosclothes];
+}
+setInterval(volgendefotoclothes, 3000);
+
+var imagebg = document.getElementById("imagebg");
+var currentPosbg = 0;
+var imagesbg = ["img/section4/Background1.svg", "img/section4/Background2.svg", "img/section4/Background3.svg"]
+function volgendefotobg() {
+    if (++currentPosbg >= imagesbg.length)
+        currentPosbg = 0;
+    imagebg.src = imagesbg[currentPosbg];
+}
+setInterval(volgendefotobg, 3000);
+
+
+////////////////////////////////////
+
 var image = document.getElementById("image");
 var currentPos = 0;
 var images = ["img/section4/Avatar1.svg", "img/section4/Avatar2.svg", "img/section4/Avatar3.svg"]
@@ -353,7 +419,7 @@ function volgendefoto() {
     image.src = images[currentPos];
 }
 
-setInterval(volgendefoto, 1000);
+setInterval(volgendefoto, 3000);
 
 ///////////////////////////
 

@@ -498,7 +498,7 @@ body {
     margin-top: 50px;
     @media screen and (max-width: $lap) {
       align-items: flex-start;
-      margin-top: 30px;
+      margin-top: 15px;
     }
     .left{
       text-align: center;
@@ -675,7 +675,7 @@ body {
       }
       &.svg4{
         right: 170px;
-        top: 70px;
+        top: 80px;
       }
       polyline, line{
         stroke-dasharray: 3;
@@ -731,6 +731,8 @@ body {
   }
 }
 
+
+
 .section4{
   background-color: $purple;
   position: relative;
@@ -747,8 +749,40 @@ body {
   .cont{
     height: 100vh;
     position: relative;
+    .cuadros{
+      width: 125px;
+      height: 125px;
+      background-color: $purple;
+      position: absolute;
+    }
     .rare{
+      position: absolute;
 
+      left: 0;
+      top: 0;
+      .cuadro1{
+        left: 0;
+        bottom: 4px;
+        animation-name: opacity;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        animation-delay: 0s;
+        //animation-direction: alternate;
+        animation-direction: linear;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+      }
+      .cuadro2{
+        left: 130px;
+        bottom: 4px;
+        animation: opacity infinite 3s linear forwards;
+        animation-delay: 3s;
+      }
+      .cuadro3{
+        left: 260px;
+        bottom: 4px;
+      }
     }
     .head{
       position: absolute;
@@ -795,9 +829,16 @@ body {
       width: 125px;
     }
   }
-
-
 }
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
 
 .section5{
 
@@ -986,6 +1027,9 @@ body {
       width: 200px;
       left: 20%;
       top: 30%;
+      @media screen and (max-width: $lap) {
+        left: 10%;
+      }
     }
     .barra{
       top: 61px;

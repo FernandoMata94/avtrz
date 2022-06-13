@@ -648,7 +648,7 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 
@@ -908,7 +908,7 @@ body {
 
 .section3 > div .svgcont.svg4 {
   right: 170px;
-  top: 70px;
+  top: 80px;
 }
 
 .section3 > div .svgcont polyline, .section3 > div .svgcont line {
@@ -994,6 +994,54 @@ body {
   position: relative;
 }
 
+.section4 .cont .cuadros {
+  width: 125px;
+  height: 125px;
+  background-color: #010628;
+  position: absolute;
+}
+
+.section4 .cont .rare {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section4 .cont .rare .cuadro1 {
+  left: 0;
+  bottom: 4px;
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: linear;
+          animation-direction: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.section4 .cont .rare .cuadro2 {
+  left: 130px;
+  bottom: 4px;
+  -webkit-animation: opacity infinite 3s linear forwards;
+          animation: opacity infinite 3s linear forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.section4 .cont .rare .cuadro3 {
+  left: 260px;
+  bottom: 4px;
+}
+
 .section4 .cont .head {
   position: absolute;
   top: 0;
@@ -1041,6 +1089,24 @@ body {
 
 .section4 .traits img {
   width: 125px;
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .section6 {
@@ -1324,6 +1390,12 @@ body {
   width: 200px;
   left: 20%;
   top: 30%;
+}
+
+@media screen and (max-width: 1400px) {
+  .section9 .logobarra .logo {
+    left: 10%;
+  }
 }
 
 .section9 .logobarra .barra {
