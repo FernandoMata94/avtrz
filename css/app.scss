@@ -407,7 +407,6 @@ body {
 }
 
 .menu {
-
   position: fixed;
   left: 0%;
   top: 0%;
@@ -418,6 +417,7 @@ body {
   transform-origin: center center;
   transform: scale(0, 1);
   transition: all 0.5s ease;
+  background-color: $purple;
   &.active {
     transition: all 0.5s ease;
     transform: scale(1, 1);
@@ -461,7 +461,7 @@ body {
 
 .modal-content {
   background-color: $purple;
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 25px;
   border-radius: 10px;
   width: 50%;
@@ -589,7 +589,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-top: 50px;
+
     @media screen and (max-width: $lap) {
       align-items: flex-start;
       margin-top: 15px;
@@ -1268,6 +1268,16 @@ body {
 
   .webgl{
 
+  }
+}
+
+.section8{
+  background-color: $purple;
+  h1{
+    text-align: center;
+  }
+  .content-carrousel{
+    width: 70%;
   }
 }
 

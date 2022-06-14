@@ -465,6 +465,7 @@ body {
           transform: scale(0, 1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  background-color: #010628;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,7 +528,7 @@ body {
 
 .modal-content {
   background-color: #010628;
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 25px;
   border-radius: 10px;
   width: 50%;
@@ -810,7 +811,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 50px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -1827,6 +1827,18 @@ body {
 
 .section5 .container h1 {
   text-align: center;
+}
+
+.section8 {
+  background-color: #010628;
+}
+
+.section8 h1 {
+  text-align: center;
+}
+
+.section8 .content-carrousel {
+  width: 70%;
 }
 
 .section9 {
