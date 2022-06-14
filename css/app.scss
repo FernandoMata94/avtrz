@@ -215,7 +215,7 @@ body {
       .left {
         .logo {
           width: 150px;
-          background-color: red;
+
           img{
             width: 150px;
           }
@@ -305,7 +305,7 @@ body {
   }
   &.activo {
     transition: all 0.5s ease;
-    background-color: $white;
+    background-color: $purple;
     .inner {
       .left {
         .logo {
@@ -320,13 +320,13 @@ body {
       .right {
         p {
           transition: all 0.5s ease;
-          color: $darkgray;
+          color: $white;
           &:after {
-            background: $darkgray;
+            background: $white;
           }
           &:hover {
             &:before {
-              background: $darkgray;
+              background: $white;
             }
             &:after {
               background: transparent;
@@ -487,6 +487,9 @@ body {
 
     .button{
       margin: 10px 0 0 0;
+      @media screen and (max-width: $md) {
+        display: none;
+      }
     }
     .right{
       width: col(9);
@@ -520,6 +523,13 @@ body {
     }
     @media screen and (max-width: $md) {
       flex-direction: column-reverse;
+    }
+    .hidden{
+      display: none;
+      @media screen and (max-width: $md) {
+        display: block;
+        margin: 15px auto 15px auto;
+      }
     }
     .left{
       text-align: center;

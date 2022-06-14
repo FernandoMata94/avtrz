@@ -213,7 +213,6 @@ body {
 
 .nav.contactnav .inner .left .logo {
   width: 150px;
-  background-color: red;
 }
 
 .nav.contactnav .inner .left .logo img {
@@ -326,7 +325,7 @@ body {
 .nav.activo {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background-color: #ffffff;
+  background-color: #010628;
 }
 
 .nav.activo .inner .left .logo svg .st0 {
@@ -338,15 +337,15 @@ body {
 .nav.activo .inner .right p {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  color: #1d1d1b;
+  color: #ffffff;
 }
 
 .nav.activo .inner .right p:after {
-  background: #1d1d1b;
+  background: #ffffff;
 }
 
 .nav.activo .inner .right p:hover:before {
-  background: #1d1d1b;
+  background: #ffffff;
 }
 
 .nav.activo .inner .right p:hover:after {
@@ -660,6 +659,12 @@ body {
   margin: 10px 0 0 0;
 }
 
+@media screen and (max-width: 850px) {
+  .section1 .top .button {
+    display: none;
+  }
+}
+
 .section1 .top .right {
   width: 50%;
   display: -webkit-box;
@@ -722,6 +727,17 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+}
+
+.section1 .bottom .hidden {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .section1 .bottom .hidden {
+    display: block;
+    margin: 15px auto 15px auto;
   }
 }
 
