@@ -104,6 +104,12 @@ p {
   color: #ffffff;
 }
 
+@media screen and (max-width: 850px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
 .button {
   background: #f93df9;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(-20%, #f93df9), color-stop(85%, #010628));
@@ -522,8 +528,24 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 850px) {
+  .section1 .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .section1 .top .left {
   width: 50%;
+}
+
+@media screen and (max-width: 850px) {
+  .section1 .top .left {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .section1 .top .left h1:nth-of-type(1) {
@@ -652,6 +674,12 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 850px) {
+  .section1 .top .right {
+    width: 100%;
+  }
+}
+
 .section1 .top .right .logoavtrz {
   width: 250px;
 }
@@ -688,8 +716,23 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .section1 .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .section1 .bottom .left {
   text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  .section1 .bottom .left {
+    width: 100%;
+  }
 }
 
 .section1 .bottom .left .pin {
@@ -698,6 +741,12 @@ body {
 
 .section1 .bottom .right {
   width: 40%;
+}
+
+@media screen and (max-width: 850px) {
+  .section1 .bottom .right {
+    width: 100%;
+  }
 }
 
 .section1 .bottom .right .texto {
@@ -760,6 +809,12 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .section2 {
+    padding-top: 150px;
+  }
+}
+
 .section2 h1 {
   text-align: center;
 }
@@ -774,6 +829,15 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+}
+
+@media screen and (max-width: 850px) {
+  .section2 .avatars {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .section2 .avatars #cursor {
@@ -817,12 +881,28 @@ body {
           animation-fill-mode: forwards;
 }
 
+@media screen and (max-width: 850px) {
+  .section2 .avatars .first-image {
+    left: initial;
+    right: 0;
+    top: 0;
+  }
+}
+
 .section2 .avatars .second-image {
   left: 50%;
   -webkit-animation: cursoranim .5s linear 1s infinite;
           animation: cursoranim .5s linear 1s infinite;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 850px) {
+  .section2 .avatars .second-image {
+    left: initial;
+    right: 0;
+    top: 50%;
+  }
 }
 
 .section2 .avatars .third-image {
@@ -836,6 +916,14 @@ body {
 @media screen and (max-width: 1400px) {
   .section2 .avatars .third-image {
     left: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section2 .avatars .third-image {
+    left: initial;
+    right: 0;
+    top: 90%;
   }
 }
 
@@ -859,6 +947,8 @@ body {
 
 .section2 .avatars > div img {
   width: 350px;
+  display: block;
+  margin: auto;
 }
 
 .section2 .avatars > div p {
@@ -874,6 +964,12 @@ body {
   font-weight: normal;
   letter-spacing: 1px;
   line-height: 2;
+}
+
+@media screen and (max-width: 850px) {
+  .section2 .avatars > div p {
+    font-size: 1.3rem;
+  }
 }
 
 .section2 .avatars > div .pleca {
@@ -922,9 +1018,21 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 850px) {
+  .section3 > div {
+    width: 90%;
+  }
+}
+
 .section3 > div .svgcont {
   position: absolute;
   width: 220px;
+}
+
+@media screen and (max-width: 850px) {
+  .section3 > div .svgcont {
+    width: 100px;
+  }
 }
 
 .section3 > div .svgcont.svg1 {
@@ -932,9 +1040,21 @@ body {
   top: 110px;
 }
 
+@media screen and (max-width: 850px) {
+  .section3 > div .svgcont.svg1 {
+    left: 90px;
+  }
+}
+
 .section3 > div .svgcont.svg2 {
   right: 210px;
   top: 100px;
+}
+
+@media screen and (max-width: 850px) {
+  .section3 > div .svgcont.svg2 {
+    right: 110px;
+  }
 }
 
 .section3 > div .svgcont.svg3 {
@@ -942,9 +1062,21 @@ body {
   bottom: 200px;
 }
 
+@media screen and (max-width: 850px) {
+  .section3 > div .svgcont.svg3 {
+    right: 70px;
+  }
+}
+
 .section3 > div .svgcont.svg4 {
   right: 170px;
   top: 80px;
+}
+
+@media screen and (max-width: 850px) {
+  .section3 > div .svgcont.svg4 {
+    right: 90px;
+  }
 }
 
 .section3 > div .svgcont polyline, .section3 > div .svgcont line {
@@ -988,11 +1120,23 @@ body {
   top: 0px;
 }
 
+@media screen and (max-width: 850px) {
+  .section3 > div .cuernoder {
+    right: 30px;
+  }
+}
+
 .section3 > div .cuernoizq {
   position: absolute;
   left: 140px;
   width: 60px;
   top: 120px;
+}
+
+@media screen and (max-width: 850px) {
+  .section3 > div .cuernoizq {
+    left: 30px;
+  }
 }
 
 .section3 > div .ojos {
@@ -1002,11 +1146,24 @@ body {
   top: 210px;
 }
 
+@media screen and (max-width: 850px) {
+  .section3 > div .ojos {
+    top: 210px;
+    right: 50px;
+  }
+}
+
 .section3 > div .boca {
   position: absolute;
   right: 210px;
   width: 30px;
   bottom: 280px;
+}
+
+@media screen and (max-width: 850px) {
+  .section3 > div .boca {
+    right: 70px;
+  }
 }
 
 .section4 {
@@ -1147,6 +1304,7 @@ body {
 
 .section5 {
   background-color: #010628;
+  overflow: hidden;
 }
 
 .section5 .container {
@@ -1270,6 +1428,15 @@ body {
   padding: 0;
 }
 
+@media screen and (max-width: 850px) {
+  .section7 .right ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .section7 .right ul li {
   text-align: center;
   display: -webkit-box;
@@ -1283,6 +1450,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+@media screen and (max-width: 850px) {
+  .section7 .right ul li {
+    margin-bottom: 50px;
+  }
 }
 
 .section7 .right ul li .switch {
@@ -1340,6 +1513,12 @@ body {
   padding: 25px;
   width: 300px;
   height: 220px;
+}
+
+@media screen and (max-width: 850px) {
+  .section7 .right ul li .cont {
+    height: auto;
+  }
 }
 
 .section7 .right ul li .cont h2 {
@@ -1408,12 +1587,34 @@ body {
   z-index: 1;
 }
 
+@media screen and (max-width: 850px) {
+  .section7 .right .avatar {
+    margin-top: 0px;
+  }
+}
+
 .section7 .right .avatar.active {
   opacity: 1;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   -webkit-transition-delay: .2s;
           transition-delay: .2s;
+}
+
+.section5 {
+  background-color: #010628;
+  overflow: hidden;
+}
+
+.section5 .container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+
+.section5 .container h1 {
+  text-align: center;
 }
 
 .section9 {
@@ -1456,6 +1657,14 @@ body {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .section9 .logobarra .logo {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
 .section9 .logobarra .barra {
   top: 61px;
   position: absolute;
@@ -1478,6 +1687,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .section9 .faq {
+    margin-top: 200px;
+  }
+}
+
 .section9 .faq li {
   border: 1px solid #F93DF9;
   margin: 10px 0;
@@ -1489,6 +1704,12 @@ body {
   -webkit-transition: max-height 0.5s ease;
   transition: max-height 0.5s ease;
   position: relative;
+}
+
+@media screen and (max-width: 1400px) {
+  .section9 .faq li {
+    max-height: 80px;
+  }
 }
 
 .section9 .faq li::after {
@@ -1533,7 +1754,14 @@ body {
 
 .section10 {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #E2E2E2;
+  padding: 5.55556% 0;
+}
+
+@media screen and (max-width: 850px) {
+  .section10 {
+    padding: 5.55556%;
+  }
 }
 
 .section10 h1 {
@@ -1562,6 +1790,12 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 850px) {
+  .section10 .memm1 .left, .section10 .memm2 .left, .section10 .memm3 .left, .section10 .memm5 .left, .section10 .memm6 .left, .section10 .memm7 .left, .section10 .memm8 .left {
+    width: 100% !important;
+  }
+}
+
 .section10 .memm1 .left .logo, .section10 .memm2 .left .logo, .section10 .memm3 .left .logo, .section10 .memm5 .left .logo, .section10 .memm6 .left .logo, .section10 .memm7 .left .logo, .section10 .memm8 .left .logo {
   width: 50px !important;
   height: 50px !important;
@@ -1580,8 +1814,33 @@ body {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 850px) {
+  .section10 .memm4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .section10 .memm4 .right {
   position: relative;
+}
+
+@media screen and (max-width: 850px) {
+  .section10 .memm4 .right {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section10 .memm4 .left {
+    width: 100% !important;
+  }
+  .section10 .memm4 .left img {
+    display: block;
+    margin: 0 auto 50px auto;
+  }
 }
 
 .section10 .memm4 .logo {
@@ -1590,6 +1849,13 @@ body {
   position: absolute;
   right: -70px;
   top: 40%;
+}
+
+@media screen and (max-width: 850px) {
+  .section10 .memm4 .logo {
+    right: 0;
+    top: 0;
+  }
 }
 
 .section10 #memberinfo {
@@ -1629,7 +1895,7 @@ body {
 }
 
 .section10 .bottom {
-  margin: 100px 0 50px 0;
+  margin: 100px 0 0 0;
   padding: 0 25px;
   display: -ms-grid;
   display: grid;
@@ -1653,6 +1919,13 @@ body {
   .section10 .bottom {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .section10 .bottom {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1730,15 +2003,27 @@ body {
   }
 }
 
+@media screen and (max-width: 1600px) and (max-width: 850px) {
+  .section10 .bottom .member p {
+    font-size: 0.9rem;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .section10 .bottom .member p {
     font-family: "BlinkerSemiBold";
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: #ffffff;
     margin: 0;
     font-weight: normal;
     letter-spacing: 1px;
     line-height: 2;
+  }
+}
+
+@media screen and (max-width: 1400px) and (max-width: 850px) {
+  .section10 .bottom .member p {
+    font-size: 0.6rem;
   }
 }
 
