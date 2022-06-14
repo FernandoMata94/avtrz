@@ -1,4 +1,5 @@
 
+
 $('.slider-cont').slick({
   infinite: true,
   slidesToShow: 1,
@@ -421,56 +422,5 @@ function volgendefoto() {
 
 setInterval(volgendefoto, 3000);
 
-///////////////////////////
-
-
-const scene = new THREE.Scene();
-//Objects
-const geometry = new THREE.SphereGeometry(15,30,16);
-
-//Materials
-const material = new THREE.PointsMaterial({
-  size:0.2,
-  color :'red'
-})
-
-//Mesh
-const mesh = new THREE.Points(geometry,material)
-scene.add(mesh)
-
-
-const sizes = {
-  width:800,
-  height:600
-}
-
-
-const camera = new THREE.PerspectiveCamera(75,sizes.width / sizes.height)
-camera.position.z = 3
-scene.add(camera)
-
-//Renderer
-const canvas = document.querySelector('.webgl')
-console.log(canvas)
-
-const renderer = new THREE.WebGLRenderer({
-  canvas:canvas
-})
-
-renderer.setSize(sizes.width, sizes.height)
-
-
-//Animations
-const tick = () =>
-{
-  //Update objects
-  mesh.rotation.y +=0.1
-
-  //Render
-  renderer.render(scene,camera)
-
-  window.requestAnimationFrame(tick)
-
-}
-tick()
+/////////////////////////// 3js
 

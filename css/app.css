@@ -1145,6 +1145,21 @@ body {
   }
 }
 
+.section5 {
+  background-color: #010628;
+}
+
+.section5 .container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+
+.section5 .container h1 {
+  text-align: center;
+}
+
 .section6 {
   background-color: #010628;
   display: -webkit-box;
@@ -1652,12 +1667,6 @@ body {
   height: 40px;
 }
 
-@media screen and (max-width: 1600px) {
-  .section10 .bottom::before {
-    height: 90px;
-  }
-}
-
 .section10 .bottom::after {
   display: none;
   position: absolute;
@@ -1711,7 +1720,25 @@ body {
 
 @media screen and (max-width: 1600px) {
   .section10 .bottom .member p {
-    height: 90px;
+    font-family: "BlinkerSemiBold";
+    font-size: 1.125rem;
+    color: #ffffff;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .section10 .bottom .member p {
+    font-family: "BlinkerSemiBold";
+    font-size: 0.875rem;
+    color: #ffffff;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 2;
   }
 }
 
