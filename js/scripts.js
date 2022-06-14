@@ -1,23 +1,11 @@
-
-
 $('.slider-cont').slick({
   infinite: true,
+  dots: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   fade: true,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 4000,
-  pauseOnHover: false
-});
-
-$('.slider-prod').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: true,
-  arrows: true,
-  autoplay: false,
   autoplaySpeed: 4000,
   pauseOnHover: false
 });

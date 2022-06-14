@@ -7,6 +7,7 @@ const controls = new OrbitControls( camera, renderer.domElement );
 
 // Canvas
 const canvas = document.querySelector("canvas.webgl");
+const canvas1 = document.querySelector("canvas1.webgl");
 
 // Scene
 const scene = new THREE.Scene();

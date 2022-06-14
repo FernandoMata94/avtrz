@@ -1276,8 +1276,21 @@ body {
   height: 350px;
 }
 
+@media screen and (max-width: 850px) {
+  .section4 .cont .avatar {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 .section4 .cont .avatar img {
   width: 350px;
+}
+
+@media screen and (max-width: 850px) {
+  .section4 .cont .avatar img {
+    width: 250px;
+  }
 }
 
 .section4 .traits img {
@@ -1315,7 +1328,20 @@ body {
 }
 
 .section5 .container h1 {
+  margin-top: 100px;
   text-align: center;
+}
+
+.section5 .container .fondo {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.section5 .entire-content {
+  width: 200px;
 }
 
 .section6 {
@@ -1327,6 +1353,68 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 5.55556%;
+}
+
+@media screen and (max-width: 1200px) {
+  .section6 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section6 #slideshow {
+    display: none;
+  }
+}
+
+.section6 .responsive-slider {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .section6 .responsive-slider {
+    display: block;
+  }
+}
+
+.section6 .responsive-slider .slider-cont {
+  padding: 0;
+}
+
+.section6 .responsive-slider .slider-cont li img {
+  width: 250px;
+  display: block;
+  margin: auto;
+}
+
+.section6 .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px auto 0 auto;
+  width: 100px;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section6 .slick-dots li {
+  cursor: pointer;
+}
+
+.section6 .slick-dots button {
+  cursor: pointer;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: gray;
 }
 
 .section6 .button {
@@ -1348,8 +1436,15 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .section6 .right {
+    width: 100%;
+  }
+}
+
 .section6 .right p {
   font-family: 'BlinkerExtraLight';
+  margin: 15px 0;
 }
 
 .section7 {
@@ -1765,7 +1860,7 @@ body {
 }
 
 .section10 h1 {
-  margin: 100px 0;
+  margin: 100px 0 100px 0;
   color: #000000;
   text-align: center;
 }
