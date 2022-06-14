@@ -1,8 +1,23 @@
 {
+  "name": "avtrz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
     "three": "^0.141.0"
   },
+  "devDependencies": {},
   "scripts": {
-    "build": "[my-framework] build --output public"
-  }
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandoMata94/avtrz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandoMata94/avtrz/issues"
+  },
+  "homepage": "https://github.com/FernandoMata94/avtrz#readme"
 }
