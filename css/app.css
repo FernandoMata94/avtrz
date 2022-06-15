@@ -1989,6 +1989,10 @@ body {
           transition-delay: .2s;
 }
 
+#slideshow {
+  pointer-events: none;
+}
+
 .section88 {
   overflow: hidden;
   width: 100%;

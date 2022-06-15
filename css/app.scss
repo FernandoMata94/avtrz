@@ -1360,7 +1360,9 @@ body {
     }
   }
 }
-
+#slideshow{
+  pointer-events: none;
+}
 .section88{
   overflow: hidden;
   width: col(18);
