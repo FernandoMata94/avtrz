@@ -1381,6 +1381,12 @@ body {
   right: 0;
 }
 
+@media screen and (max-width: 850px) {
+  .section4 .cont .eyes {
+    top: 20%;
+  }
+}
+
 .section4 .cont .clothes {
   position: absolute;
   bottom: 20%;
@@ -1391,6 +1397,12 @@ body {
   position: absolute;
   left: 0;
   bottom: 60%;
+}
+
+@media screen and (max-width: 850px) {
+  .section4 .cont .mouth {
+    bottom: 70%;
+  }
 }
 
 .section4 .cont .bg {
@@ -1429,6 +1441,12 @@ body {
 
 .section4 .traits img {
   width: 125px;
+}
+
+@media screen and (max-width: 850px) {
+  .section4 .traits img {
+    width: 80px;
+  }
 }
 
 @-webkit-keyframes opacity {
