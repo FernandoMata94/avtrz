@@ -1142,9 +1142,9 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
   .section3 > div {
-    width: 90%;
+    width: 500px;
   }
 }
 
@@ -1164,9 +1164,9 @@ body {
   top: 110px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
   .section3 > div .svgcont.svg1 {
-    left: 90px;
+    left: 30px;
   }
 }
 
@@ -1182,9 +1182,9 @@ body {
   top: 100px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
   .section3 > div .svgcont.svg2 {
-    right: 110px;
+    right: 30px;
   }
 }
 
@@ -1193,22 +1193,28 @@ body {
   bottom: 200px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
   .section3 > div .svgcont.svg3 {
-    right: 80px;
-    bottom: 240px;
+    right: 0px;
+    bottom: 200px;
   }
 }
 
 @media screen and (max-width: 580px) {
   .section3 > div .svgcont.svg3 {
-    right: 30px;
+    right: 10px;
   }
 }
 
 .section3 > div .svgcont.svg4 {
   right: 190px;
   top: 80px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section3 > div .svgcont.svg4 {
+    right: 0px;
+  }
 }
 
 @media screen and (max-width: 850px) {

@@ -795,8 +795,8 @@ body {
     height: 600px;
     margin: auto;
     position: relative;
-    @media screen and (max-width: $md) {
-      width: 90%;
+    @media screen and (max-width: $lg) {
+      width: 500px;
     }
     .svgcont{
       position: absolute;
@@ -807,8 +807,8 @@ body {
       &.svg1{
         left: 210px;
         top: 110px;
-        @media screen and (max-width: $md) {
-          left: 90px;
+        @media screen and (max-width: $lg) {
+          left: 30px;
         }
         @media screen and (max-width: $sm) {
           top: 130px;
@@ -818,24 +818,27 @@ body {
       &.svg2{
         right: 230px;
         top: 100px;
-        @media screen and (max-width: $md) {
-          right: 110px;
+        @media screen and (max-width: $lg) {
+          right: 30px;
         }
       }
       &.svg3{
         right: 210px;
         bottom: 200px;
-        @media screen and (max-width: $md) {
-          right: 80px;
-          bottom: 240px;
+        @media screen and (max-width: $lg) {
+          right: 0px;
+          bottom: 200px;
         }
         @media screen and (max-width: $sm) {
-          right: 30px;
+          right: 10px;
         }
       }
       &.svg4{
         right: 190px;
         top: 80px;
+        @media screen and (max-width: $lg) {
+          right: 0px;
+        }
         @media screen and (max-width: $md) {
           right: 90px;
         }
