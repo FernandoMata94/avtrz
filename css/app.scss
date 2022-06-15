@@ -139,11 +139,11 @@ p {
   display: block;
   text-align: center;
   &:hover {
-    background: darken($bg, 8%);
+    background: linear-gradient(0deg, rgba(249,61,249,1) -10%, rgba(1,6,40,1) 85%);
     transition: all 0.3s ease;
   }
   &:active {
-    background: darken($bg, 25%);
+    //background: darken($bg, 25%);
   }
 }
 

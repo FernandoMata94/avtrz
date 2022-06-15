@@ -129,13 +129,10 @@ p {
 }
 
 .button:hover {
-  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-10%, #f93df9), color-stop(85%, #010628));
+  background: linear-gradient(0deg, #f93df9 -10%, #010628 85%);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-.button:active {
-  background: black;
 }
 
 a {
