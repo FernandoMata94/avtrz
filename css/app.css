@@ -1176,7 +1176,7 @@ body {
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 850px) {
   .section3 > div .svgcont.svg1 {
     top: 200px;
     left: 50px;
