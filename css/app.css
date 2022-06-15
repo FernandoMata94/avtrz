@@ -269,6 +269,12 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 1600px) {
+  .nav .inner .right {
+    padding: 25px;
+  }
+}
+
 .nav .inner .right .logo {
   width: 50px;
   margin-right: 100px;
@@ -1381,6 +1387,12 @@ body {
   right: 0;
 }
 
+@media screen and (max-width: 1400px) {
+  .section4 .cont .eyes {
+    top: 30%;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .section4 .cont .eyes {
     top: 20%;
@@ -1397,6 +1409,12 @@ body {
   position: absolute;
   left: 0;
   bottom: 60%;
+}
+
+@media screen and (max-width: 1400px) {
+  .section4 .cont .mouth {
+    bottom: 50%;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -1504,8 +1522,22 @@ body {
   z-index: -1;
 }
 
+.section5 .container .button {
+  bottom: 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
 .section5 .entire-content {
   width: 200px;
+}
+
+@media screen and (max-width: 1400px) {
+  .section5 .entire-content {
+    width: 130px;
+  }
 }
 
 .section6 {
@@ -1839,7 +1871,7 @@ body {
 }
 
 .section7 .right .avatar {
-  margin-top: 100px;
+  margin-top: 30px;
   opacity: 0;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -1886,8 +1918,22 @@ body {
   z-index: -1;
 }
 
+.section88 .container .button {
+  bottom: 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
 .section88 .entire-content {
   width: 200px;
+}
+
+@media screen and (max-width: 1400px) {
+  .section88 .entire-content {
+    width: 130px;
+  }
 }
 
 .section9 {
@@ -2137,9 +2183,10 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .section10 #memberinfo {
-    width: 100%;
+    width: 88.88889%;
+    margin: 5.55556%;
   }
 }
 
@@ -2153,13 +2200,34 @@ body {
   width: 50%;
 }
 
+@media screen and (max-width: 1400px) {
+  .section10 #memberinfo .left {
+    width: 66.66667%;
+  }
+}
+
 .section10 #memberinfo .left img {
   width: 300px;
   height: 300px;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .section10 #memberinfo .left img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .section10 #memberinfo .right {
   width: 50%;
+}
+
+@media screen and (max-width: 1400px) {
+  .section10 #memberinfo .right {
+    width: 66.66667%;
+  }
 }
 
 .section10 #memberinfo .right p {

@@ -258,6 +258,9 @@ body {
     }
     .right {
       display: flex;
+      @media screen and (max-width: $max) {
+        padding: 25px;
+      }
       .logo {
         width: 50px;
         margin-right: 100px;
@@ -960,6 +963,9 @@ body {
       position: absolute;
       top: 40%;
       right: 0;
+      @media screen and (max-width: $lap) {
+        top: 30%;
+      }
       @media screen and (max-width: $md) {
         top: 20%;
       }
@@ -973,6 +979,9 @@ body {
       position: absolute;
       left: 0;
       bottom: 60%;
+      @media screen and (max-width: $lap) {
+        bottom:50%;
+      }
       @media screen and (max-width: $md) {
         bottom:70%;
       }
@@ -1050,11 +1059,22 @@ body {
       left: 0;
       z-index: -1;
     }
+    .button{
+      bottom: 15px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 2;
+    }
   }
 
   .entire-content{
     width: 200px;
+    @media screen and (max-width: $lap) {
+      width: 130px;
+    }
   }
+
 }
 
 .section6{
@@ -1265,7 +1285,7 @@ body {
       width: 250px;
     }
     .avatar{
-      margin-top: 100px;
+      margin-top: 30px;
       opacity: 0;
       transition: all .5s ease;
       z-index: 1;
@@ -1301,10 +1321,20 @@ body {
       left: 0;
       z-index: -1;
     }
+    .button{
+      bottom: 15px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 2;
+    }
   }
 
   .entire-content{
     width: 200px;
+    @media screen and (max-width: $lap) {
+      width: 130px;
+    }
   }
 }
 
@@ -1483,21 +1513,34 @@ body {
     width: col(9);
     margin: auto;
     display: none;
-    @media screen and (max-width: $lg) {
-      width: col(18);
+    @media screen and (max-width: $lap) {
+      width: col(16);
+      margin: col(1);
     }
     &.active{
       display: flex;
     }
     .left{
       width: col(9);
+      @media screen and (max-width: $lap) {
+        width: col(12);
+      }
       img{
         width: 300px;
         height: 300px;
+        display: block;
+        margin: auto;
+        @media screen and (max-width: $lap) {
+          width: 200px;
+          height: 200px;
+        }
       }
     }
     .right{
       width: col(9);
+      @media screen and (max-width: $lap) {
+        width: col(12);
+      }
       p{
         font-family: 'BlinkerExtraLight';
         color: $black;
