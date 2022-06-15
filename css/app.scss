@@ -613,6 +613,10 @@ body {
     }
     .left{
       text-align: center;
+      @media screen and (max-width: $lap) {
+        margin-top: -50px;
+      }
+
       @media screen and (max-width: $md) {
         width: 100%;
       }
