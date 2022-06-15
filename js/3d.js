@@ -96,8 +96,8 @@ const tick = () => {
   particlesMesh.rotation.y =-.1 * elapsedTime;
 
   if (mouseX>0){
-    particlesMesh.rotation.x =- mouseY * (elapsedTime * 0.00008)
-    particlesMesh.rotation.y =- mouseX * (elapsedTime * 0.00008)
+    particlesMesh.rotation.x =- mouseY * (elapsedTime * 0.000008)
+    particlesMesh.rotation.y =- mouseX * (elapsedTime * 0.000008)
   }
 
   //Render

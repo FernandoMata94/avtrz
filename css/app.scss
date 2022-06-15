@@ -519,7 +519,7 @@ body {
   width: col(18);
   padding: 0 col(1);
   height: 100vh;
-  padding-top: 100px;
+  //padding-top: 100px;
   background-color:$purple;
   @media screen and (max-width: $lap) {
     height: auto;
@@ -574,7 +574,9 @@ body {
       }
       .logoavtrz{
         width: 250px;
-
+        @media screen and (max-width: $md) {
+          width: 200px;
+        }
       }
       .avatares{
         width: 600px;
@@ -801,6 +803,10 @@ body {
         left: 190px;
         top: 110px;
         @media screen and (max-width: $md) {
+          left: 90px;
+        }
+        @media screen and (max-width: $sm) {
+          top: 130px;
           left: 90px;
         }
       }
@@ -1389,7 +1395,7 @@ body {
     padding: col(1);
   }
   h1{
-    margin: 100px 0 100px 0;
+    margin: 0px 0 100px 0;
     color: $black;
     text-align: center;
   }

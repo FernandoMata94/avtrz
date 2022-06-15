@@ -606,7 +606,6 @@ body {
   width: 100%;
   padding: 0 5.55556%;
   height: 100vh;
-  padding-top: 100px;
   background-color: #010628;
 }
 
@@ -789,6 +788,12 @@ body {
 
 .section1 .top .right .logoavtrz {
   width: 250px;
+}
+
+@media screen and (max-width: 850px) {
+  .section1 .top .right .logoavtrz {
+    width: 200px;
+  }
 }
 
 .section1 .top .right .avatares {
@@ -1159,6 +1164,13 @@ body {
 
 @media screen and (max-width: 850px) {
   .section3 > div .svgcont.svg1 {
+    left: 90px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .section3 > div .svgcont.svg1 {
+    top: 130px;
     left: 90px;
   }
 }
@@ -1989,7 +2001,7 @@ body {
 }
 
 .section10 h1 {
-  margin: 100px 0 100px 0;
+  margin: 0px 0 100px 0;
   color: #000000;
   text-align: center;
 }
