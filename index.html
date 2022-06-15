@@ -45,7 +45,7 @@
 </script>
 
 <body>
-  <nav class="nav">
+  <nav class="nav ">
     <div class="inner">
       <div class="right">
         <div class="logo">
@@ -113,37 +113,37 @@
       <span class="close">&times;</span>
       <p>Enter your information below and we'll send you a PDF</p>
       <p>"AVATAR NFTs are taking over the web 3.0 market"</p>
-      <p class="small">°°°Collections can be very lucrative if your idea isn't committed to the world- leave this page now.°°°</p>
+      <p class="small">°°If you are not interested in success via NFT's, please leave this page now.°°°</p>
 
       <div class="container">
         <form action="contact-form-handler.php" name="enviar" method="post">
           <div>
             <p>First Name:</p>
-            <input type="text" id="name" name="name" placeholder="Nombre Completo" pattern=[A-Z\sa-z]{3,20} required>
+            <input type="text" id="name" name="name" placeholder="First Name" pattern=[A-Z\sa-z]{3,20} required>
           </div>
           <div>
             <p>Last Name:</p>
-            <input type="text" id="name" name="name" placeholder="Nombre Completo" pattern=[A-Z\sa-z]{3,20} required>
+            <input type="text" id="name" name="name" placeholder="Last Name" pattern=[A-Z\sa-z]{3,20} required>
           </div>
           <div>
             <p>Email:</p>
-            <input type="email" id="email" name="email" placeholder="Correo" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
           </div>
           <div>
             <p>Phone:</p>
-            <input type="phone" id="email" name="email" placeholder="Teléfono" required>
+            <input type="phone" id="email" name="email" placeholder="Phone" required>
           </div>
           <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LcPzEIeAAAAAFEZLjTpRjbHPq_bZEOpFfQy6d8R"></div>
 
-          <button class="button">GET VALUE</button>
-
+          <button class="button">Get PDF</button>
+          <p class="small">Your information is secure. We will NEVER share your details with anyone else.</p>
         </form>
       </div>
     </div>
   </div>
 
 
-  <section class="section1" id="section1">
+  <section class="section1 ancla" id="section1">
     <div class="top">
       <div class="left">
 
@@ -484,23 +484,23 @@
     </div>
   </section>
 
-  <section class="section8" id="section8">
+  <section class="section88" id="section8">
     <div class="container">
-      <h1>COLLECTION SIZE</h1>
+      <h1>GET YOUR COLLECTION 50% OFF</h1>
       <!-- 3D Slideshow Section -->
       <div id="slideshow">
         <div class="entire-content">
           <div class="content-carrousel">
             <figure class="shadow"><img src="img/section8/BundlePack.svg" /></figure>
-            <figure class="shadow"><img src="img/section8/Smartcontract.svg" /></figure>
             <figure class="shadow"><img src="img/section8/MintingWebsite.svg" /></figure>
-
+            <figure class="shadow"><img src="img/section8/Smartcontract.svg" /></figure>
           </div>
         </div>
       </div>
+      <img src="img/fondo3d.png" class="fondo">
       <div class="button">Know more</div>
     </div>
-    <canvas class="webgl1"></canvas>
+
   </section>
 
   <section class="section9" id="section9">
@@ -709,6 +709,7 @@
 
 
 
+
   <script type="text/javascript">
 
     window.onload = function () {
@@ -730,6 +731,47 @@
     };
 
     var modal = document.getElementById('myModal');
+
+
+
+    var lastScrollTop = 0;
+    $(window).scroll(function (e) {
+        $altoportada= $('.ancla').height();
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop && st > $altoportada){
+            $('nav').removeClass('scrolldown')
+        } else {
+            $('nav').addClass('scrolldown')
+        }
+        if ( $( ".responsive-menu" ).hasClass( "activo" ) ) {
+            $('nav').addClass('scrolldown')
+        }
+        lastScrollTop = st;
+        resizeMenn()
+    });
+
+    $(window).resize(function() {
+        resizeMenn()
+    });
+
+    function resizeMenn() {
+        $width = $(window).width();
+        if ($width > 700) {
+            if ($(this).scrollTop() > 1000) {
+                $('.nav-text').removeClass('active');
+                $('.nav-text').addClass('inactive');
+
+                $('.nav-icon').addClass('active');
+            } else {
+                $('.nav-text').addClass('active');
+                $('.nav-text').removeClass('inactive');
+
+                $('.nav-icon').removeClass('active');
+            }
+        }else{
+        }
+    }
+    resizeMenn()
 
   </script>
 

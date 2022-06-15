@@ -207,6 +207,11 @@ body {
   width: 100%;
 }
 
+.nav.scrolldown {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .nav.contactnav {
   background-color: #ffffff;
 }
@@ -506,7 +511,7 @@ body {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 10;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -527,7 +532,7 @@ body {
 }
 
 .modal-content {
-  background-color: #010628;
+  background-color: #ffffff;
   margin: 10% auto;
   padding: 25px;
   border-radius: 10px;
@@ -570,7 +575,7 @@ body {
 .modal-content > p.small {
   font-family: "BlinkerSemiBold";
   font-size: 0.875rem;
-  color: #ffffff;
+  color: #000000;
   margin: 0;
   font-weight: normal;
   letter-spacing: 1px;
@@ -585,7 +590,7 @@ body {
 
 .modal-content p, .modal-content h2 {
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 .modal-content .button {
@@ -1444,9 +1449,21 @@ body {
   }
 }
 
+.section1, .section2, .section3, .section4, .section6, .section7, .section9, .section10 {
+  position: relative;
+  z-index: 1;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .section5 {
-  background-color: #010628;
   overflow: hidden;
+  width: 100%;
+  height: 100vh;
 }
 
 .section5 .container {
@@ -1825,32 +1842,34 @@ body {
           transition-delay: .2s;
 }
 
-.section5 {
-  background-color: #010628;
+.section88 {
   overflow: hidden;
+  width: 100%;
+  height: 100vh;
 }
 
-.section5 .container {
+.section88 .container {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100vh;
 }
 
-.section5 .container h1 {
+.section88 .container h1 {
+  margin-top: 100px;
   text-align: center;
 }
 
-.section8 {
-  background-color: #010628;
+.section88 .container .fondo {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
-.section8 h1 {
-  text-align: center;
-}
-
-.section8 .content-carrousel {
-  width: 70%;
+.section88 .entire-content {
+  width: 200px;
 }
 
 .section9 {
