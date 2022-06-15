@@ -209,6 +209,7 @@ body {
   left: 0;
   z-index: 9999;
   width: col(18);
+  padding:0 col(1);
   &.scrolldown{
     transform: translateY(0);
   }
@@ -258,9 +259,7 @@ body {
     }
     .right {
       display: flex;
-      @media screen and (max-width: $max) {
-        padding: 25px;
-      }
+
       .logo {
         width: 50px;
         margin-right: 100px;
@@ -525,8 +524,7 @@ body {
 .section1 {
   width: col(18);
   padding: col(1);
-  height: 100vh;
-  //padding-top: 100px;
+  //height: 100vh;
   background-color:$purple;
   @media screen and (max-width: $lap) {
     height: auto;
@@ -587,7 +585,7 @@ body {
       }
       .avatares{
         width: 600px;
-        @media screen and (max-width: $lap) {
+        @media screen and (max-width: $max) {
           width: 400px;
         }
       }
@@ -679,7 +677,7 @@ body {
   }
   .avatars{
     width: col(15);
-    margin: 100px auto 0 auto;
+    margin: 20px auto 0 auto;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -804,10 +802,10 @@ body {
       position: absolute;
       width: 220px;
       @media screen and (max-width: $md) {
-        width: 100px;
+        width: 170px;
       }
       &.svg1{
-        left: 190px;
+        left: 210px;
         top: 110px;
         @media screen and (max-width: $md) {
           left: 90px;
@@ -818,7 +816,7 @@ body {
         }
       }
       &.svg2{
-        right: 210px;
+        right: 230px;
         top: 100px;
         @media screen and (max-width: $md) {
           right: 110px;
@@ -832,7 +830,7 @@ body {
         }
       }
       &.svg4{
-        right: 170px;
+        right: 190px;
         top: 80px;
         @media screen and (max-width: $md) {
           right: 90px;
@@ -1188,8 +1186,9 @@ body {
       justify-content: space-between;
       align-items: flex-start;
       padding: 0;
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: $lg) {
         flex-direction: column;
+        align-items: center;
       }
       li{
         text-align: center;
@@ -1197,7 +1196,7 @@ body {
         flex-direction: column;
         align-items: center;
         position: relative;
-        @media screen and (max-width: $md) {
+        @media screen and (max-width: $lg) {
           margin-bottom: 50px;
         }
         .switch{
@@ -1289,6 +1288,9 @@ body {
       opacity: 0;
       transition: all .5s ease;
       z-index: 1;
+      @media screen and (max-width: $lap) {
+        width:300px;
+      }
       @media screen and (max-width: $md) {
         margin-top: 0px;
       }
