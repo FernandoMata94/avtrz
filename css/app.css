@@ -1392,14 +1392,20 @@ body {
 
 .section4 .cont .clothes {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   right: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .section4 .cont .clothes {
+    bottom: 20%;
+  }
 }
 
 .section4 .cont .mouth {
   position: absolute;
   left: 0;
-  bottom: 60%;
+  bottom: 50%;
 }
 
 @media screen and (max-width: 1400px) {
@@ -1431,10 +1437,17 @@ body {
   height: 350px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1400px) {
   .section4 .cont .avatar {
     width: 250px;
     height: 250px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section4 .cont .avatar {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -1442,19 +1455,25 @@ body {
   width: 350px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1400px) {
   .section4 .cont .avatar img {
     width: 250px;
   }
 }
 
+@media screen and (max-width: 850px) {
+  .section4 .cont .avatar img {
+    width: 200px;
+  }
+}
+
 .section4 .traits img {
-  width: 125px;
+  width: 100px;
 }
 
 @media screen and (max-width: 850px) {
   .section4 .traits img {
-    width: 80px;
+    width: 40px;
   }
 }
 

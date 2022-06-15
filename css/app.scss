@@ -970,13 +970,16 @@ body {
     }
     .clothes{
       position: absolute;
-      bottom: 20%;
+      bottom: 10%;
       right: 0;
+      @media screen and (max-width: $md) {
+        bottom: 20%;
+      }
     }
     .mouth{
       position: absolute;
       left: 0;
-      bottom: 60%;
+      bottom: 50%;
       @media screen and (max-width: $lap) {
         bottom:50%;
       }
@@ -998,23 +1001,31 @@ body {
       margin: auto;
       width: 350px;
       height: 350px;
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: $lap) {
         width: 250px;
         height: 250px;
       }
+      @media screen and (max-width: $md) {
+        width: 200px;
+        height: 200px;
+      }
       img{
         width: 350px;
-        @media screen and (max-width: $md) {
+        @media screen and (max-width: $lap) {
           width: 250px;
+        }
+        @media screen and (max-width: $md) {
+          width: 200px;
         }
       }
     }
   }
   .traits{
     img{
-      width: 125px;
+      width: 100px;
+
       @media screen and (max-width: $md) {
-        width: 80px;
+        width: 40px;
       }
     }
   }
