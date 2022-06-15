@@ -1615,7 +1615,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: -1;
 }
 
 .section5 .entire-content {
@@ -2020,7 +2020,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: -1;
 }
 
 .section88 .entire-content {
