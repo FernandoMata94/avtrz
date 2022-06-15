@@ -531,17 +531,23 @@ body {
 
 .modal-content {
   background-color: #ffffff;
-  margin: 10% auto;
+  margin: 10% auto 0 auto;
   padding: 25px;
   border-radius: 10px;
   width: 50%;
   position: relative;
 }
 
+@media screen and (max-width: 1400px) {
+  .modal-content {
+    margin: 5% auto 0 auto;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .modal-content {
     width: 88.88889%;
-    margin: 50% auto;
+    margin: 25% auto;
   }
 }
 
@@ -862,6 +868,7 @@ body {
 @media screen and (max-width: 850px) {
   .section1 .bottom .left {
     width: 100%;
+    margin-top: 0px;
   }
 }
 
@@ -1485,7 +1492,8 @@ body {
 
 @media screen and (max-width: 850px) {
   .section4 .cont .mouth {
-    bottom: 75%;
+    top: 10%;
+    bottom: initial;
   }
 }
 

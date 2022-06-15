@@ -467,14 +467,17 @@ body {
 
 .modal-content {
   background-color: $white;
-  margin: 10% auto;
+  margin: 10% auto 0 auto;
   padding: 25px;
   border-radius: 10px;
   width: 50%;
   position: relative;
+  @media screen and (max-width: $lap) {
+    margin: 5% auto 0 auto;
+  }
   @media screen and (max-width: $md) {
     width:col(16);
-    margin: 50% auto;
+    margin: 25% auto;
   }
   .close {
     color: #aaa;
@@ -619,6 +622,7 @@ body {
 
       @media screen and (max-width: $md) {
         width: 100%;
+        margin-top: 0px;
       }
       .pin{
         width: 50px;
@@ -1025,7 +1029,8 @@ body {
         bottom:50%;
       }
       @media screen and (max-width: $md) {
-        bottom: 75%;
+        top: 10%;
+        bottom: initial;
       }
     }
     .bg{
