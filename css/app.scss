@@ -305,7 +305,7 @@ body {
   }
   &.activo {
     transition: all 0.5s ease;
-    background-color: $purple;
+    background-color: transparent;
     .inner {
       .left {
         .logo {
