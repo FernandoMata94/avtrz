@@ -151,7 +151,7 @@
         <h1>GAME-CHANGING</h1>
         <h2>NFT ART </h2>
         <h2>COLLECTION</h2>
-        <!-- <div class="button" id='product-component-1655323712963'></div> -->
+        <div id='product-component-1655330464974'></div>
       </div>
       <div class="right">
         <img src="img/giflogo.gif" class="logoavtrz">
@@ -701,70 +701,6 @@
 
 
 
-  <script type="text/javascript">
-
-    window.onload = function () {
-      modal.style.display = "block";
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = "none";
-      }
-    };
-
-    var modal = document.getElementById('myModal');
-
-
-
-    var lastScrollTop = 0;
-    $(window).scroll(function (e) {
-        $altoportada= $('.ancla').height();
-        var st = $(this).scrollTop();
-        if (st > lastScrollTop && st > $altoportada){
-            $('nav').removeClass('scrolldown')
-        } else {
-            $('nav').addClass('scrolldown')
-        }
-        if ( $( ".responsive-menu" ).hasClass( "activo" ) ) {
-            $('nav').addClass('scrolldown')
-        }
-        lastScrollTop = st;
-        resizeMenn()
-    });
-
-    $(window).resize(function() {
-        resizeMenn()
-    });
-
-    function resizeMenn() {
-        $width = $(window).width();
-        if ($width > 700) {
-            if ($(this).scrollTop() > 1000) {
-                $('.nav-text').removeClass('active');
-                $('.nav-text').addClass('inactive');
-
-                $('.nav-icon').addClass('active');
-            } else {
-                $('.nav-text').addClass('active');
-                $('.nav-text').removeClass('inactive');
-
-                $('.nav-icon').removeClass('active');
-            }
-        }else{
-        }
-    }
-    resizeMenn()
-
-  </script>
 
   <!-- Start of LiveChat (www.livechat.com) code -->
   <script>
@@ -779,165 +715,7 @@
 
 
 
-
-
-  <script type="text/javascript">
-  /*<![CDATA[*/
-  (function () {
-    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) {
-      if (window.ShopifyBuy.UI) {
-        ShopifyBuyInit();
-      } else {
-        loadScript();
-      }
-    } else {
-      loadScript();
-    }
-    function loadScript() {
-      var script = document.createElement('script');
-      script.async = true;
-      script.src = scriptURL;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-      script.onload = ShopifyBuyInit;
-    }
-    function ShopifyBuyInit() {
-      var client = ShopifyBuy.buildClient({
-        domain: 'admin-2877.myshopify.com',
-        storefrontAccessToken: '466a9e4da1f8fe5515f8e03a52748e18',
-      });
-      ShopifyBuy.UI.onReady(client).then(function (ui) {
-        ui.createComponent('product', {
-          id: '7686661243122',
-          node: document.getElementById('product-component-1655323812628'),
-          moneyFormat: '%24%7B%7Bamount%7D%7D',
-          options: {
-    "product": {
-      "styles": {
-        "product": {
-          "@media (min-width: 601px)": {
-            "max-width": "calc(25% - 20px)",
-            "margin-left": "20px",
-            "margin-bottom": "50px"
-          }
-        },
-        "button": {
-          "font-family": "Lato, sans-serif",
-          "font-weight": "bold",
-          ":hover": {
-            "background-color": "#e037e0"
-          },
-          "background-color": "#f93df9",
-          ":focus": {
-            "background-color": "#e037e0"
-          },
-          "padding-left": "55px",
-          "padding-right": "55px"
-        }
-      },
-      "width": "280px",
-      "text": {
-        "button": "Add to cart"
-      },
-      "googleFonts": [
-        "Lato"
-      ]
-    },
-    "productSet": {
-      "styles": {
-        "products": {
-          "@media (min-width: 601px)": {
-            "margin-left": "-20px"
-          }
-        }
-      }
-    },
-    "modalProduct": {
-      "contents": {
-        "img": false,
-        "imgWithCarousel": true,
-        "button": false,
-        "buttonWithQuantity": true
-      },
-      "styles": {
-        "product": {
-          "@media (min-width: 601px)": {
-            "max-width": "100%",
-            "margin-left": "0px",
-            "margin-bottom": "0px"
-          }
-        },
-        "button": {
-          "font-family": "Lato, sans-serif",
-          "font-weight": "bold",
-          ":hover": {
-            "background-color": "#e037e0"
-          },
-          "background-color": "#f93df9",
-          ":focus": {
-            "background-color": "#e037e0"
-          },
-          "padding-left": "55px",
-          "padding-right": "55px"
-        }
-      },
-      "googleFonts": [
-        "Lato"
-      ],
-      "text": {
-        "button": "Add to cart"
-      }
-    },
-    "option": {},
-    "cart": {
-      "styles": {
-        "button": {
-          "font-family": "Lato, sans-serif",
-          "font-weight": "bold",
-          ":hover": {
-            "background-color": "#e037e0"
-          },
-          "background-color": "#f93df9",
-          ":focus": {
-            "background-color": "#e037e0"
-          }
-        }
-      },
-      "text": {
-        "total": "Subtotal",
-        "button": "Checkout"
-      },
-      "googleFonts": [
-        "Lato"
-      ]
-    },
-    "toggle": {
-      "styles": {
-        "toggle": {
-          "font-family": "Lato, sans-serif",
-          "font-weight": "bold",
-          "background-color": "#f93df9",
-          ":hover": {
-            "background-color": "#e037e0"
-          },
-          ":focus": {
-            "background-color": "#e037e0"
-          }
-        }
-      },
-      "googleFonts": [
-        "Lato"
-      ]
-    }
-  },
-        });
-      });
-    }
-  })();
-  /*]]>*/
-  </script>
-
-
+  <div id='product-component-1655330464974'></div>
   <script type="text/javascript">
   /*<![CDATA[*/
   (function () {
@@ -966,7 +744,7 @@
       ShopifyBuy.UI.onReady(client).then(function (ui) {
         ui.createComponent('product', {
           id: '7664696033522',
-          node: document.getElementById('product-component-1655323712963'),
+          node: document.getElementById('product-component-1655330464974'),
           moneyFormat: '%24%7B%7Bamount%7D%7D',
           options: {
     "product": {

@@ -826,7 +826,11 @@ body {
         right: 210px;
         bottom: 200px;
         @media screen and (max-width: $md) {
-          right: 70px;
+          right: 80px;
+          bottom: 240px;
+        }
+        @media screen and (max-width: $sm) {
+          right: 30px;
         }
       }
       &.svg4{
@@ -841,14 +845,6 @@ body {
         animation: dash 5s linear infinite;
       }
     }
-    .base{
-      width: 270px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      margin: auto;
-    }
     .barra{
       width: 13px;
       position: absolute;
@@ -860,6 +856,17 @@ body {
       }
       &.barraright{
         right: 0;
+      }
+    }
+    .base{
+      width: 270px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      @media screen and (max-width: $md) {
+        width: 250px;
       }
     }
     .cuernoder{
@@ -896,7 +903,12 @@ body {
       width: 30px;
       bottom: 280px;
       @media screen and (max-width: $md) {
-        right: 70px;
+        right: 30px;
+
+      }
+      @media screen and (max-width: $sm) {
+        right: 30px;
+        bottom: 250px;
       }
     }
   }
@@ -1023,7 +1035,9 @@ body {
   .traits{
     img{
       width: 100px;
-
+      @media screen and (max-width: $lap) {
+        width: 80px;
+      }
       @media screen and (max-width: $md) {
         width: 40px;
       }
