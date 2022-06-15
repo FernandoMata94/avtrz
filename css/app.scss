@@ -1071,6 +1071,13 @@ body {
   }
 }
 
+.shopify-buy-frame--product{
+  margin: auto;
+}
+.shopify-buy__product__title{
+  color: white !important;
+}
+
 @keyframes opacity {
   from {
     opacity: 0;
