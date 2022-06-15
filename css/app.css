@@ -1436,7 +1436,7 @@ body {
 
 .section4 .cont .eyes {
   position: absolute;
-  top: 40%;
+  bottom: 60%;
   right: 0;
 }
 
@@ -1455,7 +1455,7 @@ body {
 
 .section4 .cont .clothes {
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   right: 0;
 }
 
@@ -1468,7 +1468,7 @@ body {
 .section4 .cont .mouth {
   position: absolute;
   left: 0;
-  bottom: 50%;
+  bottom: 60%;
 }
 
 @media screen and (max-width: 1400px) {

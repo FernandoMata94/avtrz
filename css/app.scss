@@ -995,7 +995,7 @@ body {
     }
     .eyes{
       position: absolute;
-      top: 40%;
+      bottom: 60%;
       right: 0;
       @media screen and (max-width: $lap) {
         top: 30%;
@@ -1007,7 +1007,7 @@ body {
     }
     .clothes{
       position: absolute;
-      bottom: 10%;
+      bottom: 20%;
       right: 0;
       @media screen and (max-width: $md) {
         bottom: 20%;
@@ -1016,7 +1016,7 @@ body {
     .mouth{
       position: absolute;
       left: 0;
-      bottom: 50%;
+      bottom: 60%;
       @media screen and (max-width: $lap) {
         bottom:50%;
       }
