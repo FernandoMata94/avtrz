@@ -1448,7 +1448,8 @@ body {
 
 @media screen and (max-width: 850px) {
   .section4 .cont .eyes {
-    top: 20%;
+    top: initial;
+    bottom: 30%;
   }
 }
 
@@ -1478,7 +1479,7 @@ body {
 
 @media screen and (max-width: 850px) {
   .section4 .cont .mouth {
-    bottom: 70%;
+    bottom: 75%;
   }
 }
 
@@ -1510,6 +1511,7 @@ body {
   .section4 .cont .avatar {
     width: 200px;
     height: 200px;
+    top: -150px;
   }
 }
 

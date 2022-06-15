@@ -1001,7 +1001,8 @@ body {
         top: 30%;
       }
       @media screen and (max-width: $md) {
-        top: 20%;
+        top: initial;
+        bottom: 30%;
       }
     }
     .clothes{
@@ -1020,7 +1021,7 @@ body {
         bottom:50%;
       }
       @media screen and (max-width: $md) {
-        bottom:70%;
+        bottom: 75%;
       }
     }
     .bg{
@@ -1044,6 +1045,7 @@ body {
       @media screen and (max-width: $md) {
         width: 200px;
         height: 200px;
+        top: -150px;
       }
       img{
         width: 350px;
