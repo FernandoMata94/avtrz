@@ -959,9 +959,11 @@ body {
     }
     @media screen and (max-width: $lg) {
       width: 700px;
+      height: 700px;
     }
     @media screen and (max-width: $md) {
       width: 400px;
+      height: 100vh;
     }
     polyline, line{
       stroke-dasharray: 3;
@@ -973,8 +975,11 @@ body {
       @media screen and (max-width: $lg) {
         width: 150px;
       }
+      @media screen and (max-width: $md) {
+        display: none;
+      }
     }
-    .line{
+    .line,.verticalline{
       display: none;
     }
     .svg1{
@@ -989,26 +994,32 @@ body {
         top: 40px;
         width: 150px;
       }
-
     }
     .svg2{
       left: 310px;
       top: 240px;
       @media screen and (max-width: $lap) {
-        width: 170px;
-      left: 260px;
-      top: 200px;
+        width: 190px;
+        left: 220px;
+        top: 230px;
+        z-index: 1;
+      }
+      @media screen and (max-width: $lg) {
+        width: 190px;
+        left: 150px;
+        top: 150px;
+       z-index: 0;
       }
 
     }
+
     .svg3{
       left: 290px;
       bottom: 200px;
-      @media screen and (max-width: $lap) {
-        left: 190px;
-        bottom: 170px;
-      }
-
+        @media screen and (max-width: $lap) {
+          left: 190px;
+          bottom: 170px;
+        }
       }
       .svg4{
         right: 300px;
@@ -1029,15 +1040,25 @@ body {
         bottom: 200px;
         @media screen and (max-width: $lap) {
           right: 240px;
+          bottom: 340px;
+        }
+        @media screen and (max-width: $lg) {
+          right: 190px;
           bottom: 300px;
         }
+
       }
       .svg6{
         right: 300px;
         bottom: 110px;
         @media screen and (max-width: $lap) {
-          right: 240px;
-        bottom: 160px;
+          right: 210px;
+          bottom: 210px;
+        }
+        @media screen and (max-width: $lg) {
+          right: 190px;
+        bottom: 200px;
+        z-index: 1;
         }
 
       }
@@ -1083,6 +1104,9 @@ body {
         top: initial;
         bottom: 35%;
       }
+      @media screen and (max-width: $lg) {
+        bottom: 45%;
+      }
       @media screen and (max-width: $md) {
         top: initial;
         bottom: 30%;
@@ -1105,6 +1129,9 @@ body {
       bottom: 60%;
       @media screen and (max-width: $lap) {
         bottom:70%;
+      }
+      @media screen and (max-width: $lg) {
+        z-index: 1;
       }
       @media screen and (max-width: $md) {
         top: 10%;
