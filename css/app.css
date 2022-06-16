@@ -527,11 +527,10 @@ body {
 }
 
 .modal.active {
-  display: none;
+  display: block;
 }
 
 .modal-content {
-  display: none;
   background-color: #ffffff;
   margin: 10% auto 0 auto;
   padding: 25px;
@@ -1395,11 +1394,18 @@ body {
   position: relative;
   width: 1200px;
   margin: auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1400px) {
   .section4 .cont {
-    width: 800px;
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section4 .cont {
+    width: 700px;
   }
 }
 
@@ -1420,9 +1426,34 @@ body {
   width: 230px;
 }
 
+@media screen and (max-width: 1200px) {
+  .section4 .cont .svgcont {
+    width: 150px;
+  }
+}
+
+.section4 .cont .line {
+  display: none;
+}
+
 .section4 .cont .svg1 {
   left: 320px;
   top: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+  .section4 .cont .svg1 {
+    left: 260px;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section4 .cont .svg1 {
+    left: 190px;
+    top: 40px;
+    width: 150px;
+  }
 }
 
 .section4 .cont .svg2 {
@@ -1430,9 +1461,24 @@ body {
   top: 240px;
 }
 
+@media screen and (max-width: 1400px) {
+  .section4 .cont .svg2 {
+    width: 170px;
+    left: 260px;
+    top: 200px;
+  }
+}
+
 .section4 .cont .svg3 {
   left: 290px;
-  bottom: 150px;
+  bottom: 200px;
+}
+
+@media screen and (max-width: 1400px) {
+  .section4 .cont .svg3 {
+    left: 190px;
+    bottom: 170px;
+  }
 }
 
 .section4 .cont .svg4 {
@@ -1440,14 +1486,42 @@ body {
   top: 110px;
 }
 
+@media screen and (max-width: 1400px) {
+  .section4 .cont .svg4 {
+    right: 210px;
+    top: 70px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .section4 .cont .svg4 {
+    right: 180px;
+    top: 80px;
+  }
+}
+
 .section4 .cont .svg5 {
   right: 300px;
   bottom: 200px;
 }
 
+@media screen and (max-width: 1400px) {
+  .section4 .cont .svg5 {
+    right: 240px;
+    bottom: 300px;
+  }
+}
+
 .section4 .cont .svg6 {
   right: 300px;
-  bottom: 60px;
+  bottom: 110px;
+}
+
+@media screen and (max-width: 1400px) {
+  .section4 .cont .svg6 {
+    right: 240px;
+    bottom: 160px;
+  }
 }
 
 .section4 .cont .rare {
@@ -1505,7 +1579,8 @@ body {
 
 @media screen and (max-width: 1400px) {
   .section4 .cont .eyes {
-    top: 30%;
+    top: initial;
+    bottom: 35%;
   }
 }
 
@@ -1518,8 +1593,14 @@ body {
 
 .section4 .cont .clothes {
   position: absolute;
-  bottom: 0%;
+  bottom: 40px;
   right: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .section4 .cont .clothes {
+    bottom: 20%;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -1536,7 +1617,7 @@ body {
 
 @media screen and (max-width: 1400px) {
   .section4 .cont .mouth {
-    bottom: 50%;
+    bottom: 70%;
   }
 }
 
@@ -1566,15 +1647,24 @@ body {
 
 @media screen and (max-width: 1400px) {
   .section4 .cont .avatar {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section4 .cont .avatar {
     width: 250px;
     height: 250px;
+    top: -150px;
   }
 }
 
 @media screen and (max-width: 850px) {
   .section4 .cont .avatar {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     top: -150px;
   }
 }
@@ -1585,13 +1675,13 @@ body {
 
 @media screen and (max-width: 1400px) {
   .section4 .cont .avatar img {
-    width: 250px;
+    width: 300px;
   }
 }
 
 @media screen and (max-width: 850px) {
   .section4 .cont .avatar img {
-    width: 200px;
+    width: 250px;
   }
 }
 
@@ -1601,13 +1691,13 @@ body {
 
 @media screen and (max-width: 1400px) {
   .section4 .traits img {
-    width: 80px;
+    width: 70px;
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
   .section4 .traits img {
-    width: 40px;
+    width: 60px;
   }
 }
 
@@ -2350,6 +2440,13 @@ body {
   position: absolute;
   right: -70px;
   top: 40%;
+}
+
+@media screen and (max-width: 1400px) {
+  .section10 .memm4 .logo {
+    right: 0px;
+    top: 0;
+  }
 }
 
 @media screen and (max-width: 850px) {

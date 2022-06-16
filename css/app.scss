@@ -462,13 +462,12 @@ body {
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 
   &.active {
-    //display: block;
-    display: none;
+    display: block;
+
   }
 }
 
 .modal-content {
-  display: none;//temporal
   background-color: $white;
   margin: 10% auto 0 auto;
   padding: 25px;
@@ -966,8 +965,12 @@ body {
     position: relative;
     width: 1200px;
     margin: auto;
+    overflow: hidden;
     @media screen and (max-width: $lap) {
-      width: 800px;
+      width: 900px;
+    }
+    @media screen and (max-width: $lg) {
+      width: 700px;
     }
     @media screen and (max-width: $md) {
       width: 400px;
@@ -975,35 +978,80 @@ body {
     polyline, line{
       stroke-dasharray: 3;
       animation: dash 5s linear infinite;
-
     }
     .svgcont{
       position: absolute;
       width:230px;
+      @media screen and (max-width: $lg) {
+        width: 150px;
+      }
+    }
+    .line{
+      display: none;
     }
     .svg1{
       left: 320px;
       top: 40px;
+      @media screen and (max-width: $lap) {
+        left: 260px;
+        top: 20px;
+      }
+      @media screen and (max-width: $lg) {
+        left: 190px;
+        top: 40px;
+        width: 150px;
+      }
+
     }
     .svg2{
       left: 310px;
       top: 240px;
+      @media screen and (max-width: $lap) {
+        width: 170px;
+      left: 260px;
+      top: 200px;
+      }
+
     }
     .svg3{
       left: 290px;
-      bottom: 150px;
+      bottom: 200px;
+      @media screen and (max-width: $lap) {
+        left: 190px;
+        bottom: 170px;
+      }
+
       }
       .svg4{
         right: 300px;
         top: 110px;
+        @media screen and (max-width: $lap) {
+          right: 210px;
+          top: 70px;
+        }
+        @media screen and (max-width: $lap) {
+          right: 180px;
+        top: 80px;
+        }
+
+
       }
       .svg5{
         right: 300px;
         bottom: 200px;
+        @media screen and (max-width: $lap) {
+          right: 240px;
+          bottom: 300px;
+        }
       }
       .svg6{
         right: 300px;
-        bottom: 60px;
+        bottom: 110px;
+        @media screen and (max-width: $lap) {
+          right: 240px;
+        bottom: 160px;
+        }
+
       }
     .rare{
       position: absolute;
@@ -1044,7 +1092,8 @@ body {
       bottom: 20%;
       right: 0;
       @media screen and (max-width: $lap) {
-        top: 30%;
+        top: initial;
+        bottom: 35%;
       }
       @media screen and (max-width: $md) {
         top: initial;
@@ -1053,8 +1102,11 @@ body {
     }
     .clothes{
       position: absolute;
-      bottom: 0%;
+      bottom: 40px;
       right: 0;
+      @media screen and (max-width: $lap) {
+        bottom:20%;
+      }
       @media screen and (max-width: $md) {
         bottom: 20%;
       }
@@ -1064,7 +1116,7 @@ body {
       left: 0;
       bottom: 60%;
       @media screen and (max-width: $lap) {
-        bottom:50%;
+        bottom:70%;
       }
       @media screen and (max-width: $md) {
         top: 10%;
@@ -1086,21 +1138,27 @@ body {
       width: 350px;
       height: 350px;
       @media screen and (max-width: $lap) {
+        width: 300px;
+        height: 300px;
+        top: -150px;
+      }
+      @media screen and (max-width: $lg) {
         width: 250px;
         height: 250px;
+        top: -150px;
       }
       @media screen and (max-width: $md) {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         top: -150px;
       }
       img{
         width: 350px;
         @media screen and (max-width: $lap) {
-          width: 250px;
+          width: 300px;
         }
         @media screen and (max-width: $md) {
-          width: 200px;
+          width: 250px;
         }
       }
     }
@@ -1109,10 +1167,10 @@ body {
     img{
       width: 100px;
       @media screen and (max-width: $lap) {
-        width: 80px;
+        width: 70px;
       }
-      @media screen and (max-width: $md) {
-        width: 40px;
+      @media screen and (max-width: $lg) {
+        width: 60px;
       }
     }
   }
@@ -1624,6 +1682,10 @@ body {
       position: absolute;
       right: -70px;
       top: 40%;
+      @media screen and (max-width: $lap) {
+        right: 0px;
+        top: 0;
+      }
       @media screen and (max-width: $md) {
         right: 0;
       top: 0;
