@@ -1795,6 +1795,7 @@ body {
   .section7 .left h1 {
     text-align: center;
     max-width: initial;
+    display: none;
   }
 }
 
@@ -1846,6 +1847,21 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+.section7 .right ul li .hidden {
+  opacity: 0;
+}
+
+.section7 .right ul li h1 {
+  z-index: 1;
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .section7 .right ul li h1 {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 1200px) {

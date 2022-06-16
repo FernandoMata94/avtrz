@@ -73,7 +73,7 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
 //renderer.setClearColor(new THREE.Color('#010628',1))
-scene.background = new THREE.Color( 0x010628 );
+scene.background = new THREE.Color( 0x652bb3 );
 
 //mouse
 document.addEventListener('mousemove', animateParticles);
