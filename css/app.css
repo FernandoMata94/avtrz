@@ -636,6 +636,24 @@ body {
   width: 150px;
 }
 
+.section1 .texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section1 .texto > div {
+  width: 10px;
+  height: 3px;
+  background-color: #F93DF9;
+}
+
 .section1 .companies {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -812,6 +830,24 @@ body {
   width: 50px;
 }
 
+.section1 .left .bottomresponsive {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .section1 .left .bottomresponsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 25px 0;
+  }
+}
+
 .section1 .right {
   width: 50%;
   display: -webkit-box;
@@ -856,32 +892,20 @@ body {
   width: 600px;
 }
 
+@media screen and (max-width: 850px) {
+  .section1 .right .top .avatares {
+    width: 400px;
+  }
+}
+
 .section1 .right .bottom {
   width: 66.66667%;
 }
 
 @media screen and (max-width: 850px) {
   .section1 .right .bottom {
-    width: 100%;
+    display: none;
   }
-}
-
-.section1 .right .bottom .texto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.section1 .right .bottom .texto > div {
-  width: 10px;
-  height: 3px;
-  background-color: #F93DF9;
 }
 
 .section2 {

@@ -539,6 +539,16 @@ body {
   .companyLogo{
     width: 150px;
   }
+  .texto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    >div{
+      width: 10px;
+      height: 3px;
+      background-color: $violet;
+    }
+  }
   .companies{
     display: flex;
     align-items: center;
@@ -593,6 +603,15 @@ body {
         width: 50px;
       }
     }
+    .bottomresponsive{
+      display: none;
+      @media screen and (max-width: $md) {
+        display: flex;
+        flex-direction: column;
+        width: col(18);
+        margin: 25px 0;
+      }
+    }
   }
   .right{
     width: col(9);
@@ -612,22 +631,15 @@ body {
       }
       .avatares{
         width: 600px;
+        @media screen and (max-width: $md) {
+          width: 400px;
+        }
       }
     }
     .bottom{
       width: col(12);
       @media screen and (max-width: $md) {
-        width: col(18);
-      }
-      .texto{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        >div{
-          width: 10px;
-          height: 3px;
-          background-color: $violet;
-        }
+        display: none;
       }
     }
   }
