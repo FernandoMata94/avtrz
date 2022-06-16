@@ -1393,6 +1393,20 @@ body {
 .section4 .cont {
   height: 100vh;
   position: relative;
+  width: 1200px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .section4 .cont {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section4 .cont {
+    width: 400px;
+  }
 }
 
 .section4 .cont polyline, .section4 .cont line {
@@ -1403,22 +1417,37 @@ body {
 
 .section4 .cont .svgcont {
   position: absolute;
-  width: 350px;
+  width: 230px;
 }
 
 .section4 .cont .svg1 {
-  left: 20%;
-  top: 0;
+  left: 320px;
+  top: 40px;
 }
 
 .section4 .cont .svg2 {
-  left: 19%;
-  top: 26%;
+  left: 310px;
+  top: 240px;
 }
 
 .section4 .cont .svg3 {
-  left: 19%;
-  bottom: 26%;
+  left: 290px;
+  bottom: 150px;
+}
+
+.section4 .cont .svg4 {
+  right: 300px;
+  top: 110px;
+}
+
+.section4 .cont .svg5 {
+  right: 300px;
+  bottom: 200px;
+}
+
+.section4 .cont .svg6 {
+  right: 300px;
+  bottom: 60px;
 }
 
 .section4 .cont .rare {
@@ -1470,7 +1499,7 @@ body {
 
 .section4 .cont .eyes {
   position: absolute;
-  bottom: 60%;
+  bottom: 20%;
   right: 0;
 }
 
@@ -1489,7 +1518,7 @@ body {
 
 .section4 .cont .clothes {
   position: absolute;
-  bottom: 20%;
+  bottom: 0%;
   right: 0;
 }
 
@@ -2055,6 +2084,7 @@ body {
   z-index: 1;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .section88 .container h1 {
