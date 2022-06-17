@@ -1452,7 +1452,14 @@ body {
 
 @media screen and (max-width: 850px) {
   .section4 .cont {
-    width: 400px;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .section4 .cont {
+    width: 100%;
     height: 100vh;
   }
 }
