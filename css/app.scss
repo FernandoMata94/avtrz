@@ -1684,6 +1684,7 @@ body {
     .left{
       @media screen and (max-width: $md) {
         width: 100% !important;
+        margin-bottom: 15px;
         img{
           display: block;
           margin: 0 auto 50px auto;
@@ -1758,6 +1759,7 @@ body {
     }
     @media screen and (max-width: $md) {
       grid-template-columns: repeat(3,1fr);
+      padding: 0;
     }
     @media screen and (max-width: $sm) {
       grid-template-columns: repeat(2,1fr);
@@ -1786,11 +1788,18 @@ body {
       @media screen and (max-width: $lg) {
         display: block;
       }
+      @media screen and (max-width: $md) {
+        display: none;
+      }
     }
     .member{
       display: flex;
       flex-direction: column;
       align-items: center;
+      @media screen and (max-width: $md) {
+        flex-direction: column-reverse;
+        margin-top: 25px;
+      }
       &:nth-last-child(-n+4){
         @media screen and (max-width: $lg) {
          flex-direction: column-reverse;
@@ -1811,6 +1820,12 @@ body {
         }
         @media screen and (max-width: $lap) {
           @include p($white,.6)
+        }
+        @media screen and (max-width: $md) {
+          @include p($white,.9);
+          margin-top: 15px;
+          padding: 4px;
+          border-radius: 5px;
         }
       }
       img{

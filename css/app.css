@@ -2458,6 +2458,7 @@ body {
 @media screen and (max-width: 850px) {
   .section10 .memm4 .left {
     width: 100% !important;
+    margin-bottom: 15px;
   }
   .section10 .memm4 .left img {
     display: block;
@@ -2570,6 +2571,7 @@ body {
   .section10 .bottom {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    padding: 0;
   }
 }
 
@@ -2608,6 +2610,12 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .section10 .bottom::after {
+    display: none;
+  }
+}
+
 .section10 .bottom .member {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2619,6 +2627,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+  .section10 .bottom .member {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -2675,6 +2693,27 @@ body {
 @media screen and (max-width: 1400px) and (max-width: 850px) {
   .section10 .bottom .member p {
     font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section10 .bottom .member p {
+    font-family: "BlinkerSemiBold";
+    font-size: 1.125rem;
+    color: #ffffff;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin-top: 15px;
+    padding: 4px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 850px) and (max-width: 850px) {
+  .section10 .bottom .member p {
+    font-size: 0.9rem;
   }
 }
 
