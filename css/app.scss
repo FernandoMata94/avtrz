@@ -549,7 +549,8 @@ body {
 
 .section1 {
   width: col(18);
-  padding: col(1)  col(1) 0  col(1);
+  padding: col(1);
+  //padding: col(1)  col(1) 0  col(1);
   height: 100vh;
   background-color:$purple;
   display: flex;
