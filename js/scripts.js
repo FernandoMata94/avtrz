@@ -199,6 +199,19 @@ gsap.from('.width', {
   }
 })
 
+$(".coloredbg").each(function() {
+  // Content Reveal Animation
+  ScrollTrigger.create({
+    trigger: ".section88",
+    start: "top 80%",
+    end: "bottom 100px",
+    onEnter: () => $(this).addClass('revealed'),
+    onLeave: () => $(this).removeClass('revealed'),
+    onEnterBack: () => $(this).addClass('revealed'),
+    onLeaveBack: () => $(this).removeClass('revealed'),
+  });
+});
+
 //////////////////
 
 $content =  $('#cursor');

@@ -67,14 +67,15 @@ scene.add(camera);
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({
+  alpha:true,
   canvas: canvas,
 });
 
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
 //renderer.setClearColor(new THREE.Color('#010628',1))
-scene.background = new THREE.Color( 0x652bb3 );
-
+//scene.background = new THREE.Color( 0x652bb3 ); background color purpura
+scene.background = null;
 //mouse
 document.addEventListener('mousemove', animateParticles);
 let mouseX = 0

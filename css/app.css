@@ -1769,6 +1769,25 @@ body {
   left: 0;
 }
 
+.coloredbg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #af41af;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #af41af), color-stop(50%, #3634e7), to(#010628));
+  background: linear-gradient(0deg, #af41af 20%, #3634e7 50%, #010628 100%);
+  width: 100%;
+  height: 100%;
+}
+
+.coloredbg.revealed {
+  background: #010628;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #010628), color-stop(47%, #3634e7), to(#af41af));
+  background: linear-gradient(0deg, #010628 2%, #3634e7 47%, #af41af 100%);
+}
+
 .section5 {
   overflow: hidden;
   width: 100%;

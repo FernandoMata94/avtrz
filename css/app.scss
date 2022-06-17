@@ -1215,6 +1215,21 @@ body {
   top: 0;
   left: 0;
 }
+.coloredbg{
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgb(175,65,175);
+
+  background: linear-gradient(0deg, rgba(175,65,175,1) 20%, rgba(54,52,231,1) 50%, rgba(1,6,40,1) 100%);
+  width: 100%;
+  height: 100%;
+  &.revealed{
+
+    background: rgb(1,6,40);
+    background: linear-gradient(0deg, rgba(1,6,40,1) 2%, rgba(54,52,231,1) 47%, rgba(175,65,175,1) 100%);
+  }
+}
 .section5{
   overflow: hidden;
   width: col(18);
