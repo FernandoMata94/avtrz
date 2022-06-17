@@ -575,8 +575,16 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+    @media screen and (max-width: $sm) {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
     img{
       width: 100px;
+      @media screen and (max-width: $sm) {
+        display: block;
+        margin: auto;
+      }
     }
     .apple{
       width: 50px;
@@ -620,6 +628,9 @@ body {
         @include button2(#8fd050);
         border-color: #8fd050;
         margin: 15px 0 15px 0;
+        @media screen and (max-width: $md) {
+          margin:15px auto 15px auto;
+        }
       }
     }
     .bottom{

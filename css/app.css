@@ -667,8 +667,24 @@ body {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 580px) {
+  .section1 .companies {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .section1 .companies img {
   width: 100px;
+}
+
+@media screen and (max-width: 580px) {
+  .section1 .companies img {
+    display: block;
+    margin: auto;
+  }
 }
 
 .section1 .companies .apple {
@@ -840,6 +856,12 @@ body {
 
 .section1 .left .top .button:active {
   background: #507f22;
+}
+
+@media screen and (max-width: 850px) {
+  .section1 .left .top .button {
+    margin: 15px auto 15px auto;
+  }
 }
 
 .section1 .left .bottom {
