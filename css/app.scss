@@ -150,7 +150,28 @@ p {
 .button {
   @include button($purple);
 }
-
+@mixin button2($bg) {
+  background: $bg;
+  font-family: "BlinkerBold";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: $white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  border:1px solid  $violet;
+  margin: auto;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  &:hover {
+    transition: all 0.3s ease;
+    background: darken($bg, 8%);
+  }
+  &:active {
+    background: darken($bg, 25%);
+  }
+}
 a {
   text-decoration: none;
 }
@@ -595,6 +616,11 @@ body {
           @include h2($white,2.3)
         }
       }
+      .button{
+        @include button2(#8fd050);
+        border-color: #8fd050;
+        margin: 15px 0 15px 0;
+      }
     }
     .bottom{
       text-align: center;
@@ -602,10 +628,22 @@ body {
       @media screen and (max-width: $md) {
         width: col(18);
       }
-      .pin{
-        width: 50px;
+      .austin{
+        display: flex;
+        justify-content: center;
+        .pin{
+          width: 25px;
+          margin-right: 15px;
+        }
+      }
+
+      p{
+        &:nth-last-of-type(1){
+          @include p ($white,.9)
+        }
       }
     }
+
     .bottomresponsive{
       display: none;
       @media screen and (max-width: $md) {
@@ -700,7 +738,7 @@ body {
       }
     }
     .first-image{
-      left: 0;
+      left: 10%;
       animation: cursoranim .5s linear 1s infinite;
       animation-fill-mode: forwards;
       @media screen and (max-width: $md) {
@@ -720,7 +758,7 @@ body {
       }
     }
     .third-image{
-      left: 100%;
+      left: 90%;
       animation: cursoranim .5s linear 1s infinite;
       animation-fill-mode: forwards;
       @media screen and (max-width: $lap) {
@@ -1231,9 +1269,12 @@ body {
   }
 }
 .section5{
-  overflow: hidden;
+  position: relative;
   width: col(18);
   height: 100vh;
+  @media screen and (max-width: $lg) {
+    overflow: hidden;
+  }
   .container{
     position: absolute;
     z-index: 1;
@@ -1250,23 +1291,26 @@ body {
       left: 0;
       z-index: -1;
     }
-    .button{
-      bottom: 15px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      z-index: -1;
-    }
   }
 
+  .button{
+    bottom: -20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    @media screen and (max-width: $lg) {
+      bottom: 10px;
+    }
+  }
   .entire-content{
     width: 200px;
     @media screen and (max-width: $lap) {
-      width: 130px;
+      width: 200px;
     }
   }
-
 }
+
 
 .section6{
   background-color: $purple;

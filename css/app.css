@@ -814,6 +814,34 @@ body {
   }
 }
 
+.section1 .left .top .button {
+  background: #8fd050;
+  font-family: "BlinkerBold";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ffffff;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #F93DF9;
+  margin: auto;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  border-color: #8fd050;
+  margin: 15px 0 15px 0;
+}
+
+.section1 .left .top .button:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #7ac334;
+}
+
+.section1 .left .top .button:active {
+  background: #507f22;
+}
+
 .section1 .left .bottom {
   text-align: center;
   width: 50%;
@@ -825,8 +853,34 @@ body {
   }
 }
 
-.section1 .left .bottom .pin {
-  width: 50px;
+.section1 .left .bottom .austin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section1 .left .bottom .austin .pin {
+  width: 25px;
+  margin-right: 15px;
+}
+
+.section1 .left .bottom p:nth-last-of-type(1) {
+  font-family: "BlinkerSemiBold";
+  font-size: 1.125rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 850px) {
+  .section1 .left .bottom p:nth-last-of-type(1) {
+    font-size: 0.9rem;
+  }
 }
 
 .section1 .left .bottomresponsive {
@@ -998,7 +1052,7 @@ body {
 }
 
 .section2 .avatars .first-image {
-  left: 0;
+  left: 10%;
   -webkit-animation: cursoranim .5s linear 1s infinite;
           animation: cursoranim .5s linear 1s infinite;
   -webkit-animation-fill-mode: forwards;
@@ -1030,7 +1084,7 @@ body {
 }
 
 .section2 .avatars .third-image {
-  left: 100%;
+  left: 90%;
   -webkit-animation: cursoranim .5s linear 1s infinite;
           animation: cursoranim .5s linear 1s infinite;
   -webkit-animation-fill-mode: forwards;
@@ -1774,8 +1828,6 @@ body {
   left: 0;
   top: 0;
   background: #af41af;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #af41af), color-stop(50%, #3634e7), to(#010628));
   background: linear-gradient(0deg, #af41af 20%, #3634e7 50%, #010628 100%);
   width: 100%;
@@ -1789,9 +1841,15 @@ body {
 }
 
 .section5 {
-  overflow: hidden;
+  position: relative;
   width: 100%;
   height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .section5 {
+    overflow: hidden;
+  }
 }
 
 .section5 .container {
@@ -1814,12 +1872,18 @@ body {
   z-index: -1;
 }
 
-.section5 .container .button {
-  bottom: 15px;
+.section5 .button {
+  bottom: -20px;
   position: absolute;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1200px) {
+  .section5 .button {
+    bottom: 10px;
+  }
 }
 
 .section5 .entire-content {
@@ -1828,7 +1892,7 @@ body {
 
 @media screen and (max-width: 1400px) {
   .section5 .entire-content {
-    width: 130px;
+    width: 200px;
   }
 }
 
