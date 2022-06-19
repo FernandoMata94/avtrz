@@ -1333,6 +1333,48 @@ body {
   display: flex;
   align-items: center;
   padding: col(1);
+  justify-content: space-between;
+  @media screen and (max-width: $lg) {
+   flex-direction: column;
+  }
+  .choose-cont{
+    padding: 0;
+    li{
+      position: relative;
+      h1{
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 60%;
+        z-index: 1;
+        margin: auto;
+      }
+    }
+    .slide-img{
+      width: 400px;
+      margin: auto;
+      @media screen and (max-width: $md) {
+        width: 300px;
+       }
+    }
+    width: 50%;
+    @media screen and (max-width: $lg) {
+      width: 100%;
+     }
+    .slick-current{
+      h1{
+        /* opacity: 0;
+        animation-name: title;
+        animation-duration: .5s;
+        animation-timing-function: ease;
+        animation-delay: 0;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-fill-mode: forwards; */
+      }
+    }
+  }
   @media screen and (max-width: $lg) {
     flex-direction: column;
   }
@@ -1982,6 +2024,16 @@ body {
     transform: rotateY(0deg);
   } to {
     transform: rotateY(360deg);
+  }
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  } to {
+    opacity: 1;
+    transform: translateY(100%);
   }
 }
 

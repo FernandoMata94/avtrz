@@ -10,6 +10,18 @@ $('.slider-cont').slick({
   pauseOnHover: false
 });
 
+$('.choose-cont').slick({
+  infinite: true,
+  dots: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: false,
+  arrows: false,
+  autoplay: false,
+  autoplaySpeed: 4000,
+  pauseOnHover: false
+});
+
 $('.burguer').click(function () {
   $('.menu').toggleClass('active');
   $('.burguer').toggleClass('active');
