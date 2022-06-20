@@ -1462,6 +1462,7 @@ body {
 @media screen and (max-width: 1400px) {
   .section4 .cont {
     width: 900px;
+    height: 900px;
   }
 }
 
@@ -1923,6 +1924,12 @@ body {
   .section5 .entire-content {
     width: 200px;
   }
+}
+
+.buybutton {
+  background: #010628;
+  width: 100%;
+  position: relative;
 }
 
 .section6 {

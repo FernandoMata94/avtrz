@@ -1006,6 +1006,7 @@ body {
     overflow: hidden;
     @media screen and (max-width: $lap) {
       width: 900px;
+      height: 900px;
     }
     @media screen and (max-width: $lg) {
       width: 700px;
@@ -1326,7 +1327,11 @@ body {
     }
   }
 }
-
+.buybutton{
+  background: $purple;
+  width: 100%;
+  position: relative;
+}
 
 .section6{
   background-color: $purple;
