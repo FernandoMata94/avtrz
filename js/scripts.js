@@ -17,8 +17,8 @@ $('.choose-cont').slick({
   slidesToScroll: 1,
   fade: false,
   arrows: false,
-  autoplay: false,
-  autoplaySpeed: 4000,
+  autoplay: true,
+  autoplaySpeed: 1800,
   pauseOnHover: false
 });
 

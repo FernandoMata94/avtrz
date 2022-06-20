@@ -612,31 +612,30 @@ body {
   width: 100%;
 }
 
-.section1 {
+.sectiontest {
   width: 100%;
   padding: 5.55556%;
   height: 100vh;
   background-color: #010628;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  z-index: 1;
+  position: relative;
 }
 
 @media screen and (max-width: 850px) {
-  .section1 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  .sectiontest {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     height: auto;
   }
 }
 
-.section1 .companyLogo {
-  width: 150px;
-}
-
-.section1 .texto {
+.sectiontest .texto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,13 +647,13 @@ body {
           justify-content: space-between;
 }
 
-.section1 .texto > div {
+.sectiontest .texto > div {
   width: 10px;
   height: 3px;
   background-color: #F93DF9;
 }
 
-.section1 .companies {
+.sectiontest .companies {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,7 +667,7 @@ body {
 }
 
 @media screen and (max-width: 580px) {
-  .section1 .companies {
+  .sectiontest .companies {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -676,53 +675,28 @@ body {
   }
 }
 
-.section1 .companies img {
+.sectiontest .companies img {
   width: 100px;
 }
 
 @media screen and (max-width: 580px) {
-  .section1 .companies img {
+  .sectiontest .companies img {
     display: block;
     margin: auto;
   }
 }
 
-.section1 .companies .apple {
+.sectiontest .companies .apple {
   width: 50px;
 }
 
-.section1 .left {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-@media screen and (max-width: 1200px) {
-  .section1 .left {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 850px) {
-  .section1 .left {
-    margin-top: 25px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .section1 .left .top {
+  .sectiontest .topleft {
     text-align: center;
   }
 }
 
-.section1 .left .top h1:nth-of-type(1) {
+.sectiontest .topleft h1:nth-of-type(1) {
   font-family: "BlinkerBold";
   font-size: 3rem;
   color: #ffffff;
@@ -732,24 +706,24 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
-  .section1 .left .top h1:nth-of-type(1) {
+  .sectiontest .topleft h1:nth-of-type(1) {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .section1 .left .top h1:nth-of-type(1) {
+  .sectiontest .topleft h1:nth-of-type(1) {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (max-width: 580px) {
-  .section1 .left .top h1:nth-of-type(1) {
+  .sectiontest .topleft h1:nth-of-type(1) {
     font-size: 1.2rem;
   }
 }
 
-.section1 .left .top h1:nth-of-type(2) {
+.sectiontest .topleft h1:nth-of-type(2) {
   font-family: "BlinkerBold";
   font-size: 4.125rem;
   color: #ffffff;
@@ -759,24 +733,24 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
-  .section1 .left .top h1:nth-of-type(2) {
+  .sectiontest .topleft h1:nth-of-type(2) {
     font-size: 2.0625rem;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .section1 .left .top h1:nth-of-type(2) {
+  .sectiontest .topleft h1:nth-of-type(2) {
     font-size: 1.925rem;
   }
 }
 
 @media screen and (max-width: 580px) {
-  .section1 .left .top h1:nth-of-type(2) {
+  .sectiontest .topleft h1:nth-of-type(2) {
     font-size: 1.65rem;
   }
 }
 
-.section1 .left .top h2:nth-of-type(1) {
+.sectiontest .topleft h2:nth-of-type(1) {
   font-family: BlinkerSemiBold;
   font-size: 5.175rem;
   color: #ffffff;
@@ -786,24 +760,24 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
-  .section1 .left .top h2:nth-of-type(1) {
+  .sectiontest .topleft h2:nth-of-type(1) {
     font-size: 4.3125rem;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .section1 .left .top h2:nth-of-type(1) {
+  .sectiontest .topleft h2:nth-of-type(1) {
     font-size: 4.025rem;
   }
 }
 
 @media screen and (max-width: 580px) {
-  .section1 .left .top h2:nth-of-type(1) {
+  .sectiontest .topleft h2:nth-of-type(1) {
     font-size: 3.45rem;
   }
 }
 
-.section1 .left .top h2:nth-of-type(2) {
+.sectiontest .topleft h2:nth-of-type(2) {
   font-family: BlinkerSemiBold;
   font-size: 5.175rem;
   color: #ffffff;
@@ -813,25 +787,25 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
-  .section1 .left .top h2:nth-of-type(2) {
+  .sectiontest .topleft h2:nth-of-type(2) {
     font-size: 4.3125rem;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .section1 .left .top h2:nth-of-type(2) {
+  .sectiontest .topleft h2:nth-of-type(2) {
     font-size: 4.025rem;
   }
 }
 
 @media screen and (max-width: 580px) {
-  .section1 .left .top h2:nth-of-type(2) {
+  .sectiontest .topleft h2:nth-of-type(2) {
     font-size: 3.45rem;
   }
 }
 
-.section1 .left .top .button {
-  background: #8fd050;
+.sectiontest .topleft .button {
+  background: #73ab3c;
   font-family: "BlinkerBold";
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -848,34 +822,97 @@ body {
   margin: 15px 0 15px 0;
 }
 
-.section1 .left .top .button:hover {
+.sectiontest .topleft .button:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background: #7ac334;
+  background: #5f8d31;
 }
 
-.section1 .left .top .button:active {
-  background: #507f22;
+.sectiontest .topleft .button:active {
+  background: #344d1b;
 }
 
 @media screen and (max-width: 850px) {
-  .section1 .left .top .button {
+  .sectiontest .topleft .button {
     margin: 15px auto 15px auto;
   }
 }
 
-.section1 .left .bottom {
-  text-align: center;
-  width: 50%;
+.sectiontest .topright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 850px) {
-  .section1 .left .bottom {
+  .sectiontest .topright {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
+.sectiontest .topright .logoavtrz {
+  width: 200px;
+}
+
+.sectiontest .topright .avatares {
+  width: 600px;
+}
+
+@media screen and (max-width: 850px) {
+  .sectiontest .topright .avatares {
+    width: 400px;
+  }
+}
+
+.sectiontest .purpleline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20px;
+  width: 90vw;
+  height: 8px;
+  background-color: #F93DF9;
+  border-radius: 10px;
+  margin: auto;
+}
+
+@media screen and (max-width: 850px) {
+  .sectiontest .purpleline {
+    top: -210px;
+    width: 80vw;
+  }
+}
+
+.sectiontest .bottomleft {
+  width: 60%;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 1400px) {
+  .sectiontest .bottomleft {
     width: 100%;
   }
 }
 
-.section1 .left .bottom .austin {
+.sectiontest .bottomleft .austin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -884,12 +921,12 @@ body {
           justify-content: center;
 }
 
-.section1 .left .bottom .austin .pin {
+.sectiontest .bottomleft .austin .pin {
   width: 25px;
   margin-right: 15px;
 }
 
-.section1 .left .bottom p:nth-last-of-type(1) {
+.sectiontest .bottomleft p:nth-last-of-type(1) {
   font-family: "BlinkerSemiBold";
   font-size: 1.125rem;
   color: #ffffff;
@@ -900,31 +937,14 @@ body {
 }
 
 @media screen and (max-width: 850px) {
-  .section1 .left .bottom p:nth-last-of-type(1) {
+  .sectiontest .bottomleft p:nth-last-of-type(1) {
     font-size: 0.9rem;
   }
 }
 
-.section1 .left .bottomresponsive {
-  display: none;
-}
-
-@media screen and (max-width: 850px) {
-  .section1 .left .bottomresponsive {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    margin: 25px 0;
-  }
-}
-
-.section1 .right {
-  width: 50%;
+.sectiontest .bottomright {
+  width: 80%;
+  justify-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -934,63 +954,19 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (max-width: 1200px) {
-  .section1 .right {
-    width: 100%;
-  }
-}
-
-.section1 .right .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.section1 .right .top .logoavtrz {
-  width: 200px;
-}
-
-.section1 .right .top .avatares {
-  width: 600px;
-}
-
-@media screen and (max-width: 850px) {
-  .section1 .right .top .avatares {
-    width: 400px;
-  }
-}
-
-.section1 .right .bottom {
-  width: 66.66667%;
 }
 
 @media screen and (max-width: 1400px) {
-  .section1 .right .bottom {
-    width: 88.88889%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .section1 .right .bottom {
+  .sectiontest .bottomright {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .section1 .right .bottom {
-    display: none;
+  .sectiontest .bottomright {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    margin: 20px 0;
   }
 }
 
@@ -1106,7 +1082,7 @@ body {
 }
 
 .section2 .avatars .third-image {
-  left: 90%;
+  left: 85%;
   -webkit-animation: cursoranim .5s linear 1s infinite;
           animation: cursoranim .5s linear 1s infinite;
   -webkit-animation-fill-mode: forwards;
@@ -1115,7 +1091,7 @@ body {
 
 @media screen and (max-width: 1400px) {
   .section2 .avatars .third-image {
-    left: 90%;
+    left: 85%;
   }
 }
 
@@ -2291,7 +2267,6 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   text-transform: capitalize;
-  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -2316,7 +2291,24 @@ body {
   color: #F93DF9;
 }
 
-.section7 .right ul li .cont p {
+.section7 .right ul li .cont .especial {
+  font-family: "BlinkerSemiBold";
+  font-size: 1rem;
+  color: #F93DF9;
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 850px) {
+  .section7 .right ul li .cont .especial {
+    font-size: 0.8rem;
+  }
+}
+
+.section7 .right ul li .cont .paragraph {
   margin: auto;
   font-family: 'BlinkerExtraLight';
   max-width: 200px;
