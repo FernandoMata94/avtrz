@@ -1469,7 +1469,6 @@ body {
 
 .section4 h1 {
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .section4 h2 {
@@ -1477,7 +1476,7 @@ body {
 }
 
 .section4 .cont {
-  height: 100vh;
+  height: 90vh;
   position: relative;
   width: 1200px;
   margin: auto;
