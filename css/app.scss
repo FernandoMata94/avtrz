@@ -550,7 +550,7 @@ body {
 .sectiontest {
   width: col(18);
   padding: col(1);
-  //height: 100vh;
+  height: 100vh;
   background-color:$purple;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -595,6 +595,7 @@ body {
   }
   .topleft{
     //background-color: #73ab3c;
+    align-self: center;
     @media screen and (max-width: $md) {
       text-align: center;
     }
@@ -661,6 +662,7 @@ body {
     @media screen and (max-width: $md) {
       top: -210px;
       width: 80vw;
+      display: none;
     }
   }
   .bottomleft{
