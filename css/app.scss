@@ -684,6 +684,7 @@ body {
       margin: 20px auto 0 auto;
       @media screen and (max-width: $md) {
         grid-template-columns: repeat(3,1fr);
+        width: 100%;
       }
     }
     .austin{
