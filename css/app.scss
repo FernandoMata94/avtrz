@@ -2029,7 +2029,9 @@ body {
       bottom: 4%;
     }
     @media screen and (max-width: $md) {
-     display: none;
+      right: 3%;
+      bottom: 14%;
+      transform: rotate(90deg);
     }
 }
 
