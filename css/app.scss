@@ -709,7 +709,8 @@ body {
     flex-direction: column;
     justify-content: space-around;
     .texto{
-      margin-bottom: 60px;
+      margin-bottom: 30px;
+      margin-top: 40px;
       @media screen and (max-width: $md) {
         margin-bottom: 25px;
       }
@@ -2017,10 +2018,20 @@ body {
   transform-style: preserve-3d;
 }
 
-/* .content-carrousel:hover {
-  animation-play-state: paused;
-  cursor: pointer;
-} */
+.arrow{
+  position: fixed;
+    right: 5%;
+    bottom: 4%;
+    width: 50px;
+    z-index: 99999;
+    @media screen and (max-width: $lap) {
+      right: 10%;
+      bottom: 4%;
+    }
+    @media screen and (max-width: $md) {
+     display: none;
+    }
+}
 
 .content-carrousel figure {
   width: 90%;
