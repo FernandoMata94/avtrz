@@ -615,7 +615,6 @@ body {
 .sectiontest {
   width: 100%;
   padding: 5.55556%;
-  height: 100vh;
   background-color: #010628;
   display: -ms-grid;
   display: grid;
