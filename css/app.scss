@@ -634,7 +634,7 @@ body {
       grid-row: 1;
     }
     .logoavtrz{
-      width: 200px;
+      width: 300px;
     }
     .avatares{
       width: 450px;
@@ -670,7 +670,10 @@ body {
     flex-direction: column;
     justify-content: space-around;
     @media screen and (max-width: $lap) {
-      width: 100%;
+      width: 80%;
+    }
+    @media screen and (max-width: $lg) {
+
     }
     .austin{
       display: flex;

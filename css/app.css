@@ -865,7 +865,7 @@ body {
 }
 
 .sectiontest .topright .logoavtrz {
-  width: 200px;
+  width: 300px;
 }
 
 .sectiontest .topright .avatares {
@@ -917,7 +917,7 @@ body {
 
 @media screen and (max-width: 1400px) {
   .sectiontest .bottomleft {
-    width: 100%;
+    width: 80%;
   }
 }
 
