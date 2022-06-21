@@ -12,7 +12,7 @@ $('.slider-cont').slick({
 
 $('.choose-cont').slick({
   infinite: true,
-  dots: true,
+  dots: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   fade: false,

@@ -834,6 +834,7 @@ body {
   text-align: center;
   border-color: #8fd050;
   margin: 15px 0 15px 0;
+  font-size: 20px;
 }
 
 .sectiontest .topleft .button:hover {
@@ -972,7 +973,7 @@ body {
 }
 
 .sectiontest .bottomright .texto {
-  margin-bottom: 85px;
+  margin-bottom: 90px;
 }
 
 @media screen and (max-width: 1400px) {
