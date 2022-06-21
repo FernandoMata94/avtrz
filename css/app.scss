@@ -619,8 +619,8 @@ body {
       }
     }
     .button{
-      @include button2(#73ab3c);
-      border-color: #8fd050;
+      @include button2(#cd1b00);
+      border-color: #cd1b00;
       margin: 15px 0 15px 0;
       font-size: 20px;
       @media screen and (max-width: $md) {

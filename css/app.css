@@ -822,7 +822,7 @@ body {
 }
 
 .sectiontest .topleft .button {
-  background: #73ab3c;
+  background: #cd1b00;
   font-family: "BlinkerBold";
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -835,7 +835,7 @@ body {
   cursor: pointer;
   display: block;
   text-align: center;
-  border-color: #8fd050;
+  border-color: #cd1b00;
   margin: 15px 0 15px 0;
   font-size: 20px;
 }
@@ -843,11 +843,11 @@ body {
 .sectiontest .topleft .button:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background: #5f8d31;
+  background: #a41600;
 }
 
 .sectiontest .topleft .button:active {
-  background: #344d1b;
+  background: #4e0a00;
 }
 
 @media screen and (max-width: 850px) {
