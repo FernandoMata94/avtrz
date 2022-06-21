@@ -1023,7 +1023,7 @@ body {
     overflow: hidden;
     @media screen and (max-width: $lap) {
       width: 900px;
-      height: 900px;
+      height: 800px;
     }
     @media screen and (max-width: $lg) {
       width: 700px;
@@ -1073,7 +1073,7 @@ body {
       @media screen and (max-width: $lap) {
         width: 190px;
         left: 220px;
-        top: 230px;
+        top: 190px;
         z-index: 1;
       }
       @media screen and (max-width: $lg) {
@@ -1112,7 +1112,7 @@ body {
         bottom: 200px;
         @media screen and (max-width: $lap) {
           right: 240px;
-          bottom: 340px;
+          bottom: 280px;
         }
         @media screen and (max-width: $lg) {
           right: 190px;
@@ -1356,6 +1356,13 @@ body {
   align-items: center;
   padding: col(1);
   justify-content: space-between;
+  .buttcont{
+    display: flex;
+    align-items: center;
+    img{
+      width: 50px;
+    }
+  }
   @media screen and (max-width: $lg) {
    flex-direction: column;
   }

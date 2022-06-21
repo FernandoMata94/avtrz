@@ -1486,7 +1486,7 @@ body {
 @media screen and (max-width: 1400px) {
   .section4 .cont {
     width: 900px;
-    height: 900px;
+    height: 800px;
   }
 }
 
@@ -1567,7 +1567,7 @@ body {
   .section4 .cont .svg2 {
     width: 190px;
     left: 220px;
-    top: 230px;
+    top: 190px;
     z-index: 1;
   }
 }
@@ -1620,7 +1620,7 @@ body {
 @media screen and (max-width: 1400px) {
   .section4 .cont .svg5 {
     right: 240px;
-    bottom: 340px;
+    bottom: 280px;
   }
 }
 
@@ -1968,6 +1968,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.section6 .buttcont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section6 .buttcont img {
+  width: 50px;
 }
 
 @media screen and (max-width: 1200px) {
