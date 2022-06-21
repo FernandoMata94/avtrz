@@ -1984,6 +1984,15 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  .section6 .buttcont img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .section6 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

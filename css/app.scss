@@ -1361,6 +1361,9 @@ body {
     align-items: center;
     img{
       width: 50px;
+      @media screen and (max-width: $lg) {
+        flex-direction: column;
+       }
     }
   }
   @media screen and (max-width: $lg) {
