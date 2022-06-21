@@ -666,7 +666,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 50px;
 }
 
 @media screen and (max-width: 580px) {
@@ -933,6 +932,11 @@ body {
   }
 }
 
+.sectiontest .bottomleft .companies {
+  width: 350px;
+  margin: 20px auto 0 auto;
+}
+
 @media screen and (max-width: 850px) {
   .sectiontest .bottomleft .companies {
     -ms-grid-columns: (1fr)[3];
@@ -983,7 +987,7 @@ body {
 }
 
 .sectiontest .bottomright .texto {
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 850px) {

@@ -578,7 +578,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
     @media screen and (max-width: $sm) {
       display: grid;
       grid-template-columns: repeat(2,1fr);
@@ -679,6 +678,8 @@ body {
       width: 100%;
     }
     .companies{
+      width: 350px;
+      margin: 20px auto 0 auto;
       @media screen and (max-width: $md) {
         grid-template-columns: repeat(3,1fr);
       }
@@ -705,7 +706,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     .texto{
-      margin-bottom: 90px;
+      margin-bottom: 60px;
       @media screen and (max-width: $md) {
         margin-bottom: 25px;
       }
