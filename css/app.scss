@@ -637,7 +637,10 @@ body {
       width: 200px;
     }
     .avatares{
-      width: 600px;
+      width: 450px;
+      @media screen and (max-width: $lap) {
+        width: 450px;
+      }
       @media screen and (max-width: $md) {
         width: 400px;
       }
