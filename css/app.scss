@@ -554,7 +554,7 @@ body {
   background-color:$purple;
   display: grid;
   grid-template-columns: 1fr 1fr;
- 
+
   z-index: 1;
   position: relative;
   @media screen and (max-width: $lap) {
@@ -675,7 +675,14 @@ body {
     @media screen and (max-width: $lap) {
       width: 80%;
     }
-
+    @media screen and (max-width: $md) {
+      width: 100%;
+    }
+    .companies{
+      @media screen and (max-width: $md) {
+        grid-template-columns: repeat(3,1fr);
+      }
+    }
     .austin{
       display: flex;
       justify-content: center;
@@ -699,13 +706,16 @@ body {
     justify-content: space-around;
     .texto{
       margin-bottom: 90px;
+      @media screen and (max-width: $md) {
+        margin-bottom: 25px;
+      }
     }
     @media screen and (max-width: $lap) {
       width: 100%;
     }
     @media screen and (max-width: $md) {
       grid-row: 3;
-      margin: 20px 0;
+      margin: 25px 0;
     }
   }
 

@@ -928,6 +928,19 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .sectiontest .bottomleft {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sectiontest .bottomleft .companies {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .sectiontest .bottomleft .austin {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -974,6 +987,12 @@ body {
   margin-bottom: 90px;
 }
 
+@media screen and (max-width: 850px) {
+  .sectiontest .bottomright .texto {
+    margin-bottom: 25px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .sectiontest .bottomright {
     width: 100%;
@@ -984,7 +1003,7 @@ body {
   .sectiontest .bottomright {
     -ms-grid-row: 3;
     grid-row: 3;
-    margin: 20px 0;
+    margin: 25px 0;
   }
 }
 
