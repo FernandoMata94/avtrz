@@ -702,6 +702,14 @@ body {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .sectiontest .topleft {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .sectiontest .topleft h1:nth-of-type(1) {
   font-family: "BlinkerBold";
   font-size: 3rem;
