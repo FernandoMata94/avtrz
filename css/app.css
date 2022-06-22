@@ -1003,6 +1003,7 @@ body {
 @media screen and (max-width: 850px) {
   .sectiontest .bottomright .texto {
     margin-bottom: 25px;
+    text-align: center;
   }
 }
 
@@ -1110,8 +1111,8 @@ body {
 @media screen and (max-width: 850px) {
   .section2 .avatars .first-image {
     left: initial;
-    right: 0;
-    top: 0;
+    right: 20%;
+    top: 24%;
   }
 }
 
@@ -1126,8 +1127,8 @@ body {
 @media screen and (max-width: 850px) {
   .section2 .avatars .second-image {
     left: initial;
-    right: 0;
-    top: 50%;
+    right: 30%;
+    top: 58%;
   }
 }
 
@@ -1148,7 +1149,7 @@ body {
 @media screen and (max-width: 850px) {
   .section2 .avatars .third-image {
     left: initial;
-    right: 0;
+    right: 20%;
     top: 90%;
   }
 }
