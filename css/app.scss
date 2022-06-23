@@ -843,7 +843,6 @@ body {
     height: auto;
     padding: col(1) 0;
   }
-
   h1{
     text-align: center;
     margin-bottom: 50px;
@@ -868,6 +867,9 @@ body {
     }
     @media screen and (max-width: $md) {
       width: 380px;
+    }
+    @media screen and (max-width: $sm) {
+      width: 340px;
     }
     .svgcont{
       position: absolute;
@@ -1294,7 +1296,6 @@ body {
   left: 0;
   top: 0;
   background: rgb(175,65,175);
-
   background: linear-gradient(0deg, rgba(175,65,175,1) 20%, rgba(54,52,231,1) 50%, rgba(1,6,40,1) 100%);
   width: 100%;
   height: 100%;
@@ -1343,6 +1344,10 @@ body {
     width: 200px;
     @media screen and (max-width: $lap) {
       width: 130px;
+    }
+    @media screen and (max-width: $sm) {
+      width: 200px;
+      padding-top: 0;
     }
   }
 }
@@ -1684,6 +1689,10 @@ body {
     @media screen and (max-width: $lap) {
       width: 130px;
     }
+    @media screen and (max-width: $sm) {
+      width: 200px;
+      padding-top: 0;
+    }
   }
 }
 
@@ -2017,6 +2026,9 @@ body {
   float: right;
   animation: rotar 15s infinite linear;
   transform-style: preserve-3d;
+  @media screen and (max-width: $sm) {
+    animation: rotar 12s infinite linear;
+  }
 }
 
 .arrow{

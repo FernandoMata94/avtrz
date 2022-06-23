@@ -1257,6 +1257,12 @@ body {
   }
 }
 
+@media screen and (max-width: 580px) {
+  .section3 > div {
+    width: 340px;
+  }
+}
+
 .section3 > div .svgcont {
   position: absolute;
   width: 220px;
@@ -1952,6 +1958,13 @@ body {
   }
 }
 
+@media screen and (max-width: 580px) {
+  .section5 .entire-content {
+    width: 200px;
+    padding-top: 0;
+  }
+}
+
 .buybutton {
   background: #010628;
   width: 100%;
@@ -2481,6 +2494,13 @@ body {
   }
 }
 
+@media screen and (max-width: 580px) {
+  .section88 .entire-content {
+    width: 200px;
+    padding-top: 0;
+  }
+}
+
 .section9 {
   width: 100%;
   padding: 5.55556% 0;
@@ -2992,6 +3012,13 @@ body {
           animation: rotar 15s infinite linear;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 580px) {
+  .content-carrousel {
+    -webkit-animation: rotar 12s infinite linear;
+            animation: rotar 12s infinite linear;
+  }
 }
 
 .arrow {
