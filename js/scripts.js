@@ -22,6 +22,20 @@ $('.choose-cont').slick({
   pauseOnHover: false
 });
 
+$('.impact-slider').slick({
+  infinite: true,
+  dots: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  fade: false,
+  arrows: false,
+  autoplay: true,
+  centerMode: true,
+  autoplaySpeed: 4000,
+  pauseOnHover: false
+});
+
+
 $('.burguer').click(function () {
   $('.menu').toggleClass('active');
   $('.burguer').toggleClass('active');
@@ -358,7 +372,7 @@ $('.mem8').click(function () {
 
 ////////////////
 
-var imagerare = document.getElementById("imagerare");
+/* var imagerare = document.getElementById("imagerare");
 var currentPosrare = 0;
 var imagesrare = ["img/section4/Rare1.svg", "img/section4/Rare2.svg", "img/section4/Rare3.svg"]
 function volgendefotorare() {
@@ -418,6 +432,7 @@ function volgendefotobg() {
     imagebg.src = imagesbg[currentPosbg];
 }
 setInterval(volgendefotobg, 3000);
+ */
 
 
 ////////////////////////////////////
