@@ -24,7 +24,7 @@ $('.choose-cont').slick({
 
 $('.impact-slider').slick({
   infinite: true,
-  dots: true,
+  dots: false,
   slidesToShow: 3,
   slidesToScroll: 3,
   fade: false,
@@ -32,7 +32,17 @@ $('.impact-slider').slick({
   autoplay: true,
   centerMode: true,
   autoplaySpeed: 4000,
-  pauseOnHover: false
+  pauseOnHover: false,
+  responsive: [
+    {
+      breakpoint: 850,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true
+      },
+    },
+  ],
 });
 
 
@@ -58,21 +68,6 @@ $(window).scroll(function (e) {
   lastScrollTop = st;
 
 });
-
-
-//funcion para cambiar el contenido de los recuadros mision vision
-$content = $('#inner');
-$('#inner a').hover(function () {
-  onHover = $(this).data('hover');
-  $content.removeClass();
-  $content.addClass(onHover);
-});
-
-
-//animacion flechita
-gsap.from('.lineas', { repeat: -1, yoyo: true, y: "20", ease: Power4.easeOut, duration: 1 })
-//termina animaicon flechita
-
 
 /***** empieza timeline para los iconos ******/
 
@@ -235,6 +230,27 @@ $(".coloredbg").each(function() {
     onLeave: () => $(this).removeClass('revealed'),
     onEnterBack: () => $(this).addClass('revealed'),
     onLeaveBack: () => $(this).removeClass('revealed'),
+  });
+});
+
+  // ANIMACION ENTRA A LA SECCION  11 Y SE LE AGREGA LA CLASE INVISIBLIE
+$(".coloredbgimpact").each(function() {
+  // Content Reveal Animation
+  ScrollTrigger.create({
+    trigger: ".section11",
+    start: "top 80%",
+    end: "bottom 100px",
+    onEnter: () => $(this).addClass('revealed'),
+    onLeave: () => $(this).removeClass('revealed'),
+    onEnterBack: () => $(this).addClass('revealed'),
+    onLeaveBack: () => $(this).removeClass('revealed'),
+    onEnter: () => $('.coloredbg').addClass('invisible'),
+    onLeave: () => $('.coloredbg').removeClass('invisible'),
+
+
+    onEnterBack: () => $('.coloredbg').addClass('invisible'),
+
+    onLeaveBack: () => $('.coloredbg').removeClass('invisible'),
   });
 });
 

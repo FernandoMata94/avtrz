@@ -1373,9 +1373,26 @@ body {
   width: 100%;
   height: 100%;
   &.revealed{
-
     background: rgb(1,6,40);
     background: linear-gradient(0deg, rgba(1,6,40,1) 2%, rgba(54,52,231,1) 47%, rgba(175,65,175,1) 100%);
+  }
+  &.invisible{
+    background: rgb(200,242,255);
+    background: radial-gradient(circle, rgba(200,242,255,1) 0%, rgba(134,224,255,1) 100%);
+  }
+}
+.coloredbgimpact{
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgb(200,242,255);
+  background: radial-gradient(circle, rgba(200,242,255,1) 0%, rgba(134,224,255,1) 100%);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  &.revealed{
+    opacity: 1;
   }
 }
 
@@ -2096,20 +2113,41 @@ body {
 }
 
 .section11{
-  background-color: $purple;
+  //background-color: $purple;
   position: relative;
   width: col(18);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  .mountain{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .sol{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 750px;
+  }
   ul{
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 50%;
+    z-index: 2;
+    @media screen and (max-width: $lg) {
+      width: col(16)
+    }
     li{
       img{
         width: 150px;
+        margin: auto;
+        @media screen and (max-width: $lg) {
+
+        }
       }
     }
   }
