@@ -123,7 +123,7 @@
       <p class="small">°°If you are not interested in success via NFT's, please leave this page now.°°°</p>
 
       <div class="container">
-        <form action="enviar-hosting.php" name="enviar" method="post">
+        <form action="enviar-hosting.php" name="enviar" method="post"  id="SampleForm">
           <div>
 
             <p>First Name:</p>
@@ -142,7 +142,9 @@
             <input type="phone" id="email" name="phone" placeholder="Phone" required>
           </div>
 
-          <a href="ext/AVTRZPITCH.pdf" target="_blank"><button class="button">Get PDF</button></a>
+          <a href="ext/AVTRZPITCH.pdf" download="AVTRZPITCH"><button class="button">Get PDF</button></a>
+
+          <!-- <a href="ext/AVTRZPITCH.pdf" target="_blank"><button class="button">Get PDF</button></a> -->
 
           <p class="small">Your information is secure. We will NEVER share your details with anyone else.</p>
         </form>
@@ -876,6 +878,15 @@
 
 
   <script type="module" src="js/3d.js"></script>
+
+  <script>
+    var pdfUrl = "https://avtrz.io/ext/AVTRZPITCH.pdf";
+
+    $('#SampleForm').on('submit', function () {
+        window.open(pdfUrl, '_blank');
+    });
+  </script>
+
 
      <script type="text/javascript">
 

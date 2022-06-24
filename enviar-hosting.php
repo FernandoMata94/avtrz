@@ -28,8 +28,8 @@
 
         //recipients
         $mail->setFrom($email,$name);
-        // $mail->addAddress('avtrz@hexabit.one');
-        $mail->addAddress('diego1@avtrz.io');
+        $mail->addAddress('avtrz@hexabit.one');
+        //$mail->addAddress('diego1@avtrz.io');
         //content
         $mail->isHTML(true);
         $mail->Subject = 'AVTRZ Contact';
@@ -39,7 +39,7 @@
         echo '<script>
                 alert("El mensaje se envió correctamente");
                 window.history.go(-1);
-                window.open("ext/AVTRZPITCH.PDF", "_blank");
+
                 </script>';
     } catch (Exception $e){
         echo 'Hubo un error al enviar el mensaje',$mail->ErrorInfo;
