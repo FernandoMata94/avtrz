@@ -55,7 +55,7 @@
 
         </div>
 
-<!--         <a href="#section1">
+        <!--         <a href="#section1">
           <p class="especial">Avatar</p>
         </a>
         <a href="#section2">
@@ -80,7 +80,7 @@
 
   </nav>
 
-<!--   <div class="burguer">
+  <!--   <div class="burguer">
     <div class="cont">
       <div></div>
       <div></div>
@@ -123,7 +123,7 @@
       <p class="small">°°If you are not interested in success via NFT's, please leave this page now.°°°</p>
 
       <div class="container">
-        <form action="enviar-hosting.php" name="enviar" method="post"  id="SampleForm">
+        <form action="enviar-hosting.php" name="enviar" method="post" id="SampleForm">
           <div>
 
             <p>First Name:</p>
@@ -161,7 +161,9 @@
       <h1>GAME-CHANGING</h1>
       <h2>NFT ART </h2>
       <h2>COLLECTION</h2>
-      <a href="#section2"><div class="button">Get Started</div></a>
+      <a href="#section2">
+        <div class="button">Get Started</div>
+      </a>
     </div>
 
     <div class="topright">
@@ -200,6 +202,28 @@
         <img src="img/ethereum.svg" class="companyLogo">
         <img src="img/solana.svg" class="companyLogo">
         <img src="img/magicEden.svg" class="companyLogo">
+      </div>
+    </div>
+  </section>
+
+  <section class="brands">
+    <div class="left">
+      <div class="cont">
+        <h2>Brands</h2>
+        <div class="line"></div>
+        <p class="especial">Give your fans the opportunity to be part of a collective
+          experience and keep them hungry for your brand, via NFT's,
+          by giving them tokengated access to exclusive benefits</p>
+      </div>
+
+    </div>
+    <div class="right">
+      <div class="cont">
+        <h2>Individuals</h2>
+        <div class="line"></div>
+        <p class="especial">Be at the forefront of the Web 3 revolution by launching
+          your own top-notch NFT project, and benefit from creator
+          royalties and utilities linked to NFTs.</p>
       </div>
     </div>
   </section>
@@ -529,20 +553,20 @@
   <section class="section6" id="section6">
     <ul class="choose-cont">
       <li>
-        <img src="img/section6/avatar1.svg" class="slide-img"/>
+        <img src="img/section6/avatar1.svg" class="slide-img" />
         <h1>Premium</h1>
       </li>
       <li>
-        <img src="img/section6/avatar2.svg" class="slide-img"/>
+        <img src="img/section6/avatar2.svg" class="slide-img" />
         <h1>Relevant</h1>
       </li>
       <li>
-        <img src="img/section6/avatar3.svg" class="slide-img"/>
+        <img src="img/section6/avatar3.svg" class="slide-img" />
         <h1>Memorable</h1>
       </li>
     </ul>
 
-<!--     <div id="slideshow">
+    <!--     <div id="slideshow">
       <div class="entire-content">
         <div class="content-carrousel">
           <figure class="shadow"><img src="img/section6/avatar1.svg" /></figure>
@@ -552,7 +576,7 @@
       </div>
     </div> -->
 
-<!--     <div class="responsive-slider">
+    <!--     <div class="responsive-slider">
       <ul class="slider-cont">
         <li>
           <img src="img/section6/avatar1.svg" />
@@ -598,7 +622,7 @@
             </div>
           </div>
           <img src="img/section7/Light.svg" class="light light1 active">
-          <img src="img/section7/Floreavatar.png" class="avatar av1 active" >
+          <img src="img/section7/Floreavatar.png" class="avatar av1 active">
           <!-- <img src="img/section7/base.png" class="base"> -->
           <div class="cont">
             <h2>13 ETH</h2>
@@ -866,16 +890,11 @@
     </div>
   </section>
 
-
-
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
   <script type="text/javascript" src="js/slick.js"></script>
   <script src="js/scripts.js"></script>
-
-
-
 
   <script type="module" src="js/3d.js"></script>
 
@@ -883,12 +902,11 @@
     var pdfUrl = "https://avtrz.io/ext/AVTRZPITCH.pdf";
 
     $('#SampleForm').on('submit', function () {
-        window.open(pdfUrl, '_blank');
+      window.open(pdfUrl, '_blank');
     });
   </script>
 
-
-     <script type="text/javascript">
+  <!-- <script type="text/javascript">
 
     window.onload = function () {
       modal.style.display = "block";
@@ -946,9 +964,7 @@
     }
     resizeMenn()
 
-  </script>
-
-
+  </script> -->
 
   <!-- Start of LiveChat (www.livechat.com) code -->
   <script>
@@ -959,8 +975,6 @@
   <noscript><a href="https://www.livechat.com/chat-with/14221425/" rel="nofollow">Chat with us</a>, powered by <a
       href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
   <!-- End of LiveChat code -->
-
-
 
   <script type="text/javascript">
       /*<![CDATA[*/
@@ -1438,164 +1452,164 @@
 
   <!-- CODIGO D -->
 
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'admin-2877.myshopify.com',
-      storefrontAccessToken: '466a9e4da1f8fe5515f8e03a52748e18',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '7686661243122',
-        node: document.getElementById('product-component-1655431190241'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
-          "margin-bottom": "50px"
+  <script type="text/javascript">
+    /*<![CDATA[*/
+    (function () {
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+          ShopifyBuyInit();
+        } else {
+          loadScript();
         }
-      },
-      "button": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        ":hover": {
-          "background-color": "#e037e0"
-        },
-        "background-color": "#f93df9",
-        ":focus": {
-          "background-color": "#e037e0"
-        },
-        "padding-left": "55px",
-        "padding-right": "55px"
+      } else {
+        loadScript();
       }
-    },
-    "buttonDestination": "modal",
-    "contents": {
-      "options": false
-    },
-    "text": {
-      "button": "View product"
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
       }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        ":hover": {
-          "background-color": "#e037e0"
-        },
-        "background-color": "#f93df9",
-        ":focus": {
-          "background-color": "#e037e0"
-        },
-        "padding-left": "55px",
-        "padding-right": "55px"
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'admin-2877.myshopify.com',
+          storefrontAccessToken: '466a9e4da1f8fe5515f8e03a52748e18',
+        });
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('product', {
+            id: '7686661243122',
+            node: document.getElementById('product-component-1655431190241'),
+            moneyFormat: '%24%7B%7Bamount%7D%7D',
+            options: {
+              "product": {
+                "styles": {
+                  "product": {
+                    "@media (min-width: 601px)": {
+                      "max-width": "calc(25% - 20px)",
+                      "margin-left": "20px",
+                      "margin-bottom": "50px"
+                    }
+                  },
+                  "button": {
+                    "font-family": "Lato, sans-serif",
+                    "font-weight": "bold",
+                    ":hover": {
+                      "background-color": "#e037e0"
+                    },
+                    "background-color": "#f93df9",
+                    ":focus": {
+                      "background-color": "#e037e0"
+                    },
+                    "padding-left": "55px",
+                    "padding-right": "55px"
+                  }
+                },
+                "buttonDestination": "modal",
+                "contents": {
+                  "options": false
+                },
+                "text": {
+                  "button": "View product"
+                },
+                "googleFonts": [
+                  "Lato"
+                ]
+              },
+              "productSet": {
+                "styles": {
+                  "products": {
+                    "@media (min-width: 601px)": {
+                      "margin-left": "-20px"
+                    }
+                  }
+                }
+              },
+              "modalProduct": {
+                "contents": {
+                  "img": false,
+                  "imgWithCarousel": true,
+                  "button": false,
+                  "buttonWithQuantity": true
+                },
+                "styles": {
+                  "product": {
+                    "@media (min-width: 601px)": {
+                      "max-width": "100%",
+                      "margin-left": "0px",
+                      "margin-bottom": "0px"
+                    }
+                  },
+                  "button": {
+                    "font-family": "Lato, sans-serif",
+                    "font-weight": "bold",
+                    ":hover": {
+                      "background-color": "#e037e0"
+                    },
+                    "background-color": "#f93df9",
+                    ":focus": {
+                      "background-color": "#e037e0"
+                    },
+                    "padding-left": "55px",
+                    "padding-right": "55px"
+                  }
+                },
+                "googleFonts": [
+                  "Lato"
+                ],
+                "text": {
+                  "button": "Add to cart"
+                }
+              },
+              "option": {},
+              "cart": {
+                "styles": {
+                  "button": {
+                    "font-family": "Lato, sans-serif",
+                    "font-weight": "bold",
+                    ":hover": {
+                      "background-color": "#e037e0"
+                    },
+                    "background-color": "#f93df9",
+                    ":focus": {
+                      "background-color": "#e037e0"
+                    }
+                  }
+                },
+                "text": {
+                  "total": "Subtotal",
+                  "button": "Checkout"
+                },
+                "googleFonts": [
+                  "Lato"
+                ]
+              },
+              "toggle": {
+                "styles": {
+                  "toggle": {
+                    "font-family": "Lato, sans-serif",
+                    "font-weight": "bold",
+                    "background-color": "#f93df9",
+                    ":hover": {
+                      "background-color": "#e037e0"
+                    },
+                    ":focus": {
+                      "background-color": "#e037e0"
+                    }
+                  }
+                },
+                "googleFonts": [
+                  "Lato"
+                ]
+              }
+            },
+          });
+        });
       }
-    },
-    "googleFonts": [
-      "Lato"
-    ],
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "option": {},
-  "cart": {
-    "styles": {
-      "button": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        ":hover": {
-          "background-color": "#e037e0"
-        },
-        "background-color": "#f93df9",
-        ":focus": {
-          "background-color": "#e037e0"
-        }
-      }
-    },
-    "text": {
-      "total": "Subtotal",
-      "button": "Checkout"
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "font-family": "Lato, sans-serif",
-        "font-weight": "bold",
-        "background-color": "#f93df9",
-        ":hover": {
-          "background-color": "#e037e0"
-        },
-        ":focus": {
-          "background-color": "#e037e0"
-        }
-      }
-    },
-    "googleFonts": [
-      "Lato"
-    ]
-  }
-},
-      });
-    });
-  }
-})();
+    })();
 /*]]>*/
-</script>
+  </script>
 </body>
 
 </html>

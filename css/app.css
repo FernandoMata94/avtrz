@@ -110,6 +110,10 @@ p {
   }
 }
 
+p.especial {
+  font-family: 'BlinkerExtraLight';
+}
+
 .button {
   background: #f93df9;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(-20%, #f93df9), color-stop(85%, #010628));
@@ -1019,6 +1023,104 @@ body {
     grid-row: 3;
     margin: 25px 0;
   }
+}
+
+.brands {
+  width: 100%;
+  padding: 5.55556%;
+  background-color: #010628;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  height: 100vh;
+}
+
+@media screen and (max-width: 850px) {
+  .brands {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+}
+
+.brands .left, .brands .right {
+  position: relative;
+  width: 50%;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: start;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+@media screen and (max-width: 850px) {
+  .brands .left, .brands .right {
+    width: 100%;
+  }
+}
+
+.brands .left h2, .brands .right h2 {
+  text-transform: capitalize;
+}
+
+.brands .left h2, .brands .left p, .brands .left .line, .brands .right h2, .brands .right p, .brands .right .line {
+  z-index: 1;
+}
+
+.brands .left .cont, .brands .right .cont {
+  z-index: 1;
+  height: 220px;
+}
+
+@media screen and (max-width: 850px) {
+  .brands .left .cont, .brands .right .cont {
+    height: auto;
+  }
+}
+
+.brands .left:before, .brands .right:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #c217c2;
+  background: -webkit-gradient(linear, right top, left top, from(#a413a4), to(#f93df9));
+  background: linear-gradient(270deg, #a413a4 0%, #f93df9 100%);
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  border-radius: 25px 0 25px 25px;
+}
+
+.brands .left:hover::before, .brands .right:hover::before {
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.brands .line {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 15px 0;
 }
 
 .section2 {
