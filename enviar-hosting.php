@@ -5,7 +5,7 @@
     $email = $_POST["email"];
     $phone = $_POST["phone"];
 
-    $body = "Nombre: " . $name . "<br>Apellido" . $lastname . "<br>Correo: " .  $email . "<br>Teléfono" . $phone;
+    $body = "Nombre: " . $name . "<br>Apellido: " . $lastname . "<br>Correo: " .  $email . "<br>Telefono: " . $phone;
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
@@ -27,9 +27,9 @@
         $mail->Port = 465;
 
         //recipients
-        $mail->setFrom('steelco_84@hotmail.com',$name);
+        $mail->setFrom($email,$name);
+        // $mail->addAddress('avtrz@hexabit.one');
         $mail->addAddress('diego1@avtrz.io');
-
         //content
         $mail->isHTML(true);
         $mail->Subject = 'AVTRZ Contact';
@@ -39,6 +39,7 @@
         echo '<script>
                 alert("El mensaje se envió correctamente");
                 window.history.go(-1);
+                window.open("ext/AVTRZPITCH.PDF", "_blank");
                 </script>';
     } catch (Exception $e){
         echo 'Hubo un error al enviar el mensaje',$mail->ErrorInfo;

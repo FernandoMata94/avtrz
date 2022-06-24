@@ -2576,6 +2576,12 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .section9 .faq {
+    width: 83.33333%;
+  }
+}
+
 .section9 .faq li {
   border: 1px solid #F93DF9;
   margin: 10px 0;

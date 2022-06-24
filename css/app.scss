@@ -1702,7 +1702,6 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
-
   h1{
     text-align: center;
   }
@@ -1744,6 +1743,9 @@ body {
     }
     @media screen and (max-width: $lg) {
       margin-top: 200px;
+    }
+    @media screen and (max-width: $md) {
+      width: col(15);
     }
     li{
       border: 1px solid $violet;
