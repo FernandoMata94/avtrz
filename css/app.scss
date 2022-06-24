@@ -2113,13 +2113,21 @@ body {
 }
 
 .section11{
-  //background-color: $purple;
   position: relative;
   width: col(18);
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  .titlecont{
+    display: flex;
+    width: col(3);
+    margin:100px auto 0 auto;
+    h1{
+      text-align: center;
+      margin-right: 5px;
+    }
+  }
   .mountain{
     position: absolute;
     bottom: 0;
@@ -2134,8 +2142,11 @@ body {
     width: 750px;
   }
   ul{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 150px auto 0 auto;
     padding: 0;
-    margin: 0;
     width: 50%;
     z-index: 2;
     @media screen and (max-width: $lg) {
@@ -2145,12 +2156,16 @@ body {
       img{
         width: 150px;
         margin: auto;
-        @media screen and (max-width: $lg) {
-
+        @media screen and (max-width: $md) {
+          width: 250px;
         }
       }
     }
   }
+}
+
+.section12{
+  
 }
 
 .barrablanca{
