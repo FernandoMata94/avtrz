@@ -234,7 +234,7 @@ $(".coloredbg").each(function() {
 });
 
   // ANIMACION ENTRA A LA SECCION  11 Y SE LE AGREGA LA CLASE INVISIBLIE
-$(".coloredbgimpact").each(function() {
+/* $(".coloredbgimpact").each(function() {
   // Content Reveal Animation
   ScrollTrigger.create({
     trigger: ".section11",
@@ -252,7 +252,7 @@ $(".coloredbgimpact").each(function() {
 
     onLeaveBack: () => $('.coloredbg').removeClass('invisible'),
   });
-});
+}); */
 
 //////////////////
 

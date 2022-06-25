@@ -1382,6 +1382,7 @@ body {
   }
 }
 .coloredbgimpact{
+  pointer-events: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -2165,7 +2166,80 @@ body {
 }
 
 .section12{
-  
+  position: relative;
+  width: col(18);
+  padding: col(1);
+  height: 100vh;
+  background-color: $purple;
+  h1{
+   margin-bottom: 50px;
+    text-align: center;
+  }
+  .cont{
+    width: 900px;
+    height: 600px;
+    //background-color: #cd1b00;
+    margin: auto;
+    position: relative;
+    @media screen and (max-width: $lap) {
+      width: 900px;
+      height: 600px;
+    }
+    @media screen and (max-width: $lg) {
+      width: 700px;
+      height: 700px;
+    }
+    @media screen and (max-width: $md) {
+      width: 100%;
+      height: 100vh;
+    }
+    @media screen and (max-width: $sm) {
+      width: 100%;
+      height: 100vh;
+    }
+    .avatar,.discord,.mkt,.shopify,.smart,.webpage{
+      width: 175px;
+    }
+    .shopify{
+      position: absolute;
+      left: 40%;
+      top: 0;
+    }
+    .smart{
+      position: absolute;
+      right: 20%;
+      top: 7%;
+    }
+    .mkt{
+      position: absolute;
+      left: 5%;
+      bottom: 40%;
+    }
+    .webpage{
+      position: absolute;
+      right: 5%;
+      bottom: 20%;
+    }
+    .discord{
+      position: absolute;
+      right: 40%;
+      bottom: 0;
+    }
+    .avatar{
+      position: absolute;
+      left: 20%;
+      bottom: 5%;
+    }
+    .base{
+      width: 500px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
 }
 
 .barrablanca{
