@@ -3249,10 +3249,6 @@ body {
   }
 }
 
-.section12 .cont .avatar, .section12 .cont .discord, .section12 .cont .mkt, .section12 .cont .shopify, .section12 .cont .smart, .section12 .cont .webpage {
-  width: 175px;
-}
-
 .section12 .cont .shopify {
   position: absolute;
   left: 40%;
