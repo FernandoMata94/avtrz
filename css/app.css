@@ -2163,7 +2163,6 @@ body {
 
 .section6 .choose-cont li h1 {
   text-align: center;
-  position: absolute;
   left: 0;
   right: 0;
   top: 60%;
@@ -3180,7 +3179,7 @@ body {
   right: 0;
   margin: 150px auto 0 auto;
   padding: 0;
-  width: 50%;
+  width: 100%;
   z-index: 2;
 }
 
@@ -3292,6 +3291,32 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
+  margin: auto;
+}
+
+.section13 {
+  position: relative;
+  background-color: #e2e2e2;
+  padding: 5.55556%;
+}
+
+.section13 h1 {
+  color: #010628;
+  text-align: center;
+}
+
+.section13 h1:first-of-type {
+  margin-bottom: 50px;
+}
+
+.section13 h1:last-of-type {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.section13 img {
+  width: 40%;
+  display: block;
   margin: auto;
 }
 

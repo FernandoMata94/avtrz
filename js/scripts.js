@@ -25,13 +25,13 @@ $('.choose-cont').slick({
 $('.impact-slider').slick({
   infinite: true,
   dots: false,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 4,
+  slidesToScroll: 4,
   fade: false,
   arrows: false,
   autoplay: true,
   centerMode: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 2000,
   pauseOnHover: false,
   responsive: [
     {
@@ -234,10 +234,10 @@ $(".coloredbg").each(function() {
 });
 
   // ANIMACION ENTRA A LA SECCION  11 Y SE LE AGREGA LA CLASE INVISIBLIE
-$(".coloredbgimpact").each(function() {
+/* $(".coloredbgimpact").each(function() {
   // Content Reveal Animation
   ScrollTrigger.create({
-    trigger: ".section11",
+    trigger: ".section10",
     start: "top 80%",
     end: "bottom 100px",
     onEnter: () => $(this).addClass('revealed'),
@@ -252,7 +252,7 @@ $(".coloredbgimpact").each(function() {
 
     onLeaveBack: () => $('.coloredbg').removeClass('invisible'),
   });
-});
+}); */
 
 //////////////////
 

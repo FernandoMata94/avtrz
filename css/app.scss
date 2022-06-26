@@ -1483,7 +1483,7 @@ body {
       position: relative;
       h1{
         text-align: center;
-        position: absolute;
+        //position: absolute;
         left: 0;
         right: 0;
         top: 60%;
@@ -2148,7 +2148,7 @@ body {
     right: 0;
     margin: 150px auto 0 auto;
     padding: 0;
-    width: 50%;
+    width: 100%;
     z-index: 2;
     @media screen and (max-width: $lg) {
       width: col(16)
@@ -2239,6 +2239,28 @@ body {
       bottom: 0;
       margin: auto;
     }
+  }
+}
+
+.section13{
+  position: relative;
+  background-color:#e2e2e2;
+  padding: col(1);
+  h1{
+    color: $purple;
+    text-align: center;
+    &:first-of-type{
+      margin-bottom: 50px;
+    }
+    &:last-of-type{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+  img{
+    width: 40%;
+    display: block;
+    margin: auto;
   }
 }
 
