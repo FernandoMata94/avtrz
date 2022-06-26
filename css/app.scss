@@ -582,6 +582,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &.two{
+      flex-direction: column;
+      >div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+          margin: 15px;
+        }
+      }
+    }
     @media screen and (max-width: $sm) {
       display: grid;
       grid-template-columns: repeat(2,1fr);
@@ -685,7 +696,7 @@ body {
     }
     .companies{
       width: 350px;
-      margin: 20px auto 0 auto;
+      margin: 50px auto 0 auto;
       @media screen and (max-width: $md) {
         grid-template-columns: repeat(3,1fr);
         width: 100%;
