@@ -3306,7 +3306,7 @@ body {
 @media screen and (max-width: 850px) {
   .section12 .cont {
     width: 350px;
-    height: 300px;
+    height: 400px;
   }
 }
 
@@ -3333,6 +3333,13 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .section12 .cont .svgcont.one {
+    left: 150px;
+    top: 70px;
+  }
+}
+
 .section12 .cont .svgcont.two {
   position: absolute;
   right: 160px;
@@ -3343,6 +3350,14 @@ body {
   .section12 .cont .svgcont.two {
     right: 180px;
     top: 180px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section12 .cont .svgcont.two {
+    right: 50px;
+    top: 70px;
+    width: 70px;
   }
 }
 
@@ -3361,6 +3376,13 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .section12 .cont .svgcont.three {
+    left: 170px;
+    bottom: 80px;
+  }
+}
+
 .section12 .cont .svgcont.four {
   position: absolute;
   width: 70px;
@@ -3372,6 +3394,13 @@ body {
   .section12 .cont .svgcont.four {
     left: 90px;
     bottom: 400px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section12 .cont .svgcont.four {
+    left: 50px;
+    bottom: 230px;
   }
 }
 
@@ -3390,6 +3419,13 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .section12 .cont .svgcont.five {
+    right: 220px;
+    bottom: 100px;
+  }
+}
+
 .section12 .cont .svgcont.six {
   position: absolute;
   bottom: 0;
@@ -3402,6 +3438,13 @@ body {
   .section12 .cont .svgcont.six {
     right: 130px;
     bottom: 250px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section12 .cont .svgcont.six {
+    right: 50px;
+    bottom: 160px;
   }
 }
 
@@ -3418,6 +3461,19 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .section12 .cont .shopify {
+    left: 20%;
+    top: 0%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section12 .cont .text {
+    width: 120px;
+  }
+}
+
 .section12 .cont .smart {
   position: absolute;
   right: 20%;
@@ -3428,6 +3484,13 @@ body {
   .section12 .cont .smart {
     right: 30%;
     top: 13%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section12 .cont .smart {
+    right: 0%;
+    top: 8%;
   }
 }
 
@@ -3457,6 +3520,12 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .section12 .cont .webpage {
+    bottom: 70px;
+  }
+}
+
 .section12 .cont .discord {
   position: absolute;
   right: 40%;
@@ -3467,6 +3536,13 @@ body {
   .section12 .cont .discord {
     right: 40%;
     bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section12 .cont .discord {
+    right: 30%;
+    bottom: 0;
   }
 }
 
@@ -3483,6 +3559,13 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .section12 .cont .avatar {
+    left: 0;
+    bottom: 0;
+  }
+}
+
 .section12 .cont .base {
   width: 500px;
   position: absolute;
@@ -3491,6 +3574,12 @@ body {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+
+@media screen and (max-width: 850px) {
+  .section12 .cont .base {
+    width: 200px;
+  }
 }
 
 .section13 {
