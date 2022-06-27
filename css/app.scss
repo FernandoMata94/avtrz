@@ -1446,6 +1446,9 @@ body {
       display: flex;
       width: col(4);
       margin:100px auto 0 auto;
+      @media screen and (max-width: $md) {
+        margin:100px auto 100px auto;
+      }
       h1{
         text-align: center;
         margin-right: 5px;
@@ -1485,6 +1488,7 @@ body {
     }
   }
 }
+
 .buybutton{
   background: $purple;
   width: 100%;
@@ -1801,6 +1805,9 @@ body {
       display: flex;
       width: col(4);
       margin:100px auto 0 auto;
+      @media screen and (max-width: $md) {
+        margin:100px auto 100px auto;
+      }
       h1{
         text-align: center;
         margin-right: 5px;
@@ -2200,7 +2207,7 @@ body {
         width: 150px;
         margin: auto;
         @media screen and (max-width: $md) {
-          width: 250px;
+          width: 130px;
         }
       }
     }
@@ -2347,7 +2354,7 @@ body {
         top: 0%;
       }
     }
-    .text{
+    img{
       @media screen and (max-width: $md) {
         width: 120px;
       }
@@ -2455,17 +2462,6 @@ body {
   }
 }
 
-.barrablanca{
-  pointer-events: none;
-  width: 100%;
-  height: 500px;
-  background-color: #e2e2e2;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: none;
-}
-
 #product-component-1655334182882{
   display:block !important;
 }
@@ -2481,7 +2477,9 @@ body {
   height: 600px;
   width: 70%;
   box-sizing: border-box;
-  //pointer-events: none;
+  @media screen and (max-width: $md) {
+    display: none;
+  }
 }
 
 .entire-content {
@@ -2556,12 +2554,6 @@ body {
   }
 }
 
-.shadow {
-   //position: absolute;
-   //box-shadow: 0px 0px 20px 0px #000;
-   //border-radius: 1px;
-}
-
 .content-carrousel img {
   image-rendering: auto;
   transition: all 300ms;
@@ -2572,6 +2564,33 @@ body {
 .content-carrousel img:hover {
   transform: scale(1.1);
   transition: all 300ms;
+}
+
+.webgl-slider{
+  display: none !important;
+  padding: 0;
+  margin: 0;
+  @media screen and (max-width: $md) {
+    display: block !important;
+  }
+  @media screen and (max-width: $sm) {
+    width: 80%;
+    margin: auto;
+  }
+  .slick-active{
+    opacity: .5;
+  }
+  .slick-center{
+    opacity: 1;
+   img{
+    width: 160px;
+  }
+ }
+  img{
+    width: 130px;
+    display: block;
+    margin: auto;
+  }
 }
 
 @keyframes rotar {

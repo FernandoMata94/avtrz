@@ -25,13 +25,24 @@ $('.choose-cont').slick({
 $('.webgl-slider').slick({
   infinite: true,
   dots: false,
-  slidesToShow: 1,
+  slidesToShow: 3,
   slidesToScroll: 1,
+  centerMode: true,
   fade: false,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 1800,
-  pauseOnHover: false
+  autoplaySpeed: 18000,
+  pauseOnHover: false,
+  responsive: [
+    {
+      breakpoint: 580,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true
+      },
+    },
+  ],
 });
 
 $('.impact-slider').slick({
