@@ -783,6 +783,9 @@ body {
     flex-direction: column;
     text-align: start;
     transition: all .5s ease;
+    @media screen and (max-width: $lap) {
+      justify-content: flex-start;
+    }
     @media screen and (max-width: $lg) {
       width: col(18);
     }
@@ -1447,6 +1450,9 @@ body {
         text-align: center;
         margin-right: 5px;
       }
+      span{
+        font-size: 20px;
+      }
     }
 
     .fondo{
@@ -1798,6 +1804,9 @@ body {
       h1{
         text-align: center;
         margin-right: 5px;
+      }
+      span{
+        font-size: 20px;
       }
     }
     .fondo{
@@ -2158,6 +2167,9 @@ body {
       text-align: center;
       margin-right: 5px;
     }
+    span{
+      font-size: 20px;
+    }
   }
   .mountain{
     position: absolute;
@@ -2205,7 +2217,7 @@ body {
     height: auto;
   }
   @media screen and (max-width: $sm) {
-    padding: col(0);
+    padding: col(1) 0 col(1) 0;
   }
   h1{
    margin-bottom: 50px;
