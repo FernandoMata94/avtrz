@@ -2749,34 +2749,28 @@ body {
   }
 }
 
-.section9 .social > div {
-  margin: 25px 0;
-}
-
-@media screen and (max-width: 850px) {
-  .section9 .social > div {
-    margin: 0;
-  }
-}
-
-.section9 .social > div img {
+.section9 .social img {
   width: 25px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   cursor: pointer;
 }
 
-.section9 .social > div img:hover {
+.section9 .social img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
-.section9 .social > div .fb {
-  width: 15px;
-  display: block;
-  margin: auto;
+.section9 .social div {
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 850px) {
+  .section9 .social div {
+    margin: 0;
+  }
 }
 
 .section9 .logobarra {

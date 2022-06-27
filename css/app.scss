@@ -1864,6 +1864,7 @@ body {
     text-align: center;
   }
   background-color: $purple;
+
   .social{
     background: rgb(194,23,194);
     background: linear-gradient(270deg, rgb(164, 19, 164) -20%, rgba(249,61,249,1) 90%);
@@ -1879,24 +1880,19 @@ body {
       justify-content: space-around;
       position: initial;
     }
-    >div{
+    img{
+      width: 25px;
+      transition: all .5s ease;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.1);
+        transition: all .5s ease;
+      }
+    }
+    div{
       margin: 25px 0;
       @media screen and (max-width: $md) {
         margin: 0;
-      }
-      img{
-        width: 25px;
-        transition: all .5s ease;
-        cursor: pointer;
-        &:hover{
-          transform: scale(1.1);
-          transition: all .5s ease;
-        }
-      }
-      .fb{
-        width: 15px;
-        display: block;
-        margin: auto;
       }
     }
   }
