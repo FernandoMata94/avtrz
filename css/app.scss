@@ -583,6 +583,9 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 40px 0 0 0;
+    @media screen and (max-width: $lap) {
+      margin: 10px 0 0 0;
+    }
     @media screen and (max-width: $sm) {
       display: grid;
       grid-template-columns: repeat(1,1fr);
@@ -745,6 +748,9 @@ body {
     .texto{
       margin-bottom: 60px;
       margin-top: 10px;
+      @media screen and (max-width: $lap) {
+        margin-bottom: 40px;
+      }
       @media screen and (max-width: $md) {
         margin-bottom: 25px;
         text-align: center;

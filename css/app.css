@@ -674,6 +674,12 @@ body {
   margin: 40px 0 0 0;
 }
 
+@media screen and (max-width: 1400px) {
+  .sectiontest .companiesleft {
+    margin: 10px 0 0 0;
+  }
+}
+
 @media screen and (max-width: 580px) {
   .sectiontest .companiesleft {
     display: -ms-grid;
@@ -1060,6 +1066,12 @@ body {
 .sectiontest .bottomright .texto {
   margin-bottom: 60px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  .sectiontest .bottomright .texto {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 850px) {
