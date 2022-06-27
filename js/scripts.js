@@ -24,7 +24,7 @@ $('.choose-cont').slick({
 
 $('.webgl-slider').slick({
   infinite: true,
-  dots: false,
+  dots: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   centerMode: true,

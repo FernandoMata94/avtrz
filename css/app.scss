@@ -2591,6 +2591,25 @@ body {
     display: block;
     margin: auto;
   }
+  ul.slick-dots{
+    width: 100%;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+    li{
+      button{
+        font-size: 0;
+        border-radius: 50%;
+        background-color: $purple;
+        border: none;
+        width: 15px;
+        height:15px;
+      }
+    }
+  }
 }
 
 @keyframes rotar {
