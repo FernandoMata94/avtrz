@@ -3272,6 +3272,12 @@ body {
   }
 }
 
+@media screen and (max-width: 580px) {
+  .section12 {
+    padding: 0%;
+  }
+}
+
 .section12 h1 {
   margin-bottom: 50px;
   text-align: center;
@@ -3290,13 +3296,6 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 1400px) {
-  .section12 .cont {
-    width: 900px;
-    height: 600px;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .section12 .cont {
     width: 700px;
@@ -3306,15 +3305,8 @@ body {
 
 @media screen and (max-width: 850px) {
   .section12 .cont {
-    width: 100%;
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .section12 .cont {
-    width: 100%;
-    height: 100vh;
+    width: 350px;
+    height: 300px;
   }
 }
 
@@ -3334,10 +3326,24 @@ body {
   top: 90px;
 }
 
+@media screen and (max-width: 1200px) {
+  .section12 .cont .svgcont.one {
+    left: 280px;
+    top: 160px;
+  }
+}
+
 .section12 .cont .svgcont.two {
   position: absolute;
   right: 160px;
   top: 130px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section12 .cont .svgcont.two {
+    right: 180px;
+    top: 180px;
+  }
 }
 
 .section12 .cont .svgcont.three {
@@ -3348,12 +3354,25 @@ body {
   bottom: 150px;
 }
 
+@media screen and (max-width: 1200px) {
+  .section12 .cont .svgcont.three {
+    left: 210px;
+    bottom: 200px;
+  }
+}
+
 .section12 .cont .svgcont.four {
   position: absolute;
-  bottom: 0;
   width: 70px;
   left: 190px;
   bottom: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section12 .cont .svgcont.four {
+    left: 90px;
+    bottom: 400px;
+  }
 }
 
 .section12 .cont .svgcont.five {
@@ -3364,6 +3383,13 @@ body {
   bottom: 110px;
 }
 
+@media screen and (max-width: 1200px) {
+  .section12 .cont .svgcont.five {
+    right: 270px;
+    bottom: 170px;
+  }
+}
+
 .section12 .cont .svgcont.six {
   position: absolute;
   bottom: 0;
@@ -3372,10 +3398,24 @@ body {
   bottom: 230px;
 }
 
+@media screen and (max-width: 1200px) {
+  .section12 .cont .svgcont.six {
+    right: 130px;
+    bottom: 250px;
+  }
+}
+
 .section12 .cont .shopify {
   position: absolute;
   left: 40%;
   top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .section12 .cont .shopify {
+    left: 20%;
+    top: 10%;
+  }
 }
 
 .section12 .cont .smart {
@@ -3384,10 +3424,24 @@ body {
   top: 7%;
 }
 
+@media screen and (max-width: 1200px) {
+  .section12 .cont .smart {
+    right: 30%;
+    top: 13%;
+  }
+}
+
 .section12 .cont .mkt {
   position: absolute;
   left: 5%;
   bottom: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+  .section12 .cont .mkt {
+    left: 0;
+    bottom: 50%;
+  }
 }
 
 .section12 .cont .webpage {
@@ -3396,16 +3450,37 @@ body {
   bottom: 20%;
 }
 
+@media screen and (max-width: 1200px) {
+  .section12 .cont .webpage {
+    right: 0;
+    bottom: 20%;
+  }
+}
+
 .section12 .cont .discord {
   position: absolute;
   right: 40%;
   bottom: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .section12 .cont .discord {
+    right: 40%;
+    bottom: 50px;
+  }
+}
+
 .section12 .cont .avatar {
   position: absolute;
   left: 20%;
   bottom: 5%;
+}
+
+@media screen and (max-width: 1200px) {
+  .section12 .cont .avatar {
+    left: 10%;
+    bottom: 11%;
+  }
 }
 
 .section12 .cont .base {

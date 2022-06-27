@@ -2204,6 +2204,9 @@ body {
   @media screen and (max-width: $lap) {
     height: auto;
   }
+  @media screen and (max-width: $sm) {
+    padding: col(0);
+  }
   h1{
    margin-bottom: 50px;
     text-align: center;
@@ -2214,24 +2217,17 @@ body {
   .cont{
     width: 900px;
     height: 600px;
-    //background-color: #cd1b00;
+
     margin: auto;
     position: relative;
-    @media screen and (max-width: $lap) {
-      width: 900px;
-      height: 600px;
-    }
+    //background-color: tan;
     @media screen and (max-width: $lg) {
       width: 700px;
       height: 700px;
     }
     @media screen and (max-width: $md) {
-      width: 100%;
-      height: 100vh;
-    }
-    @media screen and (max-width: $sm) {
-      width: 100%;
-      height: 100vh;
+      width: 350px;
+      height: 300px;
     }
     .svgcont{
       width: 90px;
@@ -2243,11 +2239,19 @@ body {
         position: absolute;
         left: 490px;
         top: 90px;
+        @media screen and (max-width: $lg) {
+          left: 280px;
+          top: 160px;
+        }
       }
       &.two{
         position: absolute;
         right: 160px;
         top: 130px;
+        @media screen and (max-width: $lg) {
+          right: 180px;
+          top: 180px;
+        }
       }
       &.three{
         position: absolute;
@@ -2255,13 +2259,21 @@ body {
         width: 50px;
         left: 280px;
         bottom: 150px;
+        @media screen and (max-width: $lg) {
+          left: 210px;
+        bottom: 200px;
+        }
+
       }
       &.four{
         position: absolute;
-        bottom: 0;
         width: 70px;
         left: 190px;
         bottom: 300px;
+        @media screen and (max-width: $lg) {
+          left: 90px;
+          bottom: 400px;
+        }
       }
       &.five{
         position: absolute;
@@ -2269,6 +2281,10 @@ body {
         width: 50px;
         right: 370px;
         bottom: 110px;
+        @media screen and (max-width: $lg) {
+          right: 270px;
+          bottom: 170px;
+        }
       }
       &.six{
         position: absolute;
@@ -2276,37 +2292,65 @@ body {
         width: 60px;
         right: 180px;
         bottom: 230px;
+        @media screen and (max-width: $lg) {
+          right: 130px;
+          bottom: 250px;
+        }
       }
     }
     .shopify{
       position: absolute;
       left: 40%;
       top: 0;
+      @media screen and (max-width: $lg) {
+        left: 20%;
+        top: 10%;
+      }
     }
     .smart{
       position: absolute;
       right: 20%;
       top: 7%;
+      @media screen and (max-width: $lg) {
+        right: 30%;
+        top: 13%;
+      }
     }
     .mkt{
       position: absolute;
       left: 5%;
       bottom: 40%;
+      @media screen and (max-width: $lg) {
+        left: 0;
+        bottom: 50%;
+      }
     }
     .webpage{
       position: absolute;
       right: 5%;
       bottom: 20%;
+      @media screen and (max-width: $lg) {
+        right: 0;
+        bottom: 20%;
+      }
     }
     .discord{
       position: absolute;
       right: 40%;
       bottom: 0;
+      @media screen and (max-width: $lg) {
+        right: 40%;
+        bottom: 50px;
+      }
     }
     .avatar{
       position: absolute;
       left: 20%;
       bottom: 5%;
+      @media screen and (max-width: $lg) {
+        left: 10%;
+        bottom: 11%;
+      }
     }
     .base{
       width: 500px;
