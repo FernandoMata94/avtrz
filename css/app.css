@@ -612,6 +612,19 @@ body {
   margin-top: 25px;
 }
 
+.modal-content .container .inputcont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-content .container .inputcont > div {
+  width: 49%;
+}
+
 .modal-content .container input {
   width: 100%;
 }
@@ -2756,6 +2769,41 @@ body {
 
 .section9 h1 {
   text-align: center;
+}
+
+.section9 .social {
+  background: #c217c2;
+  background: -webkit-gradient(linear, right top, left top, color-stop(-20%, #a413a4), color-stop(90%, #f93df9));
+  background: linear-gradient(270deg, #a413a4 -20%, #f93df9 90%);
+  position: absolute;
+  left: 0;
+  top: 40%;
+  padding: 15px;
+  border-radius: 0 15px 15px 0;
+}
+
+.section9 .social > div {
+  margin: 25px 0;
+}
+
+.section9 .social > div img {
+  width: 25px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.section9 .social > div img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.section9 .social > div .fb {
+  width: 15px;
+  display: block;
+  margin: auto;
 }
 
 .section9 .logobarra {

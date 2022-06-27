@@ -4,8 +4,9 @@
     $lastname = $_POST["lastname"];
     $email = $_POST["email"];
     $phone = $_POST["phone"];
+    $date = $_POST["date"];
 
-    $body = "Nombre: " . $name . "<br>Apellido: " . $lastname . "<br>Correo: " .  $email . "<br>Telefono: " . $phone;
+    $body = "Nombre: " . $name . "<br>Apellido: " . $lastname . "<br>Correo: " .  $email . "<br>Telefono: " . $phone . "<br>Fecha de cita: " . $date;
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;

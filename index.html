@@ -14,13 +14,9 @@
 
   <link rel="manifest" href="site.webmanifest">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+
 
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/slick.css">
@@ -31,6 +27,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@200;600;700&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -124,22 +128,31 @@
 
       <div class="container">
         <form action="enviar-hosting.php" name="enviar" method="post" id="SampleForm">
-          <div>
+          <div class="inputcont">
+            <div>
+              <p>First Name:</p>
+              <input type="text" id="name" name="name" placeholder="First Name" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div>
+              <p>Last Name:</p>
+              <input type="text" id="name" name="lastname" placeholder="Last Name" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+          </div>
 
-            <p>First Name:</p>
-            <input type="text" id="name" name="name" placeholder="First Name" pattern=[A-Z\sa-z]{3,20} required>
+          <div class="inputcont">
+            <div>
+              <p>Email:</p>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div>
+              <p>Phone:</p>
+              <input type="phone" id="email" name="phone" placeholder="Phone" required>
+            </div>
           </div>
+
           <div>
-            <p>Last Name:</p>
-            <input type="text" id="name" name="lastname" placeholder="Last Name" pattern=[A-Z\sa-z]{3,20} required>
-          </div>
-          <div>
-            <p>Email:</p>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-          </div>
-          <div>
-            <p>Phone:</p>
-            <input type="phone" id="email" name="phone" placeholder="Phone" required>
+            <p>Select a date to get in contact:</p>
+            <input type="date" id="date" name="date">
           </div>
 
           <a href="ext/AVTRZPITCH.pdf" download="AVTRZPITCH"><button class="button">Get PDF</button></a>
@@ -999,6 +1012,24 @@
     <h1 class="text">
       FAQ's
     </h1>
+    <div class="social">
+
+      <div>
+        <img src="img/section9/twitter.svg">
+      </div>
+
+      <div>
+        <img src="img/section9/facebook-f.svg" class="fb">
+      </div>
+
+      <div>
+        <img src="img/section9/instagram.svg">
+      </div>
+
+      <div>
+        <img src="img/section9/linkedin.svg">
+      </div>
+    </div>
     <div class="logobarra">
       <img src="img/logo.svg" class="logo">
       <div class="barra"></div>
@@ -1076,7 +1107,7 @@
     });
   </script>
 
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
 
     window.onload = function () {
       modal.style.display = "block";
@@ -1134,7 +1165,7 @@
     }
     resizeMenn()
 
-  </script> -->
+  </script>
 
   <!-- Start of LiveChat (www.livechat.com) code -->
   <script>

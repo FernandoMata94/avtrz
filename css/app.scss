@@ -543,6 +543,13 @@ body {
     border: none;
   }
   .container{
+    .inputcont{
+      display: flex;
+      justify-content: space-between;
+      >div{
+        width: 49%;
+      }
+    }
     margin-top: 25px;
     input{
       width: 100%;
@@ -1861,6 +1868,32 @@ body {
     text-align: center;
   }
   background-color: $purple;
+  .social{
+    background: rgb(194,23,194);
+    background: linear-gradient(270deg, rgb(164, 19, 164) -20%, rgba(249,61,249,1) 90%);
+    position: absolute;
+    left: 0;
+    top: 40%;
+    padding: 15px;
+    border-radius: 0 15px 15px 0;
+    >div{
+      margin: 25px 0;
+      img{
+        width: 25px;
+        transition: all .5s ease;
+        cursor: pointer;
+        &:hover{
+          transform: scale(1.1);
+          transition: all .5s ease;
+        }
+      }
+      .fb{
+        width: 15px;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
   .logobarra{
     position: relative;
     width: 100%;
