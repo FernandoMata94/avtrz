@@ -1875,7 +1875,7 @@ body {
     border-radius: 0 15px 15px 0;
     @media screen and (max-width: $md) {
       margin: 15px 0;
-      width: 100%;
+      //width: 100%;
       display: flex;
       justify-content: space-around;
       position: initial;
@@ -2643,10 +2643,11 @@ body {
 
     list-style: none;
     li{
+      cursor: pointer;
       button{
         font-size: 0;
         border-radius: 50%;
-        background-color: $purple;
+        background-color: $violet;
         border: none;
         width: 15px;
         height:15px;

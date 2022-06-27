@@ -2739,7 +2739,6 @@ body {
 @media screen and (max-width: 850px) {
   .section9 .social {
     margin: 15px 0;
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3865,10 +3864,14 @@ body {
   list-style: none;
 }
 
+.webgl-slider ul.slick-dots li {
+  cursor: pointer;
+}
+
 .webgl-slider ul.slick-dots li button {
   font-size: 0;
   border-radius: 50%;
-  background-color: #010628;
+  background-color: #F93DF9;
   border: none;
   width: 15px;
   height: 15px;
