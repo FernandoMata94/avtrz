@@ -2784,11 +2784,13 @@ body {
   width: 200px;
   left: 20%;
   top: 30%;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1400px) {
   .section9 .logobarra .logo {
     left: 10%;
+    width: 170px;
   }
 }
 
@@ -2809,6 +2811,12 @@ body {
   -webkit-filter: blur(14px);
           filter: blur(14px);
   opacity: .3;
+}
+
+@media screen and (max-width: 1400px) {
+  .section9 .logobarra .barra {
+    height: 50px;
+  }
 }
 
 .section9 .faq {
@@ -3673,7 +3681,7 @@ body {
   }
 }
 
-#product-component-1655334182882, #product-component-1655334137668 {
+#product-component-1655334182882, #product-component-1655334137668, #product-component-1656354231711 {
   display: block !important;
 }
 
