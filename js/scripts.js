@@ -117,64 +117,6 @@ tmline.from(".puntos", {
   ease: "linear"
 });
 
-
-/***** termina timeline para los iconos ******/
-
-/***** empieza timeline para los testimonios ******/
-
-let test = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".testimonios",
-    toggleActions: "restart restart none reverse",
-    start: "top center",
-    //ease: Power4.easeInOut
-
-    //markers: true
-  }
-});
-
-test.from(".test", {
-  opacity: 0,
-  scale: 0,
-  duration: .8
-});
-
-/***** termina timeline para los iconos ******/
-
-
-let masks = document.querySelectorAll('.mask');
-
-masks.forEach(mask => {
-  let image = mask.querySelector('img');
-
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: mask,
-      toggleActions: "restart none none reset",
-      start: "top 80%",
-      //markers:true
-    }
-  });
-
-  tl.set(mask, { autoAlpha: 1 });
-
-
-  tl.fromTo(mask, 1, {
-    clipPath: "inset(100% 0% 0% 0%)"
-  }, {
-    clipPath: "inset(0% 0% 0% 0%)", //hay que usar porcentajes en los ceros también
-    duration: 1,
-    ease: Power3.easeOut,
-  });
-
-  tl.from(image, 3, {
-    scale: 1.4,
-    delay: -1.5,
-    ease: Power2.out
-  });
-
-})
-
 /***** ANIMACION PARA TODa la pagina ******/
 
 const textos = gsap.utils.toArray('.text');
@@ -190,22 +132,6 @@ textos.forEach(text => {
       toggleActions: "restart none none reverse",
       start: "top 80%",
       /*start: "top 80%",*/
-      //markers:true
-    }
-  })
-});
-
-const cuadros = gsap.utils.toArray('.cuadro');
-cuadros.forEach(cuadro => {
-  gsap.from(cuadro, {
-    width:0,
-    padding:0,
-    ease: Power4.easeOut,
-    duration: .6,
-    scrollTrigger: {
-      trigger: cuadro,
-      toggleActions: "restart none none complete",
-      start: "top center",
       //markers:true
     }
   })
@@ -255,27 +181,6 @@ $(".coloredbg").each(function() {
     onLeaveBack: () => $(this).removeClass('revealed'),
   });
 });
-
-  // ANIMACION ENTRA A LA SECCION  11 Y SE LE AGREGA LA CLASE INVISIBLIE
-/* $(".coloredbgimpact").each(function() {
-  // Content Reveal Animation
-  ScrollTrigger.create({
-    trigger: ".section10",
-    start: "top 80%",
-    end: "bottom 100px",
-    onEnter: () => $(this).addClass('revealed'),
-    onLeave: () => $(this).removeClass('revealed'),
-    onEnterBack: () => $(this).addClass('revealed'),
-    onLeaveBack: () => $(this).removeClass('revealed'),
-    onEnter: () => $('.coloredbg').addClass('invisible'),
-    onLeave: () => $('.coloredbg').removeClass('invisible'),
-
-
-    onEnterBack: () => $('.coloredbg').addClass('invisible'),
-
-    onLeaveBack: () => $('.coloredbg').removeClass('invisible'),
-  });
-}); */
 
 //////////////////
 

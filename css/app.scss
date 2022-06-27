@@ -2462,7 +2462,7 @@ body {
   }
 }
 
-#product-component-1655334182882{
+#product-component-1655334182882,#product-component-1655334137668{
   display:block !important;
 }
 .shopify-buy-frame.shopify-buy-frame--product.shopify-buy__layout-vertical{
@@ -2484,7 +2484,6 @@ body {
 
 .entire-content {
   margin: auto;
-  //width: 190px;
   width: 300px;
   perspective: 1000px;
   position: relative;
@@ -2524,8 +2523,6 @@ body {
 
 .content-carrousel figure {
   width: 90%;
-  //height: 120px;
-  //overflow: hidden;
   position: absolute;
 }
 
@@ -2628,9 +2625,4 @@ body {
     opacity: 1;
     transform: translateY(100%);
   }
-}
-
-
-.shopify-buy-frame .shopify-buy-frame--product .shopify-buy__layout-vertical{
-
 }
