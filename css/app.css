@@ -794,63 +794,9 @@ body {
   }
 }
 
-.sectiontest .topleft h1:nth-of-type(1) {
-  font-family: "BlinkerBold";
-  font-size: 3rem;
-  color: #ffffff;
-  margin: 0;
-  font-weight: normal;
-  letter-spacing: 1px;
-}
-
-@media screen and (max-width: 1400px) {
-  .sectiontest .topleft h1:nth-of-type(1) {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .sectiontest .topleft h1:nth-of-type(1) {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .sectiontest .topleft h1:nth-of-type(1) {
-    font-size: 1.2rem;
-  }
-}
-
-.sectiontest .topleft h1:nth-of-type(2) {
-  font-family: "BlinkerBold";
-  font-size: 4.125rem;
-  color: #ffffff;
-  margin: 0;
-  font-weight: normal;
-  letter-spacing: 1px;
-}
-
-@media screen and (max-width: 1400px) {
-  .sectiontest .topleft h1:nth-of-type(2) {
-    font-size: 2.0625rem;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .sectiontest .topleft h1:nth-of-type(2) {
-    font-size: 1.925rem;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .sectiontest .topleft h1:nth-of-type(2) {
-    font-size: 1.65rem;
-  }
-}
-
-.sectiontest .topleft h2:nth-of-type(1) {
+.sectiontest .topleft h2 {
   font-family: BlinkerSemiBold;
-  font-size: 5.175rem;
+  font-size: 2.7rem;
   color: #ffffff;
   margin: 0;
   font-weight: normal;
@@ -858,48 +804,56 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
-  .sectiontest .topleft h2:nth-of-type(1) {
-    font-size: 4.3125rem;
+  .sectiontest .topleft h2 {
+    font-size: 2.25rem;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .sectiontest .topleft h2:nth-of-type(1) {
-    font-size: 4.025rem;
+  .sectiontest .topleft h2 {
+    font-size: 2.1rem;
   }
 }
 
 @media screen and (max-width: 580px) {
-  .sectiontest .topleft h2:nth-of-type(1) {
-    font-size: 3.45rem;
+  .sectiontest .topleft h2 {
+    font-size: 1.8rem;
   }
 }
 
-.sectiontest .topleft h2:nth-of-type(2) {
-  font-family: BlinkerSemiBold;
-  font-size: 5.175rem;
+.sectiontest .topleft h2 span {
+  color: #F93DF9;
+}
+
+.sectiontest .topleft h1 {
+  font-family: "BlinkerBold";
+  font-size: 5.625rem;
   color: #ffffff;
   margin: 0;
   font-weight: normal;
-  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 1400px) {
-  .sectiontest .topleft h2:nth-of-type(2) {
-    font-size: 4.3125rem;
+  .sectiontest .topleft h1 {
+    font-size: 2.8125rem;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .sectiontest .topleft h2:nth-of-type(2) {
-    font-size: 4.025rem;
+  .sectiontest .topleft h1 {
+    font-size: 2.625rem;
   }
 }
 
 @media screen and (max-width: 580px) {
-  .sectiontest .topleft h2:nth-of-type(2) {
-    font-size: 3.45rem;
+  .sectiontest .topleft h1 {
+    font-size: 2.25rem;
   }
+}
+
+.sectiontest .topleft h1 span {
+  color: #F93DF9;
 }
 
 .sectiontest .topleft .button {
