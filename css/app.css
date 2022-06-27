@@ -700,8 +700,8 @@ body {
   .sectiontest .companies {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -849,7 +849,7 @@ body {
 }
 
 .sectiontest .topleft .button {
-  background: #cd1b00;
+  background: #F93DF9;
   font-family: "BlinkerBold";
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -862,7 +862,7 @@ body {
   cursor: pointer;
   display: block;
   text-align: center;
-  border-color: #cd1b00;
+  border-color: #F93DF9;
   margin: 15px 0 15px 0;
   font-size: 20px;
 }
@@ -870,11 +870,11 @@ body {
 .sectiontest .topleft .button:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background: #a41600;
+  background: #f815f8;
 }
 
 .sectiontest .topleft .button:active {
-  background: #4e0a00;
+  background: #b105b1;
 }
 
 @media screen and (max-width: 850px) {
@@ -969,7 +969,7 @@ body {
 
 .sectiontest .bottomleft .companies {
   width: 350px;
-  margin: 50px auto 0 auto;
+  margin: 40px auto 0 auto;
 }
 
 @media screen and (max-width: 850px) {
@@ -2072,7 +2072,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 16.66667%;
+  width: 22.22222%;
   margin: 100px auto 0 auto;
 }
 
@@ -2620,7 +2620,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 16.66667%;
+  width: 22.22222%;
   margin: 100px auto 0 auto;
 }
 
@@ -3172,7 +3172,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 16.66667%;
+  width: 22.22222%;
   margin: 100px auto 0 auto;
 }
 
@@ -3445,6 +3445,26 @@ body {
 .content-carrousel figure:nth-child(3) {
   -webkit-transform: rotateY(240deg) translateZ(300px);
           transform: rotateY(240deg) translateZ(300px);
+}
+
+.content-carrousel.second figure:nth-child(1) {
+  -webkit-transform: rotateY(0deg) translateZ(300px);
+          transform: rotateY(0deg) translateZ(300px);
+}
+
+.content-carrousel.second figure:nth-child(2) {
+  -webkit-transform: rotateY(90deg) translateZ(300px);
+          transform: rotateY(90deg) translateZ(300px);
+}
+
+.content-carrousel.second figure:nth-child(3) {
+  -webkit-transform: rotateY(180deg) translateZ(300px);
+          transform: rotateY(180deg) translateZ(300px);
+}
+
+.content-carrousel.second figure:nth-child(4) {
+  -webkit-transform: rotateY(270deg) translateZ(300px);
+          transform: rotateY(270deg) translateZ(300px);
 }
 
 .content-carrousel img {

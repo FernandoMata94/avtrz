@@ -22,6 +22,18 @@ $('.choose-cont').slick({
   pauseOnHover: false
 });
 
+$('.webgl-slider').slick({
+  infinite: true,
+  dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: false,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 1800,
+  pauseOnHover: false
+});
+
 $('.impact-slider').slick({
   infinite: true,
   dots: false,

@@ -595,7 +595,7 @@ body {
     }
     @media screen and (max-width: $sm) {
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(1,1fr);
     }
     img{
       width: 100px;
@@ -634,8 +634,8 @@ body {
       }
     }
     .button{
-      @include button2(#cd1b00);
-      border-color: #cd1b00;
+      @include button2($violet);
+      border-color: $violet;
       margin: 15px 0 15px 0;
       font-size: 20px;
       @media screen and (max-width: $md) {
@@ -696,7 +696,7 @@ body {
     }
     .companies{
       width: 350px;
-      margin: 50px auto 0 auto;
+      margin: 40px auto 0 auto;
       @media screen and (max-width: $md) {
         grid-template-columns: repeat(3,1fr);
         width: 100%;
@@ -1422,7 +1422,7 @@ body {
     height: 100vh;
     .titlecont{
       display: flex;
-      width: col(3);
+      width: col(4);
       margin:100px auto 0 auto;
       h1{
         text-align: center;
@@ -1774,7 +1774,7 @@ body {
     overflow: hidden;
     .titlecont{
       display: flex;
-      width: col(3);
+      width: col(4);
       margin:100px auto 0 auto;
       h1{
         text-align: center;
@@ -2133,7 +2133,7 @@ body {
   //justify-content: center;
   .titlecont{
     display: flex;
-    width: col(3);
+    width: col(4);
     margin:100px auto 0 auto;
     h1{
       text-align: center;
@@ -2357,6 +2357,23 @@ body {
   transform: rotateY(120deg) translateZ(300px);
 } .content-carrousel figure:nth-child(3) {
   transform: rotateY(240deg) translateZ(300px);
+}
+
+.content-carrousel{
+  &.second{
+    figure:nth-child(1) {
+      transform: rotateY(0deg) translateZ(300px);
+    }
+    figure:nth-child(2) {
+      transform: rotateY(90deg) translateZ(300px);
+    }
+    figure:nth-child(3) {
+      transform: rotateY(180deg) translateZ(300px);
+    }
+    figure:nth-child(4) {
+      transform: rotateY(270deg) translateZ(300px);
+    }
+  }
 }
 
 .shadow {
