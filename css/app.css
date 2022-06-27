@@ -2782,8 +2782,27 @@ body {
   border-radius: 0 15px 15px 0;
 }
 
+@media screen and (max-width: 850px) {
+  .section9 .social {
+    margin: 15px 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: initial;
+  }
+}
+
 .section9 .social > div {
   margin: 25px 0;
+}
+
+@media screen and (max-width: 850px) {
+  .section9 .social > div {
+    margin: 0;
+  }
 }
 
 .section9 .social > div img {
