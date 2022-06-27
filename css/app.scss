@@ -2239,7 +2239,7 @@ body {
     }
     @media screen and (max-width: $md) {
       width: 350px;
-      height: 400px;
+      height: 450px;
     }
     .svgcont{
       width: 90px;
@@ -2300,7 +2300,7 @@ body {
         }
         @media screen and (max-width: $md) {
           left: 50px;
-          bottom: 230px;
+          bottom: 250px;
         }
       }
       &.five{
@@ -2315,7 +2315,7 @@ body {
         }
         @media screen and (max-width: $md) {
           right: 220px;
-          bottom: 100px;
+          bottom: 110px;
         }
       }
       &.six{
@@ -2329,8 +2329,8 @@ body {
           bottom: 250px;
         }
         @media screen and (max-width: $md) {
-          right: 50px;
-          bottom: 160px;
+          right: 60px;
+          bottom: 167px;
         }
       }
     }

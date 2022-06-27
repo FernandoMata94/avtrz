@@ -3326,7 +3326,7 @@ body {
 @media screen and (max-width: 850px) {
   .section12 .cont {
     width: 350px;
-    height: 400px;
+    height: 450px;
   }
 }
 
@@ -3420,7 +3420,7 @@ body {
 @media screen and (max-width: 850px) {
   .section12 .cont .svgcont.four {
     left: 50px;
-    bottom: 230px;
+    bottom: 250px;
   }
 }
 
@@ -3442,7 +3442,7 @@ body {
 @media screen and (max-width: 850px) {
   .section12 .cont .svgcont.five {
     right: 220px;
-    bottom: 100px;
+    bottom: 110px;
   }
 }
 
@@ -3463,8 +3463,8 @@ body {
 
 @media screen and (max-width: 850px) {
   .section12 .cont .svgcont.six {
-    right: 50px;
-    bottom: 160px;
+    right: 60px;
+    bottom: 167px;
   }
 }
 
