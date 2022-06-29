@@ -2475,6 +2475,18 @@ body {
       width: 80%;
     }
   }
+  form{
+    >div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 25px;
+      input{
+        width: 110px;
+        margin: auto;
+      }
+    }
+  }
 }
 
 #product-component-1655334182882,#product-component-1655334137668,#product-component-1656354231711{

@@ -3644,6 +3644,25 @@ body {
   }
 }
 
+.section13 form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+}
+
+.section13 form > div input {
+  width: 110px;
+  margin: auto;
+}
+
 #product-component-1655334182882, #product-component-1655334137668, #product-component-1656354231711 {
   display: block !important;
 }
