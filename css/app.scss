@@ -1414,28 +1414,16 @@ body {
   background: linear-gradient(0deg, rgba(175,65,175,1) 20%, rgba(54,52,231,1) 50%, rgba(1,6,40,1) 100%);
   width: 100%;
   height: 100%;
+  transition: all .5s ease;
   &.revealed{
     background: rgb(1,6,40);
     background: linear-gradient(0deg, rgba(1,6,40,1) 2%, rgba(54,52,231,1) 47%, rgba(175,65,175,1) 100%);
+    transition: all .5s ease;
   }
   &.invisible{
     background: rgb(200,242,255);
     background: radial-gradient(circle, rgba(200,242,255,1) 0%, rgba(134,224,255,1) 100%);
-  }
-}
-.coloredbgimpact{
-  pointer-events: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: rgb(200,242,255);
-  background: radial-gradient(circle, rgba(200,242,255,1) 0%, rgba(134,224,255,1) 100%);
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
-  &.revealed{
-    opacity: 1;
+    transition: all .5s ease;
   }
 }
 
@@ -2562,13 +2550,23 @@ body {
   width: 100%;
   position: absolute;
   float: right;
-  animation: rotar 15s infinite linear;
+  //animation: rotar 6s infinite linear;
   transform-style: preserve-3d;
+  transition: all 1s ease;
   @media screen and (max-width: $sm) {
-    animation: rotar 12s infinite linear;
+    //animation: rotar 12s infinite linear;
   }
+
   &:hover{
-    animation-play-state: paused;
+    animation-play-state: paused !important;
+  }
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  } to {
+    transform: rotateY(360deg);
   }
 }
 
@@ -2593,7 +2591,6 @@ body {
   width: 90%;
   position: absolute;
 }
-
 .content-carrousel figure:nth-child(1) {
   transform: rotateY(0deg) translateZ(300px);
 } .content-carrousel figure:nth-child(2) {
@@ -2601,6 +2598,15 @@ body {
 } .content-carrousel figure:nth-child(3) {
   transform: rotateY(240deg) translateZ(300px);
 }
+
+//animacion de rotación original
+/* .content-carrousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+} .content-carrousel figure:nth-child(2) {
+  transform: rotateY(120deg) translateZ(300px);
+} .content-carrousel figure:nth-child(3) {
+  transform: rotateY(240deg) translateZ(300px);
+} */
 
 .content-carrousel{
   &.second{
@@ -2678,13 +2684,7 @@ body {
   }
 }
 
-@keyframes rotar {
-  from {
-    transform: rotateY(0deg);
-  } to {
-    transform: rotateY(360deg);
-  }
-}
+
 
 @keyframes title {
   from {
