@@ -2651,10 +2651,6 @@ body {
 }
 
 .section88 .container .titlecont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 22.22222%;
   margin: 100px auto 0 auto;
 }
 
@@ -2664,13 +2660,19 @@ body {
   }
 }
 
-.section88 .container .titlecont h1 {
+.section88 .container .titlecont h2 {
   text-align: center;
   margin-right: 5px;
 }
 
 .section88 .container .titlecont span {
   font-size: 20px;
+}
+
+.section88 .container .lower__text {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
 }
 
 .section88 .container .fondo {
@@ -3268,20 +3270,29 @@ body {
 }
 
 .section11 .titlecont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 22.22222%;
   margin: 100px auto 0 auto;
 }
 
-.section11 .titlecont h1 {
+@media screen and (max-width: 850px) {
+  .section11 .titlecont {
+    margin: 100px auto 100px auto;
+  }
+}
+
+.section11 .titlecont h2 {
   text-align: center;
   margin-right: 5px;
 }
 
 .section11 .titlecont span {
   font-size: 20px;
+}
+
+.section11 .lower__text {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  z-index: 2;
 }
 
 .section11 .mountain {
@@ -3295,7 +3306,7 @@ body {
 .section11 .sol {
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   width: 750px;
 }
 

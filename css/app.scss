@@ -1815,19 +1815,23 @@ body {
     height: 100vh;
     overflow: hidden;
     .titlecont{
-      display: flex;
-      width: col(4);
+
       margin:100px auto 0 auto;
       @media screen and (max-width: $md) {
         margin:100px auto 100px auto;
       }
-      h1{
+      h2{
         text-align: center;
         margin-right: 5px;
       }
       span{
         font-size: 20px;
       }
+    }
+    .lower__text{
+      position: absolute;
+      right: 10%;
+      bottom: 10%;
     }
     .fondo{
       width: 100%;
@@ -2217,16 +2221,23 @@ body {
   //align-items: center;
   //justify-content: center;
   .titlecont{
-    display: flex;
-    width: col(4);
     margin:100px auto 0 auto;
-    h1{
+    @media screen and (max-width: $md) {
+      margin:100px auto 100px auto;
+    }
+    h2{
       text-align: center;
       margin-right: 5px;
     }
     span{
       font-size: 20px;
     }
+  }
+  .lower__text{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    z-index: 2;
   }
   .mountain{
     position: absolute;
@@ -2238,7 +2249,7 @@ body {
   .sol{
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     width: 750px;
   }
   ul{
