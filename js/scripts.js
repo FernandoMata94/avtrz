@@ -413,7 +413,13 @@ function rotar3(){
     "rotateY(" + current_rotation4 + "deg)";
  }
 
-$(".test").click(function () {
+ $(".test3").click(function () {
+  current_rotation3 += 120;
+  document.querySelector(".content-carrousel").style.transform =
+    "rotateY(" + current_rotation3 + "deg)";
+});
+
+$(".test4").click(function () {
   current_rotation4 += 90;
   document.querySelector("#carrusel4").style.transform =
     "rotateY(" + current_rotation4 + "deg)";

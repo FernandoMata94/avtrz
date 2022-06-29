@@ -1470,16 +1470,6 @@ body {
       bottom: 10px;
     }
   }
-  .entire-content{
-    width: 200px;
-    @media screen and (max-width: $lap) {
-      width: 130px;
-    }
-    @media screen and (max-width: $sm) {
-      width: 200px;
-      padding-top: 0;
-    }
-  }
 }
 
 .buybutton{
@@ -1814,17 +1804,6 @@ body {
       left: 0;
       right: 0;
       z-index: -1;
-    }
-  }
-
-  .entire-content{
-    width: 200px;
-    @media screen and (max-width: $lap) {
-      width: 130px;
-    }
-    @media screen and (max-width: $sm) {
-      width: 200px;
-      padding-top: 0;
     }
   }
 }
@@ -2520,10 +2499,17 @@ body {
 
 .entire-content {
   margin: auto;
-  width: 300px;
+  width: 200px;
   perspective: 1000px;
   position: relative;
   padding-top: 80px;
+  @media screen and (max-width: $lap) {
+    //width: 130px;
+  }
+  @media screen and (max-width: $sm) {
+    width: 200px;
+    padding-top: 0;
+  }
 }
 
 
@@ -2559,25 +2545,32 @@ body {
   float: right;
   transform-style: preserve-3d;
   transition: all 1s ease;
+  //animation: rotar 2s infinite linear;
   @media screen and (max-width: $sm) {
     //animation: rotar 12s infinite linear;
   }
   img{
     image-rendering: auto;
     transition: all 300ms;
-    width: 100%;
-    height: 100%;
+    //width: 100%;
+    //height: 100%;
     &:hover{
       transform: scale(1.1);
       transition: all 300ms;
     }
   }
   figure{
-    width: 90%;
+    //width: 90%;
     position: absolute;
   }
 }
-
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  } to {
+    transform: rotateY(360deg);
+  }
+}
 .content-carrousel{
   figure:nth-child(1) {
     transform: rotateY(0deg) translateZ(300px);
