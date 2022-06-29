@@ -398,36 +398,43 @@ setInterval(volgendefoto, 3000);
 
 
 //funcion para rotar el slider 3D
-let current_rotation = 0;
+let current_rotation3 = 0;
+let current_rotation4 = 0;
 
 function rotar3(){
-  current_rotation += 120;
+  current_rotation3 += 120;
   document.querySelector(".content-carrousel").style.transform =
-    "rotateY(" + current_rotation + "deg)";
+    "rotateY(" + current_rotation3 + "deg)";
 }
 
-function rotar4(){
-  current_rotation += 90;
+ function rotar4(){
+    current_rotation4 += 90;
+    document.querySelector("#carrusel4").style.transform =
+    "rotateY(" + current_rotation4 + "deg)";
+ }
+
+$(".test").click(function () {
+  current_rotation4 += 90;
   document.querySelector("#carrusel4").style.transform =
-    "rotateY(" + current_rotation + "deg)";
-}
-
-
+    "rotateY(" + current_rotation4 + "deg)";
+});
 
 //cada 2 segundos ejecuta la funcion
 var intervalId = window.setInterval(function(){
   rotar3()
+  rotar4()
 }, 2000);
 
 //hover al mouse detiene la animaicion
-$('.content-carrousel').on('mouseenter',function(){
+$('.content-carrousel , #carrusel4').on('mouseenter',function(){
   clearTimeout(intervalId);
 });
 
 //empieza timeout again cuando el mouse sale
-$('.content-carrousel').on('mouseleave',function(){
+$('.content-carrousel , #carrusel4').on('mouseleave',function(){
   intervalId = window.setInterval(function(){
     rotar3()
+    rotar4()
   }, 2000);
 });
 

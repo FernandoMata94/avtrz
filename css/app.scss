@@ -146,9 +146,7 @@ p.especial{
     background: linear-gradient(0deg, rgba(249,61,249,1) -10%, rgba(1,6,40,1) 85%);
     transition: all 0.3s ease;
   }
-  &:active {
-    //background: darken($bg, 25%);
-  }
+
 }
 
 .button {
@@ -280,9 +278,6 @@ body {
     max-width: $max-width;
     margin: auto;
     height: 100px;
-    .left {
-
-    }
     .right {
       display: flex;
 
@@ -830,9 +825,6 @@ body {
         transition: all .5s ease;
       }
     }
-  }
-  .left{
-
   }
   .line{
     width: 100%;
@@ -1543,18 +1535,6 @@ body {
     @media screen and (max-width: $lg) {
       width: 100%;
      }
-    .slick-current{
-      h1{
-        /* opacity: 0;
-        animation-name: title;
-        animation-duration: .5s;
-        animation-timing-function: ease;
-        animation-delay: 0;
-        animation-iteration-count: 1;
-        animation-direction: alternate;
-        animation-fill-mode: forwards; */
-      }
-    }
   }
   @media screen and (max-width: $lg) {
     flex-direction: column;
@@ -2546,21 +2526,7 @@ body {
   padding-top: 80px;
 }
 
-.content-carrousel {
-  width: 100%;
-  position: absolute;
-  float: right;
-  //animation: rotar 6s infinite linear;
-  transform-style: preserve-3d;
-  transition: all 1s ease;
-  @media screen and (max-width: $sm) {
-    //animation: rotar 12s infinite linear;
-  }
 
-  &:hover{
-    animation-play-state: paused !important;
-  }
-}
 
 @keyframes rotar {
   from {
@@ -2587,29 +2553,44 @@ body {
     }
 }
 
-.content-carrousel figure {
-  width: 90%;
+.content-carrousel,.content-carrousel4{
+  width: 100%;
   position: absolute;
+  float: right;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  @media screen and (max-width: $sm) {
+    //animation: rotar 12s infinite linear;
+  }
+  img{
+    image-rendering: auto;
+    transition: all 300ms;
+    width: 100%;
+    height: 100%;
+    &:hover{
+      transform: scale(1.1);
+      transition: all 300ms;
+    }
+  }
+  figure{
+    width: 90%;
+    position: absolute;
+  }
 }
-.content-carrousel figure:nth-child(1) {
-  transform: rotateY(0deg) translateZ(300px);
-} .content-carrousel figure:nth-child(2) {
-  transform: rotateY(120deg) translateZ(300px);
-} .content-carrousel figure:nth-child(3) {
-  transform: rotateY(240deg) translateZ(300px);
-}
-
-//animacion de rotación original
-/* .content-carrousel figure:nth-child(1) {
-  transform: rotateY(0deg) translateZ(300px);
-} .content-carrousel figure:nth-child(2) {
-  transform: rotateY(120deg) translateZ(300px);
-} .content-carrousel figure:nth-child(3) {
-  transform: rotateY(240deg) translateZ(300px);
-} */
 
 .content-carrousel{
-  &.second{
+  figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+  }
+  figure:nth-child(2) {
+    transform: rotateY(120deg) translateZ(300px);
+  }
+  figure:nth-child(3) {
+    transform: rotateY(240deg) translateZ(300px);
+  }
+}
+
+.content-carrousel4{
     figure:nth-child(1) {
       transform: rotateY(0deg) translateZ(300px);
     }
@@ -2622,19 +2603,6 @@ body {
     figure:nth-child(4) {
       transform: rotateY(270deg) translateZ(300px);
     }
-  }
-}
-
-.content-carrousel img {
-  image-rendering: auto;
-  transition: all 300ms;
-  width: 100%;
-  height: 100%;
-}
-
-.content-carrousel img:hover {
-  transform: scale(1.1);
-  transition: all 300ms;
 }
 
 .webgl-slider{
@@ -2683,8 +2651,6 @@ body {
     }
   }
 }
-
-
 
 @keyframes title {
   from {
