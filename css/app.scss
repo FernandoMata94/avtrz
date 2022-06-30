@@ -2233,6 +2233,17 @@ body {
   }
 }
 
+#lottie{
+  background-color:transparent;
+  width:300px;
+  height:100%;
+  display:block;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  text-align: center;
+  opacity: 1;
+}
+
 .section12{
   position: relative;
   width: col(18);
