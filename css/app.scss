@@ -795,6 +795,8 @@ body {
     }
     h2{
       text-transform: capitalize;
+      color: $violet;
+      transition: all .5s ease;
     }
     h2,p,.line{
       z-index: 1 ;
@@ -820,6 +822,10 @@ body {
       border-radius: 25px 0 25px 25px;
     }
     &:hover{
+      h2{
+        transition: all .5s ease;
+        color: $white;
+      }
       &::before{
         opacity: 1;
         transition: all .5s ease;

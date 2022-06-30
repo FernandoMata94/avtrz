@@ -1122,6 +1122,9 @@ body {
 
 .brands .left h2, .brands .right h2 {
   text-transform: capitalize;
+  color: #F93DF9;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .brands .left h2, .brands .left p, .brands .left .line, .brands .right h2, .brands .right p, .brands .right .line {
@@ -1153,6 +1156,12 @@ body {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   border-radius: 25px 0 25px 25px;
+}
+
+.brands .left:hover h2, .brands .right:hover h2 {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  color: #ffffff;
 }
 
 .brands .left:hover::before, .brands .right:hover::before {
