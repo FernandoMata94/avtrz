@@ -3662,7 +3662,7 @@ body {
   margin-bottom: 25px;
 }
 
-.section13 p:hover {
+.section13 .terms:hover {
   color: #F93DF9;
 }
 
