@@ -2632,7 +2632,7 @@ body {
 
 .section88 .container .lower__text {
   position: absolute;
-  right: 10%;
+  left: 10%;
   bottom: 10%;
 }
 
@@ -3254,6 +3254,14 @@ body {
   width: 750px;
 }
 
+@media screen and (max-width: 850px) {
+  .section11 .sol {
+    width: 450px;
+    top: 0;
+    bottom: initial;
+  }
+}
+
 .section11 ul {
   position: absolute;
   left: 0;
@@ -3630,6 +3638,10 @@ body {
   text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.section13 p:hover {
+  color: #F93DF9;
 }
 
 .section13 img {
