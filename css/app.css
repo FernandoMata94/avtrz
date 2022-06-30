@@ -629,6 +629,27 @@ body {
   width: 100%;
 }
 
+#lottie {
+  background-color: transparent;
+  width: calc(50% - 5.5555%);
+  height: 170px;
+  display: block;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 1;
+  position: absolute;
+  right: 5.55556%;
+  top: 0;
+}
+
+@media screen and (max-width: 850px) {
+  #lottie {
+    width: 100%;
+  }
+}
+
 .sectiontest {
   width: 100%;
   padding: 5.55556%;
@@ -892,6 +913,8 @@ body {
 }
 
 .sectiontest .topright {
+  -ms-flex-item-align: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -908,11 +931,8 @@ body {
   .sectiontest .topright {
     -ms-grid-row: 1;
     grid-row: 1;
+    margin-top: 25px;
   }
-}
-
-.sectiontest .topright .logoavtrz {
-  width: 300px;
 }
 
 .sectiontest .topright .avatares {
@@ -1120,14 +1140,14 @@ body {
   }
 }
 
-.brands .left h2, .brands .right h2 {
+.brands .left h1, .brands .right h1 {
   text-transform: capitalize;
   color: #F93DF9;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
-.brands .left h2, .brands .left p, .brands .left .line, .brands .right h2, .brands .right p, .brands .right .line {
+.brands .left h1, .brands .left p, .brands .left .line, .brands .right h1, .brands .right p, .brands .right .line {
   z-index: 1;
 }
 
@@ -1158,7 +1178,7 @@ body {
   border-radius: 25px 0 25px 25px;
 }
 
-.brands .left:hover h2, .brands .right:hover h2 {
+.brands .left:hover h1, .brands .right:hover h1 {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   color: #ffffff;
@@ -3298,18 +3318,6 @@ body {
   }
 }
 
-#lottie {
-  background-color: transparent;
-  width: 300px;
-  height: 100%;
-  display: block;
-  overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  text-align: center;
-  opacity: 1;
-}
-
 .section12 {
   position: relative;
   width: 100%;
@@ -3678,7 +3686,22 @@ body {
   }
 }
 
-.section13 form > div {
+.section13 form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 50%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .section13 form {
+    width: 100%;
+  }
+}
+
+.section13 form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3689,12 +3712,29 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
-.section13 form > div input {
-  width: 110px;
+.section13 form div .pdate {
+  min-width: 320px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section13 form div .pdate {
+    min-width: 270px;
+  }
+}
+
+.section13 form div input {
+  width: 90%;
   margin: auto;
+}
+
+.section13 form .button {
+  margin-top: 25px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
 }
 
 #product-component-1655334182882, #product-component-1655334137668, #product-component-1656354231711 {

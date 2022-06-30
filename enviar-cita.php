@@ -1,8 +1,10 @@
 <?php
+    $name = $_POST["name"];
+    $phone = $_POST["phone"];
     $email = $_POST["email"];
     $date = $_POST["date"];
 
-    $body = "Correo: " . $email . "<br>Fecha de cita: " . $date;
+    $body = "Correo: " . $email . "<br>Nombre: " . $name . "<br>Telefono: " . $phone . "<br>Fecha de cita: " . $date;
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;

@@ -552,6 +552,23 @@ body {
   }
 
 }
+#lottie{
+  background-color:transparent;
+
+  width: calc(50% - 5.5555%);
+  height:170px;
+  display:block;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  text-align: center;
+  opacity: 1;
+  position: absolute;
+  right: col(1);
+  top: 0;
+  @media screen and (max-width: $md) {
+    width:100%;
+  }
+}
 
 .sectiontest {
   width: col(18);
@@ -664,15 +681,13 @@ body {
     }
   }
   .topright{
-    //background-color: #3FA9F5;
+    align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     @media screen and (max-width: $md) {
       grid-row: 1;
-    }
-    .logoavtrz{
-      width: 300px;
+      margin-top: 25px;
     }
     .avatares{
       width: 450px;
@@ -793,12 +808,12 @@ body {
     @media screen and (max-width: $lg) {
       width: col(18);
     }
-    h2{
+    h1{
       text-transform: capitalize;
       color: $violet;
       transition: all .5s ease;
     }
-    h2,p,.line{
+    h1,p,.line{
       z-index: 1 ;
     }
     .cont{
@@ -822,7 +837,7 @@ body {
       border-radius: 25px 0 25px 25px;
     }
     &:hover{
-      h2{
+      h1{
         transition: all .5s ease;
         color: $white;
       }
@@ -2233,16 +2248,7 @@ body {
   }
 }
 
-#lottie{
-  background-color:transparent;
-  width:300px;
-  height:100%;
-  display:block;
-  overflow: hidden;
-  transform: translate3d(0,0,0);
-  text-align: center;
-  opacity: 1;
-}
+
 
 .section12{
   position: relative;
@@ -2503,15 +2509,32 @@ body {
     }
   }
   form{
-    >div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: col(9);
+    margin:auto;
+    @media screen and (max-width: $lg) {
+      width: col(18);
+    }
+    div{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-bottom: 25px;
+      margin-bottom: 5px;
+      .pdate{
+        min-width: 320px;
+        @media screen and (max-width: $lg) {
+          min-width: 270px;
+        }
+      }
       input{
-        width: 110px;
+        width: 90%;
         margin: auto;
       }
+    }
+    .button{
+      margin-top: 25px;
+      grid-column: 1/3;
     }
   }
 }
