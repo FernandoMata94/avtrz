@@ -80,7 +80,9 @@ h1 {
     font-size: pxtorem(24 * $scale);
   }
 }
-
+span{
+  color: $violet !important;
+}
 h2 {
   @include h2();
   color: $white;
@@ -1526,7 +1528,7 @@ body {
   padding: col(1);
   justify-content: space-between;
   .secondtitle{
-    @include h1($white,.7);
+    @include h1($white,.9);
     span{
       color: $violet !important;
     }
@@ -2499,17 +2501,26 @@ body {
   position: relative;
   background-color:#e2e2e2;
   padding: col(1);
-  h1,h2{
+  h2{
     color: $purple;
     text-align: center;
-    &:first-of-type{
-      margin-bottom: 50px;
-    }
-    &:last-of-type{
-      margin-top: 50px;
-      margin-bottom: 50px;
+  }
+
+  img{
+    width: 40%;
+    display: block;
+    margin:50px auto 50px auto;
+    @media screen and (max-width: $md) {
+      width: 80%;
     }
   }
+  .cont{
+    h1,h1{
+      margin: 0;
+    }
+  }
+
+
   p{
     text-align: center;
     color: $purple;
@@ -2522,19 +2533,15 @@ body {
       color: $violet;
     }
   }
-  img{
-    width: 40%;
-    display: block;
-    margin: auto;
-    @media screen and (max-width: $md) {
-      width: 80%;
-    }
-  }
+
   form{
+    border: 3px solid $violet;
+    border-radius: 25px;
+    padding: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: col(9);
-    margin:auto;
+    margin:25px auto 0 auto;
     @media screen and (max-width: $lg) {
       width: col(18);
     }

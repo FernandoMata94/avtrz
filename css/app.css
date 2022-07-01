@@ -45,6 +45,10 @@ h1 {
   }
 }
 
+span {
+  color: #F93DF9 !important;
+}
+
 h2 {
   font-family: BlinkerSemiBold;
   font-size: 2.25rem;
@@ -2202,7 +2206,7 @@ body {
 
 .section6 .secondtitle {
   font-family: "BlinkerBold";
-  font-size: 2.625rem;
+  font-size: 3.375rem;
   color: #ffffff;
   margin: 0;
   font-weight: normal;
@@ -2211,19 +2215,19 @@ body {
 
 @media screen and (max-width: 1400px) {
   .section6 .secondtitle {
-    font-size: 1.3125rem;
+    font-size: 1.6875rem;
   }
 }
 
 @media screen and (max-width: 850px) {
   .section6 .secondtitle {
-    font-size: 1.225rem;
+    font-size: 1.575rem;
   }
 }
 
 @media screen and (max-width: 580px) {
   .section6 .secondtitle {
-    font-size: 1.05rem;
+    font-size: 1.35rem;
   }
 }
 
@@ -3699,18 +3703,25 @@ body {
   padding: 5.55556%;
 }
 
-.section13 h1, .section13 h2 {
+.section13 h2 {
   color: #010628;
   text-align: center;
 }
 
-.section13 h1:first-of-type, .section13 h2:first-of-type {
-  margin-bottom: 50px;
+.section13 img {
+  width: 40%;
+  display: block;
+  margin: 50px auto 50px auto;
 }
 
-.section13 h1:last-of-type, .section13 h2:last-of-type {
-  margin-top: 50px;
-  margin-bottom: 50px;
+@media screen and (max-width: 850px) {
+  .section13 img {
+    width: 80%;
+  }
+}
+
+.section13 .cont h1, .section13 .cont h1 {
+  margin: 0;
 }
 
 .section13 p {
@@ -3725,25 +3736,16 @@ body {
   color: #F93DF9;
 }
 
-.section13 img {
-  width: 40%;
-  display: block;
-  margin: auto;
-}
-
-@media screen and (max-width: 850px) {
-  .section13 img {
-    width: 80%;
-  }
-}
-
 .section13 form {
+  border: 3px solid #F93DF9;
+  border-radius: 25px;
+  padding: 15px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   width: 50%;
-  margin: auto;
+  margin: 25px auto 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
