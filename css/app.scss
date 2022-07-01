@@ -1527,10 +1527,13 @@ body {
   align-items: center;
   padding: col(1);
   justify-content: space-between;
+  @media screen and (max-width: $lg) {
+    flex-direction: column-reverse;
+   }
   .secondtitle{
-    @include h1($white,.9);
-    span{
-      color: $violet !important;
+    @include h1($white,.8);
+    @media screen and (max-width: $lap) {
+      @include h1($white,1.2);
     }
   }
   .buttcont{
@@ -1542,9 +1545,6 @@ body {
         flex-direction: column;
        }
     }
-  }
-  @media screen and (max-width: $lg) {
-   flex-direction: column;
   }
   .choose-cont{
     padding: 0;
@@ -1571,9 +1571,6 @@ body {
     @media screen and (max-width: $lg) {
       width: 100%;
      }
-  }
-  @media screen and (max-width: $lg) {
-    flex-direction: column;
   }
   #slideshow{
     @media screen and (max-width: $lg) {

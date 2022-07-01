@@ -2204,9 +2204,18 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1200px) {
+  .section6 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .section6 .secondtitle {
   font-family: "BlinkerBold";
-  font-size: 3.375rem;
+  font-size: 3rem;
   color: #ffffff;
   margin: 0;
   font-weight: normal;
@@ -2215,24 +2224,49 @@ body {
 
 @media screen and (max-width: 1400px) {
   .section6 .secondtitle {
-    font-size: 1.6875rem;
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 850px) {
   .section6 .secondtitle {
-    font-size: 1.575rem;
+    font-size: 1.4rem;
   }
 }
 
 @media screen and (max-width: 580px) {
   .section6 .secondtitle {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
   }
 }
 
-.section6 .secondtitle span {
-  color: #F93DF9 !important;
+@media screen and (max-width: 1400px) {
+  .section6 .secondtitle {
+    font-family: "BlinkerBold";
+    font-size: 4.5rem;
+    color: #ffffff;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 1400px) and (max-width: 1400px) {
+  .section6 .secondtitle {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 1400px) and (max-width: 850px) {
+  .section6 .secondtitle {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 1400px) and (max-width: 580px) {
+  .section6 .secondtitle {
+    font-size: 1.8rem;
+  }
 }
 
 .section6 .buttcont {
@@ -2250,15 +2284,6 @@ body {
 
 @media screen and (max-width: 1200px) {
   .section6 .buttcont img {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .section6 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2298,15 +2323,6 @@ body {
 @media screen and (max-width: 1200px) {
   .section6 .choose-cont {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .section6 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
