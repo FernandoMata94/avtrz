@@ -1051,7 +1051,7 @@ body {
 }
 
 .sectiontest .bottomright .texto {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   margin-top: 10px;
 }
 
@@ -2029,6 +2029,7 @@ body {
   background-color: #010628;
   z-index: 1;
   text-align: center;
+  padding-bottom: 25px;
 }
 
 .title span {
@@ -2037,6 +2038,11 @@ body {
 
 .title .violet {
   color: #F93DF9;
+}
+
+.title.segundo {
+  padding-bottom: 25px;
+  background-color: #010628;
 }
 
 .title.segundo h1 {

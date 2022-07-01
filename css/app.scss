@@ -243,7 +243,6 @@ body {
       .left {
         .logo {
           width: 150px;
-
           img{
             width: 150px;
           }
@@ -280,7 +279,6 @@ body {
     height: 100px;
     .right {
       display: flex;
-
       .logo {
         width: 50px;
         margin-right: 100px;
@@ -332,7 +330,6 @@ body {
   &.activo {
     transition: all 0.5s ease;
     background-color: transparent;
-
     .inner {
       .left {
         .logo {
@@ -759,7 +756,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     .texto{
-      margin-bottom: 60px;
+      margin-bottom: 50px;
       margin-top: 10px;
       @media screen and (max-width: $lap) {
         margin-bottom: 40px;
@@ -1397,9 +1394,12 @@ body {
 
 .title{
   position: relative;
+  //background: rgb(255,255,255);
+  //background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(1,6,40,1) 84%, rgba(134,224,255,1) 010628%);
   background-color: $purple;
   z-index: 1;
   text-align: center;
+  padding-bottom: 25px;
   span{
     color: $violet;
   }
@@ -1407,6 +1407,8 @@ body {
     color: $violet;
   }
   &.segundo{
+    padding-bottom: 25px;
+    background-color: $purple;
     h1{
       text-transform: capitalize;
     }
