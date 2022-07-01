@@ -1395,6 +1395,24 @@ body {
   }
 }
 
+.title{
+  position: relative;
+  background-color: $purple;
+  z-index: 1;
+  text-align: center;
+  span{
+    color: $violet;
+  }
+  .violet{
+    color: $violet;
+  }
+  &.segundo{
+    h1{
+      text-transform: capitalize;
+    }
+  }
+}
+
 .shopify-buy-frame--product{
   margin: auto;
 }
@@ -1506,7 +1524,10 @@ body {
   padding: col(1);
   justify-content: space-between;
   .secondtitle{
-    text-transform: capitalize;
+    @include h1($white,.7);
+    span{
+      color: $violet !important;
+    }
   }
   .buttcont{
     display: flex;
@@ -1616,8 +1637,7 @@ body {
   display: flex;
   align-items: center;
   width: col(18);
-  padding: col(1);
-  height: 100vh;
+  padding: 0 col(1) col(1) col(1);
   position: relative;
   @media screen and (max-width: $lap) {
     flex-direction: column;
@@ -2539,7 +2559,7 @@ body {
   }
 }
 
-#product-component-1655334182882,#product-component-1655334137668,#product-component-1656354231711{
+#product-component-1656690049306{
   display:block !important;
 }
 .shopify-buy-frame.shopify-buy-frame--product.shopify-buy__layout-vertical{
