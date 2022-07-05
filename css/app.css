@@ -642,7 +642,9 @@ body {
 
 @media screen and (max-width: 850px) {
   .logoanim {
-    width: 100%;
+    position: relative;
+    right: initial;
+    margin: auto;
   }
 }
 
@@ -955,8 +957,8 @@ body {
 
 @media screen and (max-width: 850px) {
   .sectiontest .topright {
-    -ms-grid-row: 1;
-    grid-row: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
     margin-top: 25px;
   }
 }
