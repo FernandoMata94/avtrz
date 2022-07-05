@@ -580,6 +580,7 @@ body {
   @media screen and (max-width: $md) {
     grid-template-columns: 1fr;
     height: auto;
+    gap:0;
   }
   .texto{
     display: flex;
@@ -654,7 +655,7 @@ body {
     }
     @media screen and (max-width: $md) {
       grid-row: 3;
-
+      margin: 25px 0;
     }
     h2{
       @include h2($white,1.2);
@@ -688,7 +689,8 @@ body {
     align-items: center;
     @media screen and (max-width: $md) {
       grid-row: 2;
-      margin-top: 25px;
+      margin-top: 0;
+      margin-bottom: 25px;
     }
     .avatares{
       //width: 450px;
