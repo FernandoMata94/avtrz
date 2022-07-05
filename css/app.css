@@ -633,15 +633,8 @@ body {
   width: 100%;
 }
 
-#lottie {
-  background-color: transparent;
-  width: calc(50% - 5.5555%);
-  height: 170px;
-  display: block;
-  overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  text-align: center;
+.logoanim {
+  width: 300px;
   opacity: 1;
   position: absolute;
   right: 5.55556%;
@@ -649,7 +642,7 @@ body {
 }
 
 @media screen and (max-width: 850px) {
-  #lottie {
+  .logoanim {
     width: 100%;
   }
 }
@@ -2592,6 +2585,14 @@ body {
   height: 220px;
 }
 
+@media screen and (max-width: 1600px) {
+  .section7 .right ul li .cont {
+    width: 250px;
+    padding: 20px;
+    height: 220px;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .section7 .right ul li .cont {
     height: auto;
@@ -3250,7 +3251,7 @@ body {
 @media screen and (max-width: 1600px) {
   .section10 .bottom .member p {
     font-family: "BlinkerSemiBold";
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #ffffff;
     margin: 0;
     font-weight: normal;
@@ -3261,7 +3262,7 @@ body {
 
 @media screen and (max-width: 1600px) and (max-width: 850px) {
   .section10 .bottom .member p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -3400,7 +3401,7 @@ body {
   background-color: #010628;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .section12 {
     height: auto;
   }
