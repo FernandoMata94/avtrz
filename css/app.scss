@@ -554,9 +554,8 @@ body {
 
 .logoanim{
   width:300px;
-  opacity: 1;
   position: absolute;
-  right: col(1);
+  right: col(3);
   top: 0;
   @media screen and (max-width: $md) {
     width:100%;
