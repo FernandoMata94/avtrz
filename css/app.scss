@@ -652,6 +652,10 @@ body {
     @media screen and (max-width: $lap) {
       align-self: center;
     }
+    @media screen and (max-width: $md) {
+      grid-row: 3;
+
+    }
     h2{
       @include h2($white,1.2);
       span{
@@ -771,7 +775,7 @@ body {
       width: 100%;
     }
     @media screen and (max-width: $md) {
-      grid-row: 3;
+      grid-row: 4;
       margin: 25px 0;
     }
   }

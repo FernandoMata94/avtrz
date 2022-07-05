@@ -814,6 +814,13 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .sectiontest .topleft {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+}
+
 .sectiontest .topleft h2 {
   font-family: BlinkerSemiBold;
   font-size: 2.7rem;
@@ -1106,8 +1113,8 @@ body {
 
 @media screen and (max-width: 850px) {
   .sectiontest .bottomright {
-    -ms-grid-row: 3;
-    grid-row: 3;
+    -ms-grid-row: 4;
+    grid-row: 4;
     margin: 25px 0;
   }
 }
