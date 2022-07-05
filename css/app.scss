@@ -689,7 +689,7 @@ body {
       margin-top: 25px;
     }
     .avatares{
-      width: 450px;
+      //width: 450px;
       @media screen and (max-width: $lap) {
         width: 450px;
       }
@@ -751,10 +751,10 @@ body {
     }
   }
   .bottomright{
-    //background-color: #aaa;
+
     width: 80%;
     justify-self: center;
-    //display: flex;
+
     flex-direction: column;
     justify-content: space-around;
     .texto{

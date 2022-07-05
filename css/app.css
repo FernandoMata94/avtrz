@@ -939,10 +939,6 @@ body {
   }
 }
 
-.sectiontest .topright .avatares {
-  width: 450px;
-}
-
 @media screen and (max-width: 1400px) {
   .sectiontest .topright .avatares {
     width: 450px;
