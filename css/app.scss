@@ -572,6 +572,7 @@ body {
   grid-template-columns: 1fr 1fr;
   z-index: 1;
   position: relative;
+  gap: 50px;
   @media screen and (max-width: $lap) {
    height: auto;
   }
@@ -661,6 +662,9 @@ body {
       span{
         color: $violet
       }
+      @media screen and (max-width: $max) {
+        @include h1($white,1);
+      }
     }
     .button{
       @include button2($violet);
@@ -701,6 +705,9 @@ body {
     background-color: #F93DF9;
     border-radius: 10px;
     margin: auto;
+    @media screen and (max-width: $max) {
+      top: -10px;
+    }
     @media screen and (max-width: $md) {
       top: -210px;
       width: 80vw;

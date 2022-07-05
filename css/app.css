@@ -658,6 +658,7 @@ body {
       grid-template-columns: 1fr 1fr;
   z-index: 1;
   position: relative;
+  gap: 50px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -874,6 +875,35 @@ body {
   color: #F93DF9;
 }
 
+@media screen and (max-width: 1600px) {
+  .sectiontest .topleft h1 {
+    font-family: "BlinkerBold";
+    font-size: 3.75rem;
+    color: #ffffff;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 1400px) {
+  .sectiontest .topleft h1 {
+    font-size: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 850px) {
+  .sectiontest .topleft h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 580px) {
+  .sectiontest .topleft h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .sectiontest .topleft .button {
   background: #F93DF9;
   font-family: "BlinkerBold";
@@ -954,6 +984,12 @@ body {
   background-color: #F93DF9;
   border-radius: 10px;
   margin: auto;
+}
+
+@media screen and (max-width: 1600px) {
+  .sectiontest .purpleline {
+    top: -10px;
+  }
 }
 
 @media screen and (max-width: 850px) {
