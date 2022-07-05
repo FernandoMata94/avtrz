@@ -1413,6 +1413,10 @@ body {
     background-color: $purple;
     h1{
       text-transform: capitalize;
+      @media screen and (max-width: $lg) {
+        max-width: 300px;
+        margin: auto;
+      }
     }
   }
 }

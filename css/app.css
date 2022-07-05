@@ -2053,6 +2053,13 @@ body {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 1200px) {
+  .title.segundo h1 {
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
 .shopify-buy-frame--product {
   margin: auto;
 }
