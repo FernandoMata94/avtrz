@@ -1193,7 +1193,6 @@ body {
 
 .brands .left .cont, .brands .right .cont {
   z-index: 1;
-  height: 220px;
 }
 
 @media screen and (max-width: 1200px) {
